@@ -1,0 +1,14 @@
+{
+    "ITEM_MORAY_EEL": {
+        "label": "Moray Eel",
+        "classification": "FILLER",
+        "tags": ["Fish"],
+        "modern_id": null
+    },
+    "ITEM_PROTEIN_SKIMMER": {
+        "label": "Protein Skimmer",
+        "classification": "PROGRESSION",
+        "tags": ["Equipment"],
+        "modern_id": null
+    }
+}
