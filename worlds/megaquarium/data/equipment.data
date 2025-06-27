@@ -1,0 +1,2903 @@
+{
+  "objects": [
+   {
+      "id": "basic_heater",
+      "tags": [
+        "heater"
+      ],
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "50_chemistry_basic_heater",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -20.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "heating": 18,
+        "reliability": 93,
+		"difficulty":20,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": 1,
+        "cost": 150,
+        "number": 5,
+        "availableLevel": 1,
+        "category": "equipment",
+        "autoUnlock": true
+      },
+      "sound": {
+        "placeSound": "heater_place",
+        "loopSound": "heater_loop"
+      }
+    },
+	 {
+      "id": "basic_filter",
+      "tags": [
+        "filter"
+      ],
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "51_chemistry_basic_filter",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 10.0,
+          "y": -32.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+	  "mechanical": 16,
+        "reliability": 93,
+		"difficulty":20,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": 1,
+        "cost": 600,
+        "number": 17,
+        "availableLevel": 1,
+        "category": "equipment",
+        "autoUnlock": true
+      },
+      "sound": {
+        "placeSound": "small_filter_place",
+        "loopSound": "filter_loop"
+      }
+    },
+    {
+      "id": "combi_mini",
+      "tags": [
+        "combinedFilter"
+      ],
+      "map": {
+        "map": " \
+		 3 \
+		2o4 \
+		 5 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {
+
+	  },
+      "fbx": {
+        "name": "52_chemistry_combi_mini",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -20.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 16,
+        "heating": 18,
+        "reliability": 92,
+		"difficulty":30,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": 1,
+        "availableLevel": 2,
+		"autoUnlock": true,
+		"category": "equipment"
+      },
+      "sound": {
+        "placeSound": "combi_place",
+        "loopSound": "combi_loop"
+      }
+    },
+{
+      "id": "power_filter",
+      "tags": [
+        "filter"
+      ],
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "23_chemistry_b_1_1",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+       "guiOffset": {
+          "x": 0.0,
+          "y": -20.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 36,
+        "reliability": 92,
+		"difficulty":30,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": 1,
+        "availableLevel": 3,
+		"autoUnlock": true,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "small_filter_place",
+        "loopSound": "filter_loop"
+      }
+    },   
+   {
+      "id": "power_heater",
+      "tags": [
+        "heater"
+      ],
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "20_chemistry_h_1_1",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -20.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "heating": 36,
+        "reliability": 92,
+		"difficulty":30,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": 1,
+        "number": 2,
+        "availableLevel": 3,
+		"autoUnlock": true,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "heater_place",
+        "loopSound": "heater_loop"
+      }
+    },
+	
+	
+	
+	
+	
+	{
+      "id": "power_combi",
+      "tags": [
+        "combinedFilter"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {
+	  "rotatable":true,
+	  "maxAngle":90
+	  },
+      "fbx": {
+        "name": "66_chemistry_bh_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 40,
+        "heating": 40,
+        "reliability": 90,
+		"difficulty":40,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": 1,
+        "availableLevel": 3,
+		"number": 1,
+		"category": "equipment"
+      },
+      "sound": {
+        "placeSound": "powercombi_place",
+        "loopSound": "powercombi_loop"
+      }
+    },
+	
+	{
+      "id": "basic_pump",
+      "tags": [
+        "pump"
+      ],
+       "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x","u"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "u"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "u"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "u"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "u"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostTags":["pump"]
+      },
+      "immobile": {"rotatable":true},
+      "fbx": {
+        "name": "38_pump_1_1",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -20.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+      },
+      "unlockable": {
+        "type": "Science",
+		"number": 2,
+        "availableLevel": 3,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "pump_place",
+        "loopSound": "pump_loop"
+      },
+      "pump": {
+        "range": 7,
+		"tankLimit":1
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+    },
+	
+	
+	
+{
+      "id": "18_tanklight",
+      "tags": [
+        "light"
+      ],
+      "hosting": {
+        "hostedOn": [
+          "cornerMount"
+        ],
+      },
+      "fbx": {
+        "name": "18_tanklight",
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 30.0,
+          "y": -120.0
+        },
+        "guiRotation": {
+          "x": 0.0,
+          "y": 0,
+          "z": 0
+        },
+		"disableShadowMeshes":["18_tanklight_lightrays"]
+      },
+	  "cornerMounted":{ 
+		"meshNames":["18_tanklight","18_tanklight_lightrays"]
+	  },
+      "chemistry": {
+        "light": 5
+      },
+      "unlockable": {
+        "type": "Science",
+        "autoUnlock":true,
+        "availableLevel": 4,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "light_place",
+        "loopSound": "light_loop"
+      }
+    },
+     {
+      "id": "basic_skimmer",
+      "tags": [
+        "skimmer"
+      ],
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "25_chemistry_s_1_1",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -25.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "skimming": 36,
+        "reliability": 90,
+		"difficulty":40,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 1,
+        "availableLevel": 4,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "skimmer_place",
+        "loopSound": "skimmer_loop"
+      }
+    },
+    
+   
+  
+    {
+      "id": "large_filter",
+      "tags": [
+        "filter"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90},
+      "fbx": {
+        "name": "29_chemistry_b_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+       "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 90,
+        "reliability": 90,
+		"difficulty":40,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 1,
+        "availableLevel": 4,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_filter_place",
+        "loopSound": "large_filter_loop"
+      }
+    },   
+   {
+      "id": "large_heater",
+      "tags": [
+        "heater"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90},
+      "fbx": {
+        "name": "27_chemistry_h_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "heating": 90,
+        "reliability": 90,
+		"difficulty":40,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 3,
+        "availableLevel": 4,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_heater_place",
+        "loopSound": "large_heater_loop"
+      }
+    },
+	{
+      "id": "basic_chiller",
+      "tags": [
+        "chiller"
+      ],
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "22_chemistry_c_1_1",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -20.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "chilling": 40,
+        "reliability": 92,
+		"difficulty":30,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "autoUnlock":true,
+        "availableLevel": 5,
+		"adjustLevelWithDLC": [{"dlc":"deep freeze","adjustLevel":-1}],
+      },
+      "sound": {
+        "placeSound": "chiller_place",
+        "loopSound": "chiller_loop"
+      }
+    },
+	
+	{
+      "id": "power_light",
+      "tags": [
+        "light"
+      ],
+      "hosting": {
+        "hostedOn": [
+          "cornerMount"
+        ],
+      },
+      "fbx": {
+        "name": "81_tanklight_power",
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 30.0,
+          "y": -120.0
+        },
+        "guiRotation": {
+          "x": 0.0,
+          "y": 0,
+          "z": 0
+        },
+		"disableShadowMeshes":["18_tanklight_lightrays"]
+      },
+	  "cornerMounted":{ 
+		"meshNames":["18_tanklight","18_tanklight_lightrays"]
+	  },
+      "chemistry": {
+        "light": 10
+      },
+      "unlockable": {
+        "type": "Science",
+        "number":1,
+        "availableLevel": 5,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "light_place",
+        "loopSound": "light_loop"
+      }
+    },
+	{
+      "id": "power_pump",
+      "tags": [
+        "pump"
+      ],
+       "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x","u"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "u"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "u"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "u"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "u"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostTags":["pump"]
+      },
+      "immobile": {"rotatable":true},
+      "fbx": {
+        "name": "39_pump_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "unlockable": {
+        "type": "Science",
+		"number": 2,
+        "availableLevel": 5,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "pump_place",
+        "loopSound": "pump_loop"
+      },
+      "pump": {
+        "range": 12,
+		"tankLimit": 2,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+    },
+	// Rank 6
+	{
+      "id": "large_skimmer",
+      "tags": [
+        "skimmer"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90},
+      "fbx": {
+        "name": "31_chemistry_s_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "skimming": 90,
+        "reliability": 88,
+		"difficulty":50,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 2,
+        "availableLevel": 5,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_skimmer_place",
+        "loopSound": "large_skimmer_loop"
+      }
+    },
+	
+	{
+      "id": "large_chiller",
+      "tags": [
+        "chiller"
+      ],
+      "map": {
+                "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90},
+      "fbx": {
+        "name": "28_chemistry_c_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "chilling": 90,
+        "reliability": 90,
+		"difficulty":40,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number":2,
+        "availableLevel": 6,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_chiller_place",
+        "loopSound": "large_chiller_loop"
+      }
+    },
+	
+	 {
+      "id": "double_filter",
+      "tags": [
+        "combinedFilter"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90},
+      "fbx": {
+        "name": "67_chemistry_bs_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 40,
+		"skimming": 40,
+        "reliability": 90,
+		"difficulty":50,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 3,
+        "availableLevel": 6,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "double_filter_place",
+        "loopSound": "double_filter_loop"
+      }
+    },   
+	
+	{
+      "id": "nitrate_reactor",
+      "tags": [
+        "nitrateReactor"
+      ],
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "68_chemistry_n_1_1",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -20.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "nitrateReacting": 36,
+        "reliability": 90,
+		"difficulty":50,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 1,
+        "availableLevel": 7,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "nitrate_reactor_place",
+        "loopSound": "nitrate_reactor_loop"
+      }
+    },
+	{
+      "id": "mega_heater",
+      "tags": [
+        "heater"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2xx4 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {
+		"blocksLineOfSight":true,
+	  },
+      "fbx": {
+        "name": "32_chemistry_h_2_2",
+		"voCollection":"equipment",
+		"center":{"x":0.5,"z":0.5},
+        "guiScale": 0.38,
+        "guiOffset": {
+          "x": 0.0,
+          "y": 10
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "heating": 220,
+        "reliability": 88,
+		"difficulty":50,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 2,
+        "availableLevel": 7,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_heater_place",
+        "loopSound": "large_heater_loop"
+      }
+    },
+	
+	
+	
+	{
+      "id": "large_nitrate_reactor",
+      "tags": [
+        "nitrateReactor"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90},
+      "fbx": {
+        "name": "69_chemistry_n_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "nitrateReacting": 90,
+        "reliability": 88,
+		"difficulty":60,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 3,
+        "availableLevel": 8,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_nitrate_reactor_place",
+        "loopSound": "large_nitrate_reactor_loop"
+      }
+    },
+	
+	{
+      "id": "mega_chiller",
+      "tags": [
+        "chiller"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2xx4 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {
+		"blocksLineOfSight":true,
+	  },
+      "fbx": {
+        "name": "33_chemistry_c_2_2",
+		"voCollection":"equipment",
+		"center":{"x":0.5,"z":0.5},
+        "guiScale": 0.38,
+        "guiOffset": {
+          "x": 0.0,
+          "y": 10
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "chilling": 220,
+        "reliability": 88,
+		"difficulty":50,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 2,
+        "availableLevel": 8,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_chiller_place",
+        "loopSound": "large_chiller_loop"
+      }
+    },
+	
+	{
+      "id": "large_double_filter",
+      "tags": [
+        "combinedFilter"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2xx4 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {
+		"blocksLineOfSight":true,
+	  },
+      "fbx": {
+        "name": "70_chemistry_bs_2_2",
+		"voCollection":"equipment",
+		"center":{"x":0.5,"z":0.5},
+        "guiScale": 0.38,
+        "guiOffset": {
+          "x": 0.0,
+          "y": 10
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 100,
+		"skimming": 100,
+        "reliability": 88,
+		"difficulty":60,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number":3,
+        "availableLevel": 7,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_double_filter_place",
+        "loopSound": "large_double_filter_loop"
+      }
+    },
+	
+	// RANK 9
+	
+	{
+      "id": "triple_filter",
+      "tags": [
+        "combinedFilter"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90},
+      "fbx": {
+        "name": "76_chemistry_bns_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 28,
+		"skimming": 28,
+		"nitrateReacting": 28,
+        "reliability": 88,
+		"difficulty":60,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 1,
+        "availableLevel": 9,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "triple_filter_place",
+        "loopSound": "triple_filter_loop"
+      }
+    },   
+	
+	{
+      "id": "large_pump",
+      "tags": [
+        "pump"
+      ],
+       "map": {
+        "map": " \
+		 333 \
+		2oxx4 \
+		 555 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x","u"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "u"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "u"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "u"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "u"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostTags":["pump"]
+      },
+      "immobile": {"rotatable":true},
+      "fbx": {
+        "name": "74_pump_3_1",
+		"voCollection":"equipment",
+		"center":{"x":1},
+        "guiOffset": {
+          "x": 40.0,
+          "y": 25
+        },
+		"guiScale": 0.35,
+        "guiRotation": {
+          "x": 23.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "unlockable": {
+        "type": "Science",
+		"number": 2,
+        "availableLevel": 9,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "large_pump_place",
+        "loopSound": "large_pump_loop"
+      },
+      "pump": {
+        "range": 18,
+		"tankLimit": 4,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+    },
+	{
+      "id": "large_light",
+      "tags": [
+        "light"
+      ],
+      "hosting": {
+        "hostedOn": [
+          "cornerMount"
+        ],
+      },
+      "fbx": {
+        "name": "82_tanklight_large",
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 30.0,
+          "y": -120.0
+        },
+        "guiRotation": {
+          "x": 0.0,
+          "y": 0,
+          "z": 0
+        },
+		"disableShadowMeshes":["18_tanklight_lightrays"]
+      },
+	  "cornerMounted":{ 
+		"meshNames":["18_tanklight","18_tanklight_lightrays"]
+	  },
+      "chemistry": {
+        "light": 15
+      },
+      "unlockable": {
+        "type": "Science",
+        "number":3,
+        "availableLevel": 10,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "light_place",
+        "loopSound": "light_loop"
+      }
+    },
+	
+	
+	// Rank 10
+	
+	
+	{
+      "id": "uv_steriliser",
+      "tags": [
+        "uvSteriliser"
+      ],
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "71_chemistry_u_1_1",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -20.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "uvSterilising": 36,
+        "reliability": 90,
+		"difficulty":60,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 1,
+        "availableLevel": 10,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "uv_steriliser_place",
+        "loopSound": "uv_steriliser_loop"
+      }
+    },
+	
+	
+	{
+      "id": "mega_double_filter",
+      "tags": [
+        "combinedFilter"
+      ],
+      "map": {
+        "map": " \
+		 3333 \
+		2xxxx4 \
+		2oxxx4 \
+		 5555 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90,"blocksLineOfSight":true},
+      "fbx": {
+        "name": "79_chemistry_bs_4_2",
+		"voCollection":"equipment",
+		"center":{"x":1.5,"z":0.5},
+        "guiScale": 0.24,
+        "guiOffset": {
+          "x": 20.0,
+          "y": 30.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 220,
+		"skimming": 220,
+        "reliability": 84,
+		"difficulty":70,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number":3,
+        "availableLevel": 8,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_double_filter_place",
+        "loopSound": "large_double_filter_loop"
+      }
+    },
+
+	{
+      "id": "calcium_reactor",
+      "tags": [
+        "specialEquipment"
+      ],
+	  "perSpecNumbering": true,
+      "map": {
+        "map": "\r\n\t\t 3\r\n\t\t2o4\r\n\t\t 5\r\n\t\t",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "78_chemistry_calcium_1_1",
+		"voCollection":"equipment",
+        "guiScale": 0.6,
+        "guiOffset": {
+          "x": 0.0,
+          "y": -25.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "reliability": 92,
+		"difficulty":70,
+      },
+	  "salinity": {"canGoInSaltwater":true},
+	  "aquascaping":{
+		"stats":{
+			"increaseCoralGrowth":{"value":30},
+			"prestige":{"value":0}
+		}
+	  },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 3,
+        "availableLevel": 10,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "calcium_reactor_place",
+        "loopSound": "calcium_reactor_loop"
+      }
+    },
+	// Rank 11
+	{
+      "id": "large_triple_filter",
+      "tags": [
+        "combinedFilter"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2xx4 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {
+		"blocksLineOfSight":true,
+	  },
+      "fbx": {
+        "name": "77_chemistry_bns_2_2",
+		"voCollection":"equipment",
+		"center":{"x":0.5,"z":0.5},
+        "guiScale": 0.38,
+        "guiOffset": {
+          "x": 0.0,
+          "y": 10
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "mechanical": 67,
+		"skimming": 67,
+		"nitrateReacting": 67,
+        "reliability": 84,
+		"difficulty":70,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 3,
+        "availableLevel": 10,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_triple_filter_place",
+        "loopSound": "large_triple_filter_loop"
+      }
+    },   
+	
+	{
+      "id": "large_uv_steriliser",
+      "tags": [
+        "uvSteriliser"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {"rotatable":true,"maxAngle":90},
+      "fbx": {
+        "name": "72_chemistry_u_2_1",
+		"voCollection":"equipment",
+		"center":{"x":0.5},
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 32.0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "uvSterilising": 90,
+        "reliability": 88,
+		"difficulty":70,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 2,
+        "availableLevel": 11,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_uv_steriliser_place",
+        "loopSound": "large_uv_steriliser_loop"
+      }
+    },
+	
+	{
+      "id": "mega_nitrate_reactor",
+      "tags": [
+        "nitrateReactor"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2xx4 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {
+		"blocksLineOfSight":true,
+	  },
+      "fbx": {
+        "name": "80_chemistry_n_2_2",
+		"voCollection":"equipment",
+		"center":{"x":0.5,"z":0.5},
+        "guiScale": 0.38,
+        "guiOffset": {
+          "x": 0.0,
+          "y": 10
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "nitrateReacting": 220,
+        "reliability": 84,
+		"difficulty":70,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 3,
+        "availableLevel": 11,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_nitrate_reactor_place",
+        "loopSound": "large_nitrate_reactor_loop"
+      }
+    },
+	
+	{
+      "id": "mega_light",
+      "tags": [
+        "light"
+      ],
+      "hosting": {
+        "hostedOn": [
+          "cornerMount"
+        ],
+      },
+      "fbx": {
+        "name": "83_tanklight_mega",
+        "guiScale": 0.48,
+        "guiOffset": {
+          "x": 30.0,
+          "y": -120.0
+        },
+        "guiRotation": {
+          "x": 0.0,
+          "y": 0,
+          "z": 0
+        },
+		"disableShadowMeshes":["18_tanklight","18_tanklight_lightrays"]
+      },
+	  "cornerMounted":{ 
+		"meshNames":["18_tanklight","18_tanklight_lightrays"]
+	  },
+      "chemistry": {
+        "light": 20
+      },
+      "unlockable": {
+        "type": "Science",
+        "number":4,
+        "availableLevel": 11,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "light_place",
+        "loopSound": "light_loop"
+      }
+    },
+	
+	
+	// Rank 12
+	{
+      "id": "auto_feeder",
+      "tags": [
+        "specialEquipment",
+		"auto_feeder",
+      ],
+	  "perSpecNumbering": true,
+      "map": {
+        "map": " \
+		 d \
+		2o4 \
+		 5 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": ["floor"],
+		"hostedAdjacent":["tank"],
+		"hostingBlockingChar":"A",
+		"hostedOnTop":true
+      },
+      "immobile": {
+		"rotatable":true,
+		"layers":[0,1], // Occupies main layer and roof layer	  
+	  },
+      "fbx": {
+        "name": "88_auto_feeder",
+		"voCollection":"equipment",
+        "guiScale": 0.49,
+        "guiOffset": {
+          "x": -5.0,
+          "y": -25
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+	  "autofeeder":{
+		"capacityMultiplier":1, // This is multiplied by the item's "howManyInPack" variable to give capacity.
+		"excludeItems":["supplement","liveMysis","liveLugWorms","artemia","liveSandShrimp"] // You can use this to exclude certain food items from the auto-feeder's list. You can also use "includeOnlyItems":[] to list the only items that can be used by this auto-feeder.
+	  },
+	  "breakdown":{
+		"reliability":90,
+		"difficulty":100,
+	  },
+      "unlockable": {
+        "type": "Science",
+        "number": 1,
+        "availableLevel": 12,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "auto_feeder_place",
+        "loopSound": "auto_feeder_loop"
+      }
+    },
+	{
+      "id": "mega_pump",
+      "tags": [
+        "pump"
+      ],
+       "map": {
+        "map": " \
+		 333 \
+		2xxx4 \
+		2oxx4 \
+		 555 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x","u"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "u"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "u"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "u"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "u"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostTags":["pump"]
+      },
+      "immobile": {"rotatable":true},
+      "fbx": {
+        "name": "75_pump_3_2",
+		"voCollection":"equipment",
+		"center":{"x":1,"z":0.5},
+        "guiOffset": {
+          "x": 18.0,
+          "y": 31.0
+        },
+		"guiScale": 0.28,
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "unlockable": {
+        "type": "Science",
+		"number": 2,
+        "availableLevel": 12,
+        "category": "auxiliary"
+      },
+      "sound": {
+        "placeSound": "large_pump_place",
+        "loopSound": "large_pump_loop"
+      },
+      "pump": {
+        "range": 30,
+		"tankLimit": 8,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+    },
+	{
+      "id": "mega_uv_steriliser",
+      "tags": [
+        "uvSteriliser"
+      ],
+      "map": {
+        "map": " \
+		 33 \
+		2xx4 \
+		2ox4 \
+		 55 \
+		 ",
+        "originChar": "x",
+        "multiCodes": [
+          {
+            "code": "o",
+            "chars": [
+              "x"
+            ]
+          },
+          {
+            "code": "2",
+            "chars": [
+              "c"
+            ]
+          },
+          {
+            "code": "3",
+            "chars": [
+              "c"
+            ],
+            "angle": 90
+          },
+          {
+            "code": "4",
+            "chars": [
+              "c"
+            ],
+            "angle": 180
+          },
+          {
+            "code": "5",
+            "chars": [
+              "c"
+            ],
+            "angle": 270
+          }
+        ]
+      },
+      "hosting": {
+        "hostedOn": [
+          "floor"
+        ],
+		"hostedAdjacent":["tank","pump"]
+      },
+      "immobile": {},
+      "fbx": {
+        "name": "73_chemistry_u_2_2",
+		"voCollection":"equipment",
+		"center":{"x":0.5,"z":0.5},
+        "guiScale": 0.38,
+        "guiOffset": {
+          "x": 0.0,
+          "y": 10
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        }
+      },
+      "chemistry": {
+        "uvSterilising": 220,
+        "reliability": 84,
+		"difficulty":80,
+      },
+	  "attraction":{"limit1Visit":true,"attractionChar":"c"},"uglyEquipment":{},
+      "unlockable": {
+        "type": "Science",
+        "number": 3,
+        "availableLevel": 12,
+        "category": "equipment"
+      },
+      "sound": {
+        "placeSound": "large_uv_steriliser_place",
+        "loopSound": "large_uv_steriliser_loop"
+      }
+    },
+	
+  ]
+}

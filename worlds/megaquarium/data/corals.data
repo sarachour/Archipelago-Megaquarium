@@ -1,0 +1,1533 @@
+{
+  "objects": [
+    {
+      "id": "68_disco_mushrooms",
+      "tags": [
+        "animal",
+        "softCoral"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},
+	  "fbx": {
+        "name": "68_disco_mushrooms",
+		"alwaysReload":true,
+        "guiScale": 0.9,
+        "guiOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          },
+          "feed": {
+            "name": "feed"
+          }
+        },
+        "baseHue": 0.55
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "single",
+            "growthTime": 3,
+            "foodAmount": 1
+          },
+          {
+            "stageName": "pair",
+            "growthTime": 3,
+            "foodAmount": 2
+          },
+          {
+            "stageName": "cluster",
+            "growthTime": 3,
+            
+            "foodAmount": 3
+          },
+          {
+            "stageName": "colony",
+            "growthTime": 3,
+            
+            "foodAmount": 4
+          },
+          {
+            "stageName": "colony",
+            
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+		"prestigeTalk":{},
+		  "science": {},
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 1
+          },
+          "waterQuality": {
+            "value": 70
+          },
+          "isSoftCoral": {},
+          "isTropical": {},
+          "light": {
+            "value": 5
+          }
+        },
+        "colonies": {
+          "meshNames": [
+            "68_disco_mushrooms_mushroom",
+          ],
+          "positions": [
+            [
+              0.16971,
+			  0,
+              0.16659,
+              163.677
+            ],
+            [
+              0.15655,
+			  0,
+              -0.18642,
+              -290.044
+            ],
+            [
+              -0.18243,
+			  0,
+              -0.14401,
+              6.559
+            ],
+            [
+              -0.15901,
+			  0,
+              0.19153,
+              35.591
+            ]
+          ]
+        }
+      },
+      "unlockable": {
+        "number": 1,
+        "availableLevel": 4,
+        "category": "coralsAndInvertebrates"
+      },
+      "sound": {
+        "placeSound": "soft_coral_place",
+        "feedSound": "soft_coral_place_feed"
+      }
+    },
+    {
+      "id": "66_daisy_star_polyps",
+      "tags": [
+        "animal",
+        "softCoral"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "66_daisy_star_polyps",
+		"alwaysReload":true,
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 10.0,
+          "y": -5.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          },
+          "feed": {
+            "name": "feed"
+          }
+        },
+        "baseHue": 0.55
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "single",
+            "growthTime": 2,
+            "stats": {
+              "ecology": {
+                "value": 3
+              }
+            },
+            "foodAmount": 1
+          },
+          {
+            "stageName": "pair",
+            "growthTime": 2,
+            "stats": {
+              "ecology": {
+                "value": 6
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "cluster",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 9
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "colony",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 12
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "colony",
+            "stats": {
+              "ecology": {
+                "value": 15
+              }
+            },
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 1
+          },
+          "waterQuality": {
+            "value": 75
+          },
+          "isSoftCoral": {},
+          "isTropical": {},
+          "light": {
+            "value": 10
+          }
+        },
+        "colonies": {
+          "meshNames": [
+            "66_daisy_star_polyps_foot",
+            "66_daisy_star_polyps_arms",
+          ],
+          "positions": [
+            [
+              0.16971,
+			  0,
+              0.16659,
+              163.677
+            ],
+            [
+              0.15655,
+			  0,
+              -0.18642,
+              -290.044
+            ],
+            [
+              -0.18243,
+			  0,
+              -0.14401,
+              6.559
+            ],
+            [
+              -0.15901,
+			  0,
+              0.19153,
+              35.591
+            ]
+          ]
+        }
+      },
+      "unlockable": {
+        "number": 2,
+        "availableLevel": 6,
+        "category": "coralsAndInvertebrates",
+		"howRare":2
+      },
+      "sound": {
+        "placeSound": "soft_coral_place",
+        "feedSound": "soft_coral_place_feed"
+      }
+    },
+    {
+      "id": "71_blue_tubular_sponge",
+      "tags": [
+        "animal",
+        "softCoral"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "71_blue_tubular_sponge",
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 12.0,
+          "y": -12.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          }
+        },
+        "baseHue": 0.55,
+        "scaleTheseMeshes": [
+          "71_blue_tubular_sponge"
+        ],
+		"scaleTransform":{
+			"linearTransform":{"y":-0.123},
+			"constantTransform":{"y":0.123}
+		}
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 3
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 6
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 9
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "megalith",
+            "stats": {
+              "science": {
+                "value": 12
+              }
+            },
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 1
+          },
+          "waterQuality": {
+            "value": 70
+          },
+          "isSoftCoral": {},
+          "isTropical": {},
+          "light": {
+            "value": 10
+          }
+        }
+      },
+      "unlockable": {
+        "number": 2,
+        "availableLevel": 5,
+        "category": "coralsAndInvertebrates",
+		"howRare":2
+      },
+      "sound": {
+        "placeSound": "soft_coral_place",
+      }
+    },
+    {
+      "id": "112_frilled_anemone",
+      "tags": [
+        "animal",
+        "otherInvertsStatic"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "112_frilled_anemone",
+		"alwaysReload":true,
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 0,
+          "y": -30
+        },
+        "guiRotation": {
+          "y": 61.8,
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          }
+        },
+        "baseHue": 0.55,
+		"countFirstForDuplicates":true
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "single",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 3
+              }
+            },
+            "foodAmount": 1
+          },
+          {
+            "stageName": "pair",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 6
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "cluster",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 9
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "colony",
+            "stats": {
+              "science": {
+                "value": 12
+              }
+            },
+            "foodAmount": 4
+          },
+        ],
+        "stats": {
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 1
+          },
+          "waterQuality": {
+            "value": 70
+          },
+          "isColdwater": {},
+          "light": {
+            "value": 5
+          },
+		  "isAnemone": {},
+        },
+        "colonies": {
+          "meshNames": [
+            "112_frilled_anemone_stalk",
+            "112_frilled_anemone_head",
+          ],
+          "positions": [
+			[
+              0,
+			  0.15,
+              0,
+              0
+            ],
+            [
+              0.16971,
+			  0.15,
+              0.16659,
+              163.677
+            ],
+            [
+              0.15655,
+			  0.15,
+              -0.18642,
+              -290.044
+            ],
+            [
+              -0.18243,
+			  0.15,
+              -0.14401,
+              6.559
+            ]
+          ],
+		  "doColoniesForSpecModel":true
+        }
+      },
+      "unlockable": {
+        "number": 1,
+        "availableLevel": 6,
+        "category": "coralsAndInvertebrates",
+		"howRare":1
+      },
+      "sound": {
+        "placeSound": "soft_coral_place",
+      }
+    },
+	 
+	
+	
+	{
+      "id": "60_bubble_tip_anemone,_rose",
+      "tags": [
+        "animal",
+        "otherInvertsStatic"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "60_bubble_tip_anemone_rose",
+        "guiScale": 1.0,
+       "guiOffset": {
+          "x": 0,
+          "y": -50
+        },
+        "guiRotation": {
+          "x": 0.0,
+          "y": 0,
+          "z": 0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          },
+          "feed": {
+            "name": "feed"
+          }
+        },
+        "baseHue": 0.55,
+        "scaleTheseMeshes": [
+          "60_bubble_tip_anemone_rose_stalk",
+		  "60_bubble_tip_anemone_rose_tendral",
+        ],
+		"scaleTransform":{
+			"linearTransform":{},
+			"constantTransform":{"y":0.205},
+			"constantEuler":{"x":13.39,"z":-11.79}
+		},
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 3
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 6
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 9
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "megalith",
+            "stats": {
+              "ecology": {
+                "value": 12
+              }
+            },
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 1
+          },
+          "waterQuality": {
+            "value": 80
+          },
+          "isAnemone": {},
+          "isTropical": {},
+		  "light": {
+            "value": 10
+          },
+		  "exudesPoison": {}
+        }
+      },
+      "unlockable": {
+        "number": 3,
+        "availableLevel": 7,
+        "category": "coralsAndInvertebrates",
+		"howRare":1
+      },
+      "sound": {
+        "placeSound": "soft_coral_place",
+        "feedSound": "soft_coral_place_feed"
+      }
+    },
+	
+	
+	{
+      "id": "76_toadstool_leather_coral",
+      "tags": [
+        "animal",
+        "softCoral"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "76_toadstool_leather_coral",
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 0,
+          "y": -12.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          },
+        },
+        "baseHue": 0.55,
+         "scaleTheseMeshes": [
+          "76_toadstool_leather_coral_stalk",
+		  "76_toadstool_leather_coral_top",
+        ],
+		"scaleTransform":{
+			"linearTransform":{"y":-0.08},
+			"constantTransform":{"y":0.169}
+		},
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 3,
+            "foodAmount": 3
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 3,
+            "foodAmount": 4
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 3,
+            "foodAmount": 5
+          },
+          {
+            "stageName": "megalith",
+            "foodAmount": 6
+          }
+        ],
+        "stats": {
+			"ecology": {
+               
+              },
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 1
+          },
+          "waterQuality": {
+            "value": 75
+          },
+          "isSoftCoral": {},
+          "isTropical": {},
+		  "light":{"value":10}
+        }
+      },
+      "unlockable": {
+        "number": 1,
+        "availableLevel": 8,
+        "category": "coralsAndInvertebrates"
+      },
+      "sound": {
+        "placeSound": "soft_coral_place",
+      }
+    },
+	
+	
+	{
+      "id": "113_fish-eating_anemone",
+      "tags": [
+        "animal",
+        "otherInvertsStatic"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "113_fish-eating_anemone",
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 0,
+          "y": -50
+        },
+        "guiRotation": {
+          "x": 0.0,
+          "y": 0,
+          "z": 0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          },
+          "feed": {
+            "name": "feed"
+          }
+        },
+        "baseHue": 0.55,
+        "scaleTheseMeshes": [
+          "113_fish_eating_anemone_stalk",
+		  "113_fish_eating_anemone_tendral",
+        ],
+		"scaleTransform":{
+			"linearTransform":{},
+			"constantTransform":{"y":0.222},
+			"constantEuler":{"x":5.29,"z":-18.14}
+		},
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 3,
+            "foodAmount": 4
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 3,
+            "foodAmount": 6
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 3,
+            "foodAmount": 8
+          },
+          {
+            "stageName": "megalith",
+            "foodAmount": 10
+          }
+        ],
+        "stats": {
+		  "science":{},
+		"prestigeTalk":{},
+          "eats": {
+            "item": "sandEel",
+            "daysBetweenFeed": 2
+          },
+          "waterQuality": {
+            "value": 75
+          },
+         "isAnemone": {},
+          "isColdwater": {"canLiveInSuperchilled":true},
+		  "eater":{
+			"fishEater": {}
+		  }
+        }
+      },
+      "unlockable": {
+        "number": 2,
+        "availableLevel": 9,
+        "category": "coralsAndInvertebrates"
+      },
+      "sound": {
+        "placeSound": "soft_coral_place",
+        "feedSound": "soft_coral_place_feed"
+      }
+    },
+	
+	{
+      "id": "74_stagshorn_coral",
+      "tags": [
+        "animal",
+        "stonyCoral"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "74_stagshorn_coral",
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 10.0,
+          "y": -40.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          }
+        },
+        "baseHue": 0.55,
+		"scaleTheseMeshes":["74_stagshorn_coral"],
+		"scaleTransform":{
+			"constantTransform":{"y":0.071}
+		},
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 4,
+            "stats": {
+              "science": {
+                "value": 3
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 4,
+            "stats": {
+              "science": {
+                "value": 6
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 4,
+            "stats": {
+              "science": {
+                "value": 9
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "megalith",
+            "stats": {
+              "science": {
+                "value": 12
+              }
+            },
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 2
+          },
+          "waterQuality": {
+            "value": 85
+          },
+          "isStonyCoral": {},
+          "isTropical": {},
+		  "light":{"value":15}
+        }
+      },
+      "unlockable": {
+        "number": 1,
+        "availableLevel": 10,
+        "category": "coralsAndInvertebrates",
+		"howRare":1
+      },
+      "sound": {
+        "placeSound": "hard_coral_place"
+      }
+    },
+	
+	{
+      "id": "72_plate_coral",
+      "tags": [
+        "animal",
+        "stonyCoral"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "72_plate_coral",
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 8.0,
+          "y": -8.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          }
+        },
+		 "scaleTheseMeshes": [
+          "72_plate_coral"
+        ],
+		"scaleTransform":{
+			"linearTransform":{"y":-0.2},
+			"constantTransform":{"y":0.2}
+		},
+        "baseHue": 0.55
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 5,
+            "stats": {
+              "ecology": {
+                "value": 3
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 5,
+            "stats": {
+              "ecology": {
+                "value": 6
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 5,
+            "stats": {
+              "ecology": {
+                "value": 9
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "megalith",
+            "stats": {
+              "ecology": {
+                "value": 12
+              }
+            },
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 2
+          },
+          "waterQuality": {
+            "value": 85
+          },
+          "isStonyCoral": {},
+          "isTropical": {},
+		  "light":{"value":15}
+        }
+      },
+      "unlockable": {
+        "number": 2,
+        "availableLevel": 10,
+        "category": "coralsAndInvertebrates"
+      },
+      "sound": {
+        "placeSound": "hard_coral_place"
+      }
+    },
+	
+	{
+      "id": "73_sun_montipora",
+      "tags": [
+        "animal",
+        "stonyCoral"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "73_sun_montipora",
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 8.0,
+          "y": -13.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          }
+        },
+		 "scaleTheseMeshes": [
+          "73_sun_montipora"
+        ],
+		"scaleTransform":{
+			"linearTransform":{"y":-0.158},
+			"constantTransform":{"y":0.158}
+		},
+        "baseHue": 0.55
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 5,
+            "stats": {
+              "science": {
+                "value": 3
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 5,
+            "stats": {
+              "science": {
+                "value": 6
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 5,
+            "stats": {
+              "science": {
+                "value": 9
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "megalith",
+            "stats": {
+              "science": {
+                "value": 12
+              }
+            },
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 3
+          },
+		  "delicate":{},
+          "waterQuality": {
+            "value": 85
+          },
+          "isStonyCoral": {},
+          "isTropical": {},
+		  "light":{"value":20}
+        }
+      },
+      "unlockable": {
+        "number": 1,
+        "availableLevel": 11,
+        "category": "coralsAndInvertebrates"
+      },
+      "sound": {
+        "placeSound": "hard_coral_place"
+      }
+    },
+	
+	{
+      "id": "70_purple_plume_fan",
+      "tags": [
+        "animal",
+        "otherInvertsStatic"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "70_purple_plume_fan",
+        "guiScale": 0.9,
+        "guiOffset": {
+          "x": 0,
+          "y": -15.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          }
+        },
+        "baseHue": 0.55,
+        "scaleTheseMeshes": [
+          "70_purple_plume_fan"
+        ],
+		"scaleTransform":{
+			"linearTransform":{"y":-0.1958},
+			"constantTransform":{"y":0.1958}
+		},
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 3
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 6
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 9
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "megalith",
+            "stats": {
+              "ecology": {
+                "value": 12
+              }
+            },
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+		"prestigeTalk":{},
+          "waterQuality": {
+            "value": 90
+          },
+          "isGorgonian": {},
+          "isTropical": {},
+		  "light":{"value":15}
+        }
+      },
+      "unlockable": {
+        "number": 2,
+        "availableLevel": 11,
+        "category": "coralsAndInvertebrates"
+      },
+      "sound": {
+        "placeSound": "soft_coral_place"
+      }
+    },
+	
+	{
+      "id": "69_emperor_gorgonian",
+      "tags": [
+        "animal",
+        "otherInvertsStatic"
+      ],
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "69_emperor_gorgonian",
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 18.0,
+          "y": -5.0
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "mill",
+        "animationsById": {
+          "static": {
+            "name": "mill"
+          }
+        },
+        "baseHue": 0.55,
+        "scaleTheseMeshes": [
+          "69_emperor_gorgonian"
+        ],
+		"scaleTransform":{
+			"linearTransform":{"y":-0.2021},
+			"constantTransform":{"y":0.2021}
+		},
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 3
+              }
+            },
+            "foodAmount": 2
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 6
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 3,
+            "stats": {
+              "science": {
+                "value": 9
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "megalith",
+            "stats": {
+              "science": {
+                "value": 12
+              }
+            },
+            "foodAmount": 5
+          }
+        ],
+        "stats": {
+		"prestigeTalk":{},
+          "waterQuality": {
+            "value": 95
+          },
+          "isGorgonian": {},
+          "isTropical": {},
+		  "delicate": {},
+		  "light":{"value":5}
+        }
+      },
+      "unlockable": {
+        "number": 1,
+        "availableLevel": 12,
+        "category": "coralsAndInvertebrates"
+      },
+      "sound": {
+        "placeSound": "soft_coral_place"
+      }
+    },
+	
+	{
+      "id": "63_leopard_giant_clam",
+      "tags": [
+        "animal",
+      ],
+	  "menuButton":"livestock",
+	  "menuTag":"bivalve",
+      "perSpecNumbering": true,
+      "map": {
+        "map": "o",
+        "originChar": "x"
+      },
+      "hosting": {
+        "hostedOn": [
+          "tank"
+        ]
+      },
+      "immobile": {
+        "rotatable": true
+      },
+      "bar":{},"fbx": {
+        "name": "63_leopard_giant_clam",
+        "guiScale": 1.0,
+        "guiOffset": {
+          "x": 0,
+          "y": -25
+        },
+        "guiRotation": {
+          "x": 30.0,
+          "y": 125.0,
+          "z": 325.0
+        },
+        "defaultAnimation": "open",
+        "animationsById": {
+          "static": {
+            "name": "open"
+          },
+          "feed": {
+            "name": "close"
+          }
+        },
+        "baseHue": 0.55,
+        "scaleTheseMeshes": [
+          "63_leopard_giant_clam"
+        ],
+		"scaleTransform":{
+			"constantTransform":{"y":0.0755},
+			"constantEuler":{"y":-36.81,"z":12.5},
+		}
+		
+      },
+      "animal": {
+        "stages": [
+          {
+            "stageName": "baby",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 3
+              }
+            },
+            "foodAmount": 3
+          },
+          {
+            "stageName": "juvenile",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 6
+              }
+            },
+            "foodAmount": 4
+          },
+          {
+            "stageName": "adult",
+            "growthTime": 3,
+            "stats": {
+              "ecology": {
+                "value": 9
+              }
+            },
+            "foodAmount": 5
+          },
+          {
+            "stageName": "megalith",
+            "stats": {
+              "ecology": {
+                "value": 12
+              }
+            },
+            "foodAmount": 6
+          }
+        ],
+        "stats": {
+		"prestigeTalk":{},
+          "eats": {
+            "item": "coralFood",
+            "daysBetweenFeed": 1
+          },
+          "waterQuality": {
+            "value": 95
+          },
+          "isClam": {},
+          "isTropical": {},
+		  "delicate": {},
+          "light": {
+            "value": 20
+          }
+        }
+      },
+      "unlockable": {
+        "number": 2,
+        "availableLevel": 12,
+        "category": "coralsAndInvertebrates",
+		"howRare":1
+      },
+      "sound": {
+        "placeSound": "soft_coral_place",
+        "closeSound": "hard_coral_place_feed"
+      }
+    },
+  ]
+}

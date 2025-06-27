@@ -12,7 +12,9 @@ import settings
 from worlds.AutoWorld import WebWorld, World
 from Options import (Choice, DeathLink, DefaultOnToggle, OptionSet, NamedRange, Range, Toggle, FreeText,
                      PerGameCommonOptions, OptionGroup, StartInventory)
-from .data import MEGAQUARIUM_ITEM_GROUPS, MEGAQUARIUM_LOCATION_GROUPS 
+from BaseClasses import CollectionState, ItemClassification, Region
+from .data import MEGAQUARIUM_DB, MEGAQUARIUM_BASE_MAP
+
 
 
 class MegaquariumWebWorld(WebWorld):
@@ -60,11 +62,10 @@ class MegaquariumWorld(World):
     options_dataclass = MegaquariumOptions 
     options: MegaquariumOptions 
 
-    item_name_to_id = {} 
-    location_name_to_id = {} 
-    item_name_groups : Dict[str, Set[str]] = MEGAQUARIUM_ITEM_GROUPS
-     
-    location_name_groups : Dict[str, Set[str]] = MEGAQUARIUM_LOCATION_GROUPS
+    item_name_to_id = MEGAQUARIUM_DB.item_name_to_id 
+    location_name_to_id = MEGAQUARIUM_DB.loc_name_to_id
+    item_name_groups : Dict[str, Set[str]] = MEGAQUARIUM_DB.item_groups
+    location_name_groups : Dict[str, Set[str]] = MEGAQUARIUM_DB.location_groups
 
     required_client_version = (0, 4, 6)
 
@@ -76,10 +77,28 @@ class MegaquariumWorld(World):
         pass
 
     def create_regions(self) -> None:
-        pass
+        num_regions = 2
+        num_locations = 2
+        # locations = tanks built with requirement, rank ups, full_grown_fish
+        # regions = sections
+        # regions = objectives
+
+        self.multiworld.regions.extend([Region("Menu", self.player, self.multiworld)])
 
     def create_items(self) -> None:
-        pass
+        self.item_pool = []
+        for item in MEGAQUARIUM_DB.all_items(self.player):
+            self.item_pool.append(item)
+
+        self.multiworld.itempool += self.item_pool
+
 
     def set_rules(self) -> None:
         set_rules(self)
+
+
+    def generate_output(self, output_directory: str) -> None:
+        import json5
+        output_file = output_directory + os.path.sep + "archipelago.sav"
+        with open(output_file,"w") as fh:
+            fh.write(json5.dumps(MEGAQUARIUM_BASE_MAP))

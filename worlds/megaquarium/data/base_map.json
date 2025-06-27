@@ -1,0 +1,3408 @@
+{
+  "saveName": "ARCHIPELAGO",
+  "version": "v4.2.5",
+  "defaultTheme": "theme_1",
+  "realSeconds": 317.4134,
+  "isPaused": true,
+  "nextUID": 541,
+  "mapName": "custom",
+  "dlcTags": [
+    "freshwater frenzy",
+    "architect's collection",
+    "deep freeze"
+  ],
+  "scenarioSetup": {
+    "id": "custom",
+    "startRank": 1,
+    "fishAvailability": -1,
+    "sideObjectives": -1,
+    "trades": -1,
+    "merchants": -1
+  },
+  "playerData": {
+    "scenario": {
+      "campaign": "sandbox",
+      "currentSections": [],
+      "sections": [],
+      "globalTriggers": [
+        {
+          "conditions": [
+            {
+              "havePoints": {
+                "id": 2,
+                "quantity": 5
+              }
+            }
+          ],
+          "doOnTrigger": [
+            {
+              "moveOnToSection": "ALOC_0"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "havePoints": {
+                "quantity": 5
+              }
+            }
+          ],
+          "doOnTrigger": [
+            {
+              "moveOnToSection": "ALOC_1"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "havePoints": {
+                "id": 1,
+                "quantity": 5
+              }
+            }
+          ],
+          "doOnTrigger": [
+            {
+              "moveOnToSection": "ALOC_2"
+            }
+          ]
+        }
+      ]
+    },
+    "resources": {
+      "money": 4000,
+      "points": {},
+      "pointChains": [],
+      "firstDayOfHistory": 1,
+      "moneyHistoryByType": [
+        {}
+      ],
+      "pointHistoryByType": {}
+    },
+    "unlockableManager": {
+      "currentResearch": {},
+      "unlockedSpecs": [
+        "basic_heater",
+        "basic_filter",
+        "55_sea_lettuce",
+        "3_small_rock",
+        "17_toolstation",
+        "2_freestanding_2_2",
+        "1_azure_demoiselle",
+        "orangePelletTag",
+        "47_orchid_dottyback"
+      ],
+      "excludedSpecs": [
+        "2_king_demoiselle",
+        "31_redtail_butterflyfish",
+        "10_coral_hind",
+        "53_blue_knuckle_hermit_crab",
+        "17_long_horn_cowfish",
+        "35_panther_grouper",
+        "4_picasso_triggerfish",
+        "8_volitans_lionfish",
+        "68_disco_mushrooms",
+        "4_shorthorn_sculpin",
+        "46_oblique_lined_dottyback",
+        "3_midas_cichlid",
+        "9_convict_cichlid",
+        "102_cuckoo_wrasse",
+        "18_giant_isopod",
+        "20_tinfoil_barb",
+        "19_blind_cave_tetra",
+        "6_oriental_sweetlips",
+        "93_humpback_snapper",
+        "1_antarctic_silverfish",
+        "9_antarctic_scallop",
+        "107_atlantic_pollock",
+        "7_red_striped_eartheater",
+        "9_shortfin_lionfish",
+        "13_sea_needle",
+        "37_french_angelfish",
+        "10_decorator_crab",
+        "25_unicorn_surgeonfish",
+        "112_frilled_anemone",
+        "2_pacu",
+        "28_antarctic_sea_whip",
+        "2_blackfin_icefish",
+        "103_ballan_wrasse",
+        "17_cardinal_tetra",
+        "12_long_tailed_duck",
+        "78_moon_jelly",
+        "29_striped_boxfish",
+        "66_daisy_star_polyps",
+        "23_dumbo_octopus",
+        "94_horse-eye_jack",
+        "21_gardners_killifish",
+        "115_bull_huss",
+        "21_green_moray_eel",
+        "8_antarctic_feather_star",
+        "27_eastern_long_necked_turtle",
+        "60_bubble_tip_anemone,_rose",
+        "10_sunshine_pleco",
+        "43_bartlett_anthias",
+        "101_turbot",
+        "58_marbled_serpent_starfish",
+        "1_red_bellied_piranha",
+        "1_surge_wrasse",
+        "81_southern_stingray",
+        "34_blue_and_yellow_grouper",
+        "76_toadstool_leather_coral",
+        "16_regal_tang",
+        "13_redtail_catfish",
+        "87_leopard_shark",
+        "16_northern_sea_otter",
+        "8_butterfly_ram",
+        "29_zigzag_coral",
+        "7_arctic_skate",
+        "northern_stargazer",
+        "19_pacific_viperfish",
+        "25_black_seadevil_anglerfish",
+        "113_fish-eating_anemone",
+        "24_peacock_squid",
+        "11_porcupine_river_stingray",
+        "51_slender_seahorse",
+        "18_giant_hatchetfish",
+        "99_wolffish",
+        "104_blonde_skate",
+        "5_golden_jack",
+        "90_tassled_wobbegong_shark",
+        "106_atlantic_cod",
+        "10_adelie_penguin",
+        "14_emperor_angelfish",
+        "12_john_dory",
+        "7_large_tooth_sawfish",
+        "77_fried_egg_jelly",
+        "4_discus",
+        "36_leaf_scorpionfish",
+        "regal_slipper_lobster",
+        "114_starry_smoothhound",
+        "23_blacktip_reef_shark",
+        "23_electric_eel",
+        "11_emperor_penguin",
+        "108_blue_whiting",
+        "25_dwarf_crocodile",
+        "21_long_nosed_chimaera",
+        "26_sohal_surgeonfish",
+        "116_angel_shark",
+        "22_barreleye",
+        "15_japanese_spider_crab",
+        "6_arapaima",
+        "83_spotted_eagle_ray",
+        "24_green_anaconda",
+        "26_american_paddlefish",
+        "86_bonnethead_shark",
+        "79_greater_blue_ring_octopus",
+        "6_atlantic_halibut",
+        "85_green_turtle",
+        "15_pacific_walrus",
+        "97_nautilus",
+        "8_ocean_sunfish",
+        "84_manta_ray",
+        "26_goblin_shark",
+        "28_american_manatee",
+        "95_leafy_seadragon",
+        "88_whale_shark",
+        "96_giant_pacific_octopus",
+        "20_antarctic_sea_pig",
+        "27_giant_phantom_jelly",
+        "vampire_squid"
+      ]
+    },
+    "logManager": {
+      "messages": []
+    },
+    "handData": {
+      "handObjects": []
+    },
+    "nameNumbers": {
+      "entrance": 1
+    },
+    "staffManager": {
+      "staffUIDs": [],
+      "usedStaffSpecs": []
+    },
+    "zoneManager": {
+      "zones": {
+        "487": {
+          "uid": 487,
+          "name": "No zone assigned",
+          "coords": [],
+          "zoneNumber": 1
+        }
+      },
+      "defaultZoneUID": 487,
+      "zoneNumber": 1
+    },
+    "breedingManager": {
+      "parents": []
+    },
+    "prestigeList": [],
+    "viewRateManager": [],
+    "values": {}
+  },
+  "gameParameters": {
+    "chillingMultiplier": 1.0,
+    "heatingMultiplier": 1.0,
+    "moodletAppearsAtRank": {
+      "fun": 1,
+      "energy": 2,
+      "thirst": 3,
+      "bladder": 4,
+      "hunger": 5
+    },
+    "ranks": [
+      {
+        "rankNumber": 1,
+        "nextRankAt": 10
+      },
+      {
+        "rankNumber": 2,
+        "nextRankAt": 100
+      },
+      {
+        "rankNumber": 3,
+        "nextRankAt": 220
+      },
+      {
+        "rankNumber": 4,
+        "nextRankAt": 590
+      },
+      {
+        "rankNumber": 5,
+        "nextRankAt": 1140
+      },
+      {
+        "rankNumber": 6,
+        "nextRankAt": 2100
+      },
+      {
+        "rankNumber": 7,
+        "nextRankAt": 3230
+      },
+      {
+        "rankNumber": 8,
+        "nextRankAt": 4720
+      },
+      {
+        "rankNumber": 9,
+        "nextRankAt": 6770
+      },
+      {
+        "rankNumber": 10,
+        "nextRankAt": 9020
+      },
+      {
+        "rankNumber": 11,
+        "nextRankAt": 11730
+      },
+      {
+        "rankNumber": 12,
+        "nextRankAt": 14850
+      },
+      {
+        "rankNumber": 13,
+        "nextRankAt": 99999
+      }
+    ],
+    "maxRank": 13,
+    "difficulty": "normal"
+  },
+  "dateAndTimeData": {
+    "dayTick": {},
+    "forcedPauses": []
+  },
+  "costData": {},
+  "cameraData": {
+    "localPosition": {
+      "x": 50.5207367,
+      "y": 70.71071,
+      "z": -49.47374
+    },
+    "pan": {
+      "x": -9.54486752,
+      "z": -1.62077761
+    },
+    "zoomLevel": 9.0
+  },
+  "systemManager": {
+    "nodes": [],
+    "pools": []
+  },
+  "systemManagerAir": {
+    "nodes": [],
+    "pools": []
+  },
+  "staffManager": {
+    "availableStaffUIDs": [
+      501,
+      502,
+      503,
+      504,
+      505
+    ],
+    "doneFirstTimeSetup": true,
+    "randomisedStaff": true,
+    "randomisedStaffNameNumbers": [
+      1,
+      52,
+      5,
+      86,
+      100,
+      67,
+      55,
+      31,
+      36,
+      90,
+      83,
+      18,
+      53,
+      88,
+      76,
+      3,
+      14,
+      45,
+      72,
+      17,
+      10,
+      89,
+      64,
+      77,
+      22,
+      97,
+      96,
+      65,
+      7,
+      87,
+      30,
+      29,
+      80,
+      85,
+      74,
+      73,
+      69,
+      81,
+      6,
+      54,
+      49,
+      23,
+      0,
+      13,
+      11,
+      93,
+      48,
+      99,
+      95,
+      57,
+      66,
+      78,
+      84,
+      62,
+      59,
+      98,
+      9,
+      51,
+      8,
+      32,
+      26,
+      58,
+      44,
+      15,
+      43,
+      21,
+      42,
+      92,
+      37,
+      56,
+      4,
+      71,
+      40,
+      16,
+      38,
+      19,
+      41,
+      91,
+      46,
+      70,
+      75,
+      61,
+      24,
+      47,
+      34,
+      2,
+      39,
+      35,
+      33,
+      20,
+      94,
+      68,
+      82,
+      25,
+      28,
+      63
+    ],
+    "randomStaffSetNumber": 46300,
+    "designedStaffOrder": [
+      "staff40",
+      "staff19",
+      "staff5",
+      "staff21",
+      "staff22",
+      "staff1",
+      "staff31",
+      "staff32",
+      "staff13",
+      "staff10",
+      "staff3",
+      "staff16",
+      "staff36",
+      "staff0",
+      "staff14",
+      "staff28",
+      "staff30",
+      "staff23",
+      "staff4",
+      "staff35",
+      "staff29",
+      "staff39",
+      "staff8",
+      "staff7",
+      "staff26",
+      "staff38",
+      "staff41",
+      "staff12",
+      "staff27",
+      "staff2",
+      "staff6",
+      "staff24",
+      "staff11",
+      "staff34",
+      "staff33",
+      "staff25",
+      "staff20",
+      "staff37",
+      "staff17",
+      "staff18",
+      "staff9",
+      "staff15"
+    ]
+  },
+  "dynamicSpecs": {},
+  "objects": [
+    {
+      "name": "background_atmosphere",
+      "uid": -1,
+      "specId": "background_atmosphere",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": 2
+        }
+      },
+      "prefab": {},
+      "sound": {}
+    },
+    {
+      "uid": 3,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 4,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 5,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 6,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 7,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 8,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 9,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 10,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 11,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 14,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 15,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 16,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 17,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 18,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 19,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 20,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 21,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 22,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 25,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 26,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 27,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 28,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 29,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 30,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 31,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 32,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 33,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 36,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 37,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 38,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 39,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 40,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 41,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 42,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 43,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 44,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 47,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 48,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 49,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 50,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 51,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 52,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 53,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 54,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 55,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName90",
+      "uid": 486,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName89",
+      "uid": 485,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName88",
+      "uid": 484,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName87",
+      "uid": 483,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName86",
+      "uid": 482,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName85",
+      "uid": 481,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName84",
+      "uid": 480,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName83",
+      "uid": 479,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName82",
+      "uid": 478,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName81",
+      "uid": 477,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 127,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 128,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 129,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 130,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 131,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 132,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 133,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 134,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 135,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 136,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 137,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 138,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 140,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName62",
+      "uid": 458,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 142,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName61",
+      "uid": 457,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -7,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 144,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName60",
+      "uid": 456,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -8,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName59",
+      "uid": 455,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -9,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName58",
+      "uid": 454,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -10,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName57",
+      "uid": 453,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -11,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName56",
+      "uid": 452,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -12,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName55",
+      "uid": 451,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -13,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 284,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -6,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 283,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -7,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 282,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -8,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 281,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -9,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 280,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -10,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Entrance 1",
+      "uid": 279,
+      "specId": "entrance",
+      "inGameWorld": true,
+      "map": {},
+      "hosting": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -1
+        },
+        "angle": 90
+      },
+      "fbx": {},
+      "entrance": {
+        "objectUIDsTryingToEnter": [],
+        "queueCounter": -195
+      },
+      "sound": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName48",
+      "uid": 491,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "dropawayName48",
+      "uid": 492,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 219,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 220,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 221,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 222,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 223,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 224,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 225,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 226,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 228,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 229,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 230,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 231,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 232,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 233,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 234,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 235,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 237,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 238,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 239,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 240,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 241,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 242,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 243,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 244,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 258,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 259,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 261,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 275,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 26",
+      "uid": 417,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 291,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -11,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 364,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 365,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -13,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 366,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 367,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -12,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 368,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "uid": 369,
+      "specId": "tile",
+      "inGameWorld": true,
+      "map": {},
+      "floor": {
+        "coord": {
+          "m": -14,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 1",
+      "uid": 373,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 2",
+      "uid": 374,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 91",
+      "uid": 494,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -13,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 92",
+      "uid": 495,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -12,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 93",
+      "uid": 496,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -11,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 94",
+      "uid": 497,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -10,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 95",
+      "uid": 498,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -9,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 96",
+      "uid": 499,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -8,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Dropaway 97",
+      "uid": 500,
+      "specId": "wall",
+      "inGameWorld": true,
+      "map": {},
+      "wall": {},
+      "immobile": {
+        "coord": {
+          "m": -7,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "dropaway": {},
+      "paintable": {
+        "theme": "theme_1"
+      }
+    },
+    {
+      "name": "Patrick",
+      "uid": 501,
+      "specId": "aquarist",
+      "hosting": {},
+      "container": {},
+      "fbx": {},
+      "taskfinder": {},
+      "staff": {
+        "salary": 14,
+        "currentZone": 487,
+        "appearance": {
+          "gender": 46312,
+          "skin": 46312,
+          "hair": 46312,
+          "hairTex": 46312,
+          "head": 46312,
+          "glasses": 12,
+          "glassesTex": 46312
+        },
+        "desc": "staff48Desc",
+        "talents": {
+          "fitness": 2,
+          "precision": 2,
+          "empathy": 7,
+          "memory": 2,
+          "charisma": 5
+        },
+        "skills": {
+          "feeding": 1
+        },
+        "priorities": {
+          "feeding": 1
+        }
+      },
+      "sound": {},
+      "free": {
+        "move": {
+          "speedFactor": 1.0
+        }
+      }
+    },
+    {
+      "name": "Bae",
+      "uid": 502,
+      "specId": "aquarist",
+      "hosting": {},
+      "container": {},
+      "fbx": {},
+      "taskfinder": {},
+      "staff": {
+        "salary": 11,
+        "currentZone": 487,
+        "appearance": {
+          "gender": 46379,
+          "skin": 46379,
+          "hair": 46379,
+          "hairTex": 46379,
+          "head": 46379,
+          "glasses": 79,
+          "glassesTex": 46379
+        },
+        "desc": "staff20Desc",
+        "talents": {
+          "fitness": 4,
+          "precision": 4,
+          "empathy": 2,
+          "memory": 2,
+          "charisma": 4
+        },
+        "skills": {
+          "fixing": 1
+        },
+        "priorities": {
+          "fixing": 1
+        }
+      },
+      "sound": {},
+      "free": {
+        "move": {
+          "speedFactor": 1.0
+        }
+      }
+    },
+    {
+      "name": "Kate",
+      "uid": 503,
+      "specId": "aquarist",
+      "hosting": {},
+      "container": {},
+      "fbx": {},
+      "taskfinder": {},
+      "staff": {
+        "salary": 9,
+        "currentZone": 487,
+        "appearance": {
+          "gender": 46327,
+          "skin": 46327,
+          "hair": 46327,
+          "hairTex": 46327,
+          "head": 46327,
+          "glasses": 27,
+          "glassesTex": 46327
+        },
+        "desc": "staff36Desc",
+        "talents": {
+          "fitness": 4,
+          "precision": 2,
+          "empathy": 3,
+          "memory": 3,
+          "charisma": 3
+        },
+        "skills": {
+          "cleaning": 1
+        },
+        "priorities": {
+          "cleaning": 1
+        }
+      },
+      "sound": {},
+      "free": {
+        "move": {
+          "speedFactor": 1.0
+        }
+      }
+    },
+    {
+      "name": "Aidan",
+      "uid": 504,
+      "specId": "aquarist",
+      "hosting": {},
+      "container": {},
+      "fbx": {},
+      "taskfinder": {},
+      "staff": {
+        "salary": 15,
+        "currentZone": 487,
+        "appearance": {
+          "gender": 46350,
+          "skin": 46350,
+          "hair": 46350,
+          "hairTex": 46350,
+          "head": 46350,
+          "glasses": 50,
+          "glassesTex": 46350
+        },
+        "desc": "staff23Desc",
+        "talents": {
+          "fitness": 1,
+          "precision": 4,
+          "empathy": 6,
+          "memory": 4,
+          "charisma": 4
+        },
+        "skills": {
+          "feeding": 1
+        },
+        "priorities": {
+          "feeding": 1
+        }
+      },
+      "sound": {},
+      "free": {
+        "move": {
+          "speedFactor": 1.0
+        }
+      }
+    },
+    {
+      "name": "Mikey",
+      "uid": 505,
+      "specId": "aquarist",
+      "hosting": {},
+      "container": {},
+      "fbx": {},
+      "taskfinder": {},
+      "staff": {
+        "salary": 12,
+        "currentZone": 487,
+        "appearance": {
+          "gender": 46360,
+          "skin": 46360,
+          "hair": 46360,
+          "hairTex": 46360,
+          "head": 46360,
+          "glasses": 60,
+          "glassesTex": 46360
+        },
+        "desc": "staff48Desc",
+        "talents": {
+          "fitness": 4,
+          "precision": 2,
+          "empathy": 6,
+          "memory": 3,
+          "charisma": 4
+        },
+        "skills": {
+          "giftShop": 1
+        },
+        "priorities": {
+          "giftShop": 1
+        }
+      },
+      "sound": {},
+      "free": {
+        "move": {
+          "speedFactor": 1.0
+        }
+      }
+    },
+    {
+      "uid": 506,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -7,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 507,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -9,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 508,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -8,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 509,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -13,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 510,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -12,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 511,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -10,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 512,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 513,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 514,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 515,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 516,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -11,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 517,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 518,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": 3
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 519,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": 2
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 520,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 521,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 522,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 523,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 524,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 525,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 526,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 527,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -5
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 528,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": -6
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 529,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -6,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 530,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -7,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 531,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -8,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 532,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -9,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 533,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -10,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 534,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -11,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 535,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -12,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 536,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -13,
+          "n": 4
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 537,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": 1
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 538,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -3
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 539,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 540,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -1
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    },
+    {
+      "uid": 541,
+      "specId": "skirt",
+      "inGameWorld": true,
+      "map": {},
+      "immobile": {
+        "coord": {
+          "m": -14,
+          "n": -2
+        }
+      },
+      "fbx": {},
+      "skirt": {}
+    }
+  ]
+}

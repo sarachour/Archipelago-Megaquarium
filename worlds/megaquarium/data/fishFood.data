@@ -1,0 +1,1102 @@
+{
+	"objects":[
+
+// ########## FISH FOOD DISPENSERS ###########
+
+{
+	"id":"orangePellet_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"orangePelletTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["orangePellet"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"8_omnivoreflakebox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"greenPellet_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"greenPelletTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["greenPellet"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"42_greenpelletbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"mussels_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"musselsTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["mussels"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"9_musselsbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"cockles_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"cocklesTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["cockles"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"56_cocklesbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"coralFood_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedByMany":["coralFoodTag","artemiaTag","liveMysisTag","liveLugWormsTag","liveSandShrimpTag"]}, // Unlocked by any of the foods that need it create
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["coralFood"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"57_coralfoodbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"sandEel_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"sandEelTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["sandEel"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"58_sandeelbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"spongePellet_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"spongePelletTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["spongePellet"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"59_spongepelletbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+
+{
+	"id":"artemia_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"artemiaTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["artemia"],
+		"hideStickers":true,
+		"dontRefill":true,
+		"capacity":50,
+	},
+	"liveCulture":{
+		"feedItem":"coralFood",
+	},
+	"fbx":{
+		"name":"60_artemiabox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"sprat_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"spratTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["sprat"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"61_spratbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"krill_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"krillTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["krill"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"11_krillbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"crab_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"crabTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["crab"],
+		"capacity":200
+	},
+	"fbx":{
+		"name":"16_crabbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"liveLugWorms_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"liveLugWormsTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["liveLugWorms"],
+		"hideStickers":true,
+		"dontRefill":true,
+		"capacity":50,
+	},
+	"liveCulture":{
+		"feedItem":"coralFood",
+	},
+	"fbx":{
+		"name":"62_livelugwormsbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+{
+	"id":"liveMysis_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"liveMysisTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["liveMysis"],
+		"capacity":50,
+		"hideStickers":true,
+		"dontRefill":true,
+	},
+	"liveCulture":{
+		"feedItem":"coralFood",
+	},
+	"fbx":{
+		"name":"12_livemysisbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+
+{
+	"id":"supplement_box",
+	"sound":{
+		"placeSound":"item_box_place"
+	},
+	"tags":["foodDispenser","taskItemDispenser"],
+	"perSpecNumbering": true,
+	"hosting":{
+		"hostTags":["foodDispenser"],
+		"hostedOn":["floor"]
+	},
+	"map":{
+		"map":" \
+		 3 \
+		2o4 \
+		 5 \
+		",
+		"multiCodes":[
+			{"code":"o", "chars":["x"]},
+			{"code":"2", "chars":["u"],"angle":0},
+			{"code":"3", "chars":["u","c"],"angle":90},
+			{"code":"4", "chars":["u"],"angle":180},
+			{"code":"5", "chars":["u"],"angle":270},
+		]
+	},
+	"unlockable":{"unlockedBy":"supplementTag"},
+	"immobile":{
+		"rotatable":true
+	},
+	"attraction":{"limit1Visit":true,"attractionChar":"u"},"uglyEquipment":{},
+	"itemBox":{
+		"items":["supplement"],
+		"capacity":15
+	},
+	"fbx":{
+		"name":"63_supplementbox",
+		"voCollection":"equipment",
+		"guiScale":0.4,
+		"guiOffset":{"y":-19}
+	}
+},
+
+
+
+//##########  FOOD ITEMS ######################
+
+
+
+
+
+{
+	"id":"orangePellet",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.1,
+		"color":"0xFBAC46FF",
+		"animalDifficulty":2,
+		"itemClass":"taskItem",
+	},
+	"contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"4_omnivoreflake",
+		"guiOffset":{"x":0,"y":-25},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"greenPellet",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.15,
+		"color":"0x8BA462FF",
+		"animalDifficulty":2,
+		"itemClass":"taskItem",
+	},
+	"contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"17_greenpellet",
+		"guiOffset":{"x":0,"y":-25},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"mussels",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.2,
+		"color":"0xF14A4CFF",
+		"animalDifficulty":2,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"5_mussels",
+		"guiOffset":{"x":0,"y":-20},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"cockles",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.3,
+		"color":"0x675B50FF",
+		"animalDifficulty":3,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"18_cockles",
+		"guiOffset":{"x":0,"y":-20},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"coralFood",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.4,
+		"color":"0xFF6FB6FF",
+		"animalDifficulty":3,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"19_coralfood",
+		"guiOffset":{"x":0,"y":-30},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"sandEel",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.3,
+		"color":"0xFBE866FF",
+		"animalDifficulty":3,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"20_sandeel",
+		"guiOffset":{"x":0,"y":-20},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"spongePellet",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.4,
+		"color":"0xD05DFDFF",
+		"animalDifficulty":3,
+		"itemClass":"taskItem",
+	},
+	"contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"21_spongepellet",
+		"guiOffset":{"x":0,"y":-25},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+
+{
+	"id":"artemia",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":2.5,
+		"color":"0x009393FF",
+		"animalDifficulty":8,
+		"itemClass":"taskItem",
+		"howManyInPack":25,
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"22_artemia",
+		"guiOffset":{"x":0,"y":-30},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"sprat",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.5,
+		"color":"0xC7F9FCFF",
+		"animalDifficulty":3,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"23_sprat",
+		"guiOffset":{"x":0,"y":-20},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"krill",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.7,
+		"color":"0x8663FBFF",
+		"animalDifficulty":4,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"7_krill",
+		"guiOffset":{"x":0,"y":-20},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"crab",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":0.6,
+		"color":"0x89E9B0FF",
+		"animalDifficulty":4,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"12_crab",
+		"guiOffset":{"x":0,"y":-20},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"liveLugWorms",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":3,
+		"color":"0xB1986AFF",
+		"animalDifficulty":9,
+		"howManyInPack":25,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"24_livelugworms",
+		"guiOffset":{"x":0,"y":-20},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"liveMysis",
+	"tags":["item","animalFood"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":4,
+		"color":"0x48B240FF",
+		"animalDifficulty":10,
+		"howManyInPack":25,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"8_livemysis",
+		"guiOffset":{"x":0,"y":-20},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+{
+	"id":"supplement",
+	"tags":["item"],
+	"hosting":{
+		"hostedOn":["staff","foodDispenser"]
+	},
+	"item":{
+		"itemValue":15,
+		"color":"0x65FCF4FF",
+		"animalDifficulty":2,
+		"howManyInPack":5,
+		"itemClass":"taskItem",
+	},
+	 "contained":{
+		"held":{
+			"doBob":true,
+		}
+	},
+	"fbx":{
+		"name":"25_supplement",
+		"guiOffset":{"x":0,"y":-30},
+		"dontPlayDefaultAnimationAutomatically":true,
+		"animationMovementSpeed":0.0105,
+		"animationsById": {
+			"move":{"name":"carry"},
+			"static":{"name":"carry"},
+			"turnLeft":{"name":"carry"},
+			"turnRight":{"name":"carry"},
+			"collectItem":{"name":"carry"},
+			"fix":{"name":"feed scatter"},
+			"feedScatter":{"name":"feed scatter"},
+			"feedStick":{"name":"feed stick"},
+			"observe":{"name":"feed scatter"},
+		},
+	}
+},
+	]
+}
