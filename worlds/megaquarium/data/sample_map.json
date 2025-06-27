@@ -1,0 +1,280 @@
+{
+  "saveName": "campaign-archipelago",
+  "mapName": "campaign-10-megalopolis",
+  "defaultTheme": "theme_1",
+  "realSeconds": 0,
+  "isPaused": true,
+  "nextUID": 1183,
+  "playerData": {
+    "scenario": {
+      "campaign": "campaign",
+      "campaignNumber": 10,
+      "currentSections": [],
+	  "startSection":"archipelago_main", // Starts on load
+      "sections": [
+		{	
+			"sectionId":"archipelago_main",
+			"reward":{"money":10000},
+			"mainSection":true,
+			"doOnStart":[{"popupMessage":"megalopolis_intro"},{"newStaff":["staff41","staff7","staff8","staff9","staff14","staff20","staff5","staff4"]}],
+			"objectives":[
+				{
+					"id":"combinedPointValueScience",
+					"conditions":[
+						{"combinedPointValue":{"id":"Science","quantity":40, "insert": true}}
+					]
+				}
+			],
+            "triggers":[
+            {
+                {"id": "triggerArchi",
+                "conditions": [{"objectivesComplete":{"value":1}}],
+                "doOnTrigger": [{"moveOnToSection": "LOC_test_location"}]
+            }
+            ],
+            "doOnComplete":[],
+        }
+      ],
+      //starting resources
+      "resources": {
+        "money": 2000,
+        "rankNumber": 2,
+        "points": {},
+        "pointChains": [],
+        "firstDayOfHistory": 1,
+        "moneyHistoryByType": [
+        ],
+        "pointHistoryByType": {}
+      },
+      //unlockable manager
+      "unlockableManager": {
+      "currentResearch": {},
+      "unlockedSpecs": [
+        "44_royal_gramma",
+        "80_zebra_moray_eel",
+        "Staff Door",
+        "basic_heater",
+        "basic_filter",
+        "combi_mini",
+        "power_filter",
+        "power_heater",
+        "orangePelletTag",
+        "greenPelletTag",
+		"musselsTag",
+      ],
+      "excludedSpecs": [
+        "2_freestanding_2_2",
+        "lagoon_tank_3_3",
+        "5_wall_1side_2_2",
+        "tank_wall_2side_2_2",
+        "tank_wall_3side_2_3",
+        "blue_paint",
+        "ship_wreck_paint",
+        "63_barrel",
+        "12_conch",
+        "10_anchor",
+        "tropical_paint",
+        "16_spiral_shell",
+        "18_tanklight",
+        "4_toilet_cubicle",
+        "65_sponge_box",
+        "wall_1side_deep_3_3",
+        "tank_wall_2side_deep_3_3",
+        "tank_wall_3side_deep_3_3",
+		"2_vending_machine_fizzy_drinks",
+		"floor_arrow",
+		"64_broom_box",
+		"bin",
+		"basic_skimmer",
+		"46_oblique_lined_dottyback",
+		"68_disco_mushrooms",
+		"8_volitans_lionfish",
+        "35_panther_grouper",
+		"31_redtail_butterflyfish",
+		"4_half_and_half_chromis",
+		"45_arabian_bluelined_dottyback",
+		"oneway",
+		"4_partition_low_1_1",
+      ]
+    },
+    "handData": {
+      "handObjects": []
+    },
+    "nameNumbers": {
+      "sound": 1,
+      "unselectable": 255,
+      "entrance": 1,
+      "dropaway": 70,
+      "tank": 5,
+      "Staff Door": 4,
+      "80_zebra_moray_eel": 1,
+      "combinedFilter": 5,
+      "itemBox": 5,
+      "46_oblique_lined_dottyback": 1,
+      "scenery": 9,
+      "4_half_and_half_chromis": 4,
+      "45_arabian_bluelined_dottyback": 3,
+      "47_orchid_dottyback": 4,
+      "11_yellow_tang": 3,
+      "2_king_demoiselle": 3,
+      "1_azure_demoiselle": 2
+    },
+    "staffManager": {
+      "staffUIDs": [],
+      "usedStaffSpecs": [
+        "staff8",
+        "staff9",
+        "staff10",
+        "staff12"
+      ]
+    },
+    "zoneManager": {
+      "zones": {
+        "487": {
+          "uid": 487,
+          "name": "Everywhere",
+          "coords": []
+        }
+      },
+      "defaultZoneUID": 487
+    },
+    "logManager": {
+    },
+    "prestigeList": [],
+    "values": {}
+  },
+  "dateAndTimeData": {
+    "dayTick": {},
+    "forcedPauses": [],
+    "pausedBeforeForcePause": true
+  },
+  "costData": {},
+  "gameParameters": {
+    "moodletAppearsAtRank": {
+      "fun": 1,
+      "energy": 2,
+      "thirst": 99,
+      "bladder": 99,
+      "hunger": 99
+    },    
+    "maxRank": 3,
+	"disableColdwaterToggle": true,
+	"staffLevelUpIsOff":true
+  },
+  "cameraData": {
+    "localPosition": {
+      "x": 53.8067665,
+      "y": 62.5483246,
+      "z": -56.50223
+    },
+    "localRotation": {
+      "x": 38.71767,
+      "y": 316.399628,
+      "z": -4.814693E-05
+    },
+    "pan": {
+      "x": -6.40521669,
+      "y": 1.05703E-05,
+      "z": -0.433177471
+    },
+    "zoomLevel": 10.1802483
+  },
+  "handData": {
+      "handObjects": []
+    },
+    "nameNumbers": {
+      "sound": 1,
+      "unselectable": 255,
+      "entrance": 1,
+      "dropaway": 70,
+      "tank": 5,
+      "Staff Door": 4,
+      "80_zebra_moray_eel": 1,
+      "combinedFilter": 5,
+      "itemBox": 5,
+      "46_oblique_lined_dottyback": 1,
+      "scenery": 9,
+      "4_half_and_half_chromis": 4,
+      "45_arabian_bluelined_dottyback": 3,
+      "47_orchid_dottyback": 4,
+      "11_yellow_tang": 3,
+      "2_king_demoiselle": 3,
+      "1_azure_demoiselle": 2
+    },
+    "staffManager": {
+      "staffUIDs": [],
+      "usedStaffSpecs": [
+        "staff8",
+        "staff9",
+        "staff10",
+        "staff12"
+      ]
+    },
+    "zoneManager": {
+      "zones": {
+        "487": {
+          "uid": 487,
+          "name": "Everywhere",
+          "coords": []
+        }
+      },
+      "defaultZoneUID": 487
+    },
+    "logManager": {
+    },
+    "prestigeList": [],
+    "values": {}
+  },
+  "dateAndTimeData": {
+    "dayTick": {},
+    "forcedPauses": [],
+    "pausedBeforeForcePause": true
+  },
+  "costData": {},
+  "gameParameters": {
+    "moodletAppearsAtRank": {
+      "fun": 1,
+      "energy": 2,
+      "thirst": 99,
+      "bladder": 99,
+      "hunger": 99
+    },    
+    "maxRank": 3,
+	"disableColdwaterToggle": true,
+	"staffLevelUpIsOff":true
+  },
+  "cameraData": {
+    "localPosition": {
+      "x": 53.8067665,
+      "y": 62.5483246,
+      "z": -56.50223
+    },
+    "localRotation": {
+      "x": 38.71767,
+      "y": 316.399628,
+      "z": -4.814693E-05
+    },
+    "pan": {
+      "x": -6.40521669,
+      "y": 1.05703E-05,
+      "z": -0.433177471
+    },
+    "zoomLevel": 10.1802483
+  },
+  "systemManager": {
+    "nodes": [],
+    "pools": [],
+    "staffManager": {
+        "availableStaffUIDs": [],
+        "doneFirstTimeSetup": true,
+        "generateSpecificStaff": []
+    },
+    "dynamicSpecs": {},
+    "objects": [
+
+    ]
+}
+
+}
+
+  

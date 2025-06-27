@@ -2,8 +2,13 @@
 
 
 rm output/*
+
+GENERATED_MAP="worlds/megaquarium/data/sample_map2.json"
+MEGAQUARIUM_PATH="/home/sachour/.local/share/Megaquarium/Saves"
+
 if python3 Generate.py; then
     echo "world generation succeeded."
+    cp $GENERATED_MAP $MEGAQUARIUM_PATH/archipelago_map.sav
     ARCHIPELAGOGAME=$(ls output)
     python3 MultiServer.py output/${ARCHIPELAGOGAME}
 else
