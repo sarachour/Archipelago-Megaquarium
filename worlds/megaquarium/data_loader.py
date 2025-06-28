@@ -7,6 +7,7 @@ import pkg_resources
 import json5 
 
 from .data import MegaquariumDB, FishRequirements, TankRequirements, Animal, Food, Equipment
+from .utils import load_json5_data
 
 
 def load_animals_from_json(db,dataname) -> None:
@@ -88,13 +89,6 @@ def load_equipment_from_json(db,dataname) -> None:
         equipment = Equipment(idNo=ident,gameId=json_equipment["id"])
         db.add_equipment(equipment)
 
-def load_json_data(data_name: str) -> Union[List[Any], Dict[str, Any]]:
-    return orjson.loads(pkgutil.get_data(__name__, "data/" + data_name).decode("utf-8-sig"))
-
-def load_json5_data(data_name: str):
-    return json5.loads(pkgutil.get_data(__name__, "data/" + data_name).decode("utf-8-sig"))
-
-
 
 
 MEGAQUARIUM_DB = MegaquariumDB()
@@ -103,5 +97,3 @@ load_animals_from_json(MEGAQUARIUM_DB , "animals.data")
 load_food_sources_from_json(MEGAQUARIUM_DB, "fishFood.data")
 load_equipment_from_json(MEGAQUARIUM_DB, "equipment.data")
 
-
-MEGAQUARIUM_BASE_MAP = load_json5_data("base_map.json")

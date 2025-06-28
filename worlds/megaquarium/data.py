@@ -1,15 +1,13 @@
-import json
-import orjson
+
 from typing import Dict, List, NamedTuple, Optional, Set, FrozenSet, Tuple, Any, Union
 from enum import IntEnum, Enum
 import pkgutil
 import pkg_resources
-import json5 
 from dataclasses import dataclass
-
 #from BaseClasses import ItemClassification
 from BaseClasses import Location, Entrance, Item, ItemClassification
 
+from .utils import load_json5_data
 
 class MegaquariumLocation(Location):
     game = "Megaquarium"
@@ -35,9 +33,27 @@ class TankRequirements(Enum):
     likes_plants = "likes_plants"
 
 
-class AnimalData(NamedTuple):
+class MegaqCondition:
+    pass
+
+class MegaqAction:
+    pass
+
+@dataclass
+class MegaqItem:
     idNo: int
     gameId: str
+    itemClass: ItemClassification
+
+    def to_item_id(self)-> str:
+        return f"AITEM_{self.gameId}"
+
+    def to_item(self,player) -> Item:
+        return MegaquariumItem(name=self.to_item_id(), classification=self.itemClass, code=self.idNo, player=player)
+
+
+@dataclass(kw_only=True)
+class Animal(MegaqItem):
     rank: int
     genus: str
     food: str
@@ -46,11 +62,10 @@ class AnimalData(NamedTuple):
     size: int
     fishRequirements: FrozenSet[str]
     tankRequirements: FrozenSet[str]
+    itemClass: ItemClassification = ItemClassification.filler 
 
 
-class Animal(AnimalData):
-
-    def compatible(self,other: AnimalData) -> bool:
+    def compatible(self, other) -> bool:
         if FishRequirements.wimp in self.fishRequirements and FishRequirements.bully in other.fishRequirements:
             return False
 
@@ -59,50 +74,16 @@ class Animal(AnimalData):
 
         return True
 
-    def to_item_id(self)-> str:
-        return f"AITEM_{self.gameId}"
-
-    def to_item(self,player) -> Item:
-        return MegaquariumItem(name=self.to_item_id(), classification=ItemClassification.filler, code=self.idNo, player=player)
-
-class FoodData(NamedTuple):
-    idNo: int
-    gameId: str
+@dataclass(kw_only=True)
+class Food(MegaqItem):
     food: str
+    itemClass: ItemClassification = ItemClassification.filler
 
+@dataclass(kw_only=True)
+class Equipment(MegaqItem):
+    itemClass: ItemClassification = ItemClassification.filler
 
-class Food(FoodData):
-
-    def to_item_id(self)-> str:
-        return f"AITEM_{self.gameId}"
-
-    def to_item(self,player) -> Location:
-        return MegaquariumItem(name=self.to_item_id(), classification=ItemClassification.filler, code=self.idNo, player=player)
-
-
-
-
-class EquipmentData(NamedTuple):
-    idNo: int
-    gameId: str
-
-class Equipment(EquipmentData):
-
-    def to_item_id(self)-> str:
-        return f"AITEM_{self.gameId}"
-
-    def to_location(self,player,) -> Location:
-        return MegaquariumLocation(name=self.to_location_id(), player=player)
-
-    def to_item(self,player) -> Item:
-        return MegaquariumItem(name=self.to_item_id(), classification=ItemClassification.filler, code=self.idNo, player=player)
-
-
-class MegaqCondition:
-    pass
-
-class MegaqAction:
-    pass
+    
 
 
 @dataclass
@@ -183,6 +164,45 @@ class Section:
             "doOnComplete": list(map(lambda a: a.to_json(), self.doOnComplete))
         }
 
+@dataclass
+class UnlockableManager:
+    excluded: List[MegaqItem]
+    available: List[MegaqItem]
+
+
+    def to_json(self):
+        return {
+            "currentResearch": {},
+            "unlockedSpecs": list(map(lambda x: x.gameId, self.available)),
+            "excludedSpecs": list(map(lambda x: x.gameId, self.excluded))
+        }
+
+@dataclass(kw_only=True)
+class MegaqScenario:
+    startSection: Section
+    sections: List[Section]
+    startRank: int = -1
+    money: int = 10000
+    unlockables: UnlockableManager
+
+    def write(self, filename):
+        import json5
+        MEGAQUARIUM_BASE_MAP = load_json5_data("base_map.json")
+        new_save = dict(MEGAQUARIUM_BASE_MAP)
+        for sec in self.sections:
+            new_save["playerData"]["scenario"]["sections"].append(sec.to_json())
+
+        new_save["playerData"]["scenario"]["startSection"] = self.startSection.sectionId
+        
+        new_save["playerData"]["scenario"]["unlockableManager"] = self.unlockables.to_json()
+
+        new_save["playerData"]["resources"]["money"] = self.money
+        new_save["playerData"]["resources"]["rankNumber"] = self.startRank
+
+
+        with open(filename,"w") as fh:
+            fh.write(json5.dumps(new_save))
+
 
 
 class MegaquariumDB:
@@ -222,13 +242,13 @@ class MegaquariumDB:
         self.loc_id_to_obj[trigger.location] =  trigger
 
 
-    def add_animal(self, animal: AnimalData) -> None:
+    def add_animal(self, animal: Animal) -> None:
         self.animals[animal.gameId] = animal
         self.item_groups["animals"].append(animal.to_item_id())
         self.item_name_to_id[animal.to_item_id()] = animal.idNo
         self.item_id_to_item[animal.to_item_id()] = animal  
 
-    def add_food_source(self, food_source: FoodData) -> None:
+    def add_food_source(self, food_source: Food) -> None:
         self.food_sources[food_source.gameId] = food_source
     
         self.item_groups["food_sources"].append(food_source.to_item_id())
@@ -236,7 +256,7 @@ class MegaquariumDB:
         self.item_id_to_item[food_source.to_item_id()] = food_source 
 
 
-    def add_equipment(self, equipment: EquipmentData) -> None:
+    def add_equipment(self, equipment: Equipment) -> None:
         self.equipment[equipment.gameId] = equipment
         
         self.item_groups["equipment"].append(equipment.to_item_id())

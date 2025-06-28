@@ -13,8 +13,8 @@ from worlds.AutoWorld import WebWorld, World
 from Options import (Choice, DeathLink, DefaultOnToggle, OptionSet, NamedRange, Range, Toggle, FreeText,
                      PerGameCommonOptions, OptionGroup, StartInventory)
 from BaseClasses import CollectionState, ItemClassification, Region
-from .data_loader import MEGAQUARIUM_DB, MEGAQUARIUM_BASE_MAP
-from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition
+from .data_loader import MEGAQUARIUM_DB
+from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition, UnlockableManager, MegaqScenario
 
 
 class MegaquariumWebWorld(WebWorld):
@@ -108,14 +108,19 @@ class MegaquariumWorld(World):
 
 
     def generate_output(self, output_directory: str) -> None:
-        import json5
-        output_file = output_directory + os.path.sep + "archipelago_map.sav"
 
         filled_locs = self.multiworld.get_filled_locations(self.player)
         precollected_items = self.multiworld.precollected_items[self.player]
+        for item in precollected_items:
+            item = MEGAQUARIUM_DB.get_item_by_item_id(item)
+            unlockables.unlocked.append(item)
+
+
+        unlockables = UnlockableManager(excluded=[], available=[])
         for loc in filter(lambda loc: loc.item.game == "Megaquarium" and loc.item.player == self.player, filled_locs):
             item = MEGAQUARIUM_DB.get_item_by_item_id(loc.item.name)
             MEGAQUARIUM_DB.get_objective_by_location_id(loc.name).actions.append(UnlockItemAction(item))
+            unlockables.excluded.append(item)
 
 
         obj = MegaqObjective(objectiveId="reachRankX",conditions=[ReachRankCondition(12)])
@@ -123,9 +128,9 @@ class MegaquariumWorld(World):
 
         sec = Section(sectionId="mainSection", triggers=list(map(lambda x: x, MEGAQUARIUM_DB.rank_objs.values())), reward=AddMoneyAction(2000), doOnComplete=[], objectives=[obj])
         sec.mainSection = True
-        new_save = dict(MEGAQUARIUM_BASE_MAP)
-        new_save["playerData"]["scenario"]["sections"].append(sec.to_json())
-        new_save["playerData"]["scenario"]["startSection"] = sec.sectionId
+        
+        campaign = MegaqScenario(startSection=sec, sections=[sec], unlockables=unlockables, startRank=1, money=10000)
 
-        with open(output_file,"w") as fh:
-            fh.write(json5.dumps(MEGAQUARIUM_BASE_MAP))
+        output_file = output_directory + os.path.sep + "archipelago_map.sav"
+        campaign.write(output_file)
+
