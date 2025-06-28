@@ -13,8 +13,8 @@ from worlds.AutoWorld import WebWorld, World
 from Options import (Choice, DeathLink, DefaultOnToggle, OptionSet, NamedRange, Range, Toggle, FreeText,
                      PerGameCommonOptions, OptionGroup, StartInventory)
 from BaseClasses import CollectionState, ItemClassification, Region
-from .data import MEGAQUARIUM_DB, MEGAQUARIUM_BASE_MAP
-
+from .data_loader import MEGAQUARIUM_DB, MEGAQUARIUM_BASE_MAP
+from .data import Section, ReachRank
 
 
 class MegaquariumWebWorld(WebWorld):
@@ -74,7 +74,11 @@ class MegaquariumWorld(World):
         super(MegaquariumWorld, self).__init__(multiworld, player)
 
     def generate_early(self) -> None:
-        pass
+        for i in range(2,12):
+            idx = MEGAQUARIUM_DB.get_id()
+            MEGAQUARIUM_DB.add_rank_objective(ReachRank(idNo=idx, rankNo=i))
+
+        
 
     def create_regions(self) -> None:
         num_regions = 2
@@ -82,8 +86,12 @@ class MegaquariumWorld(World):
         # locations = tanks built with requirement, rank ups, full_grown_fish
         # regions = sections
         # regions = objectives
+        menu_region = Region("Menu", self.player, self.multiworld)
+        for rank_obj in MEGAQUARIUM_DB.rank_objs.values():
+            menu_region.locations.append(rank_obj.to_location(self.player,menu_region))
 
-        self.multiworld.regions.extend([Region("Menu", self.player, self.multiworld)])
+
+        self.multiworld.regions.extend([menu_region])
 
     def create_items(self) -> None:
         self.item_pool = []
@@ -99,6 +107,18 @@ class MegaquariumWorld(World):
 
     def generate_output(self, output_directory: str) -> None:
         import json5
-        output_file = output_directory + os.path.sep + "archipelago.sav"
+        output_file = output_directory + os.path.sep + "archipelago_map.sav"
+
+        filled_locs = self.multiworld.get_filled_locations(self.player)
+        precollected_items = self.multiworld.precollected_items[self.player]
+        print(filled_locs)
+        print(precollected_items)
+
+        sec = Section("mainSection", triggers=list(map(lambda x: x, MEGAQUARIUM_DB.rank_objs.values())))
+
+        new_save = dict(MEGAQUARIUM_BASE_MAP)
+        new_save["playerData"]["scenario"]["sections"].append(sec.to_json())
+        new_save["playerData"]["scenario"]["startSection"] = sec.sectionId
+
         with open(output_file,"w") as fh:
             fh.write(json5.dumps(MEGAQUARIUM_BASE_MAP))
