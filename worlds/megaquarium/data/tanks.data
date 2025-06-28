@@ -1,0 +1,1776 @@
+{
+	"objects":[
+		{
+			"id":"2_freestanding",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"1x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":3,"n":3},
+				"minSize":{"m":2,"n":2},
+				"removeRow":1,
+				"removeColumn":1,
+				"menuTag":"freestanding"
+			},
+			"tank":{
+				"volumePerTile":2,
+			},
+			"paintable":{
+				"paintable":["tank_freeatanding_1_observer_edge_theme","tank_freeatanding_1_observer_observer_corner_theme"],
+				"paintCount":2,
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":2.4,"y":0.8,"z":2.4}
+			},
+			"map":{
+				"map":" \
+				   aaa \
+				  aaaaa \
+				 aa---aa \
+				aa{789}aa \
+				aa{456}aa \
+				aa{o23}aa \
+				 aa___aa \
+				  aaaaa \
+				   aaa \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["v","c"], "angle":0},
+					{"code":"-", "chars":["v","c"], "angle":90},
+					{"code":"}", "chars":["v","c"], "angle":180},
+					{"code":"_", "chars":["v","c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":4},
+			"pointGenerator":{},
+			 "unlockable": {
+				"cost": 150,
+				"number": 1,
+				"type":2,
+				"availableLevel":1,
+				"category": "exhibit",
+				"autoUnlock": true
+			  },
+			"fbx":{
+				"name":"2_freestanding_3_3_1",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_freeatanding_1_observer_observer_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_freeatanding_1_observer_edge","angle":180},
+					"3":{"fbx":"tank_freeatanding_1_observer_observer_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_freeatanding_1_observer_edge","angle":270},
+					"5":{"fbx":"tank_freeatanding_1_center","angle":0},
+					"6":{"fbx":"tank_freeatanding_1_observer_edge","angle":90},
+					"7":{"fbx":"tank_freeatanding_1_observer_observer_corner","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_freeatanding_1_observer_edge","angle":0},
+					"9":{"fbx":"tank_freeatanding_1_observer_observer_corner","angle":0,"lightAngle":180},
+				},
+				"center":{"x":1,"z":1},
+				"guiScale":0.17,
+				"guiOffset":{"x":0,"y":7},
+			}
+		},
+		{
+			"id":"lagoon_tank",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"3x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":5,"n":5},
+				"minSize":{"m":3,"n":3},
+				"removeRow":3,
+				"removeColumn":1,
+				"menuTag":"freestanding"
+			},
+			"tank":{
+				"volumePerTile":3.5,
+				"sunken":true
+				
+			},
+			"paintable":{
+				"paintable":["tank_freeatanding_2_observer_edge_theme","tank_freeatanding_2_observer_observer_corner_theme"],
+				"paintCount":3,
+			},
+			"container":{
+				"min":{"x":-0.4,"y":-0.6,"z":-0.4},
+				"max":{"x":4.4,"y":0.8,"z":4.4}
+			},
+			"map":{
+				"map":" \
+				   aaaaa \
+				  aaaaaaa \
+				 aa-----aa \
+				aa{78889}aa \
+				aa{45556}aa \
+				aa{45556}aa \
+				aa{45556}aa \
+				aa{o2223}aa \
+				 aa_____aa \
+				  aaaaaaa \
+				   aaaaa \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["v","c"], "angle":0},
+					{"code":"-", "chars":["v","c"], "angle":90},
+					{"code":"}", "chars":["v","c"], "angle":180},
+					{"code":"_", "chars":["v","c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":8},
+			"pointGenerator":{},
+			"unlockable": {
+				"number": 1,
+				"type":"Science",
+				"availableLevel":3,
+				"category": "exhibit"
+			  },
+			"fbx":{
+				"name":"lagoon_tank_5_5_2",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_freeatanding_2_observer_edge","angle":180},
+					"3":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_freeatanding_2_observer_edge","angle":270},
+					"5":{"fbx":"tank_freeatanding_2_center","angle":0},
+					"6":{"fbx":"tank_freeatanding_2_observer_edge","angle":90},
+					"7":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_freeatanding_2_observer_edge","angle":0},
+					"9":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":0,"lightAngle":180},
+				},
+				"center":{"x":2,"z":2},
+				"guiScale":0.1,
+				"guiOffset":{"x":0,"y":18}
+			}
+		},
+		{
+			"id":"5_wall_1side",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"2x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":4,"n":3},
+				"minSize":{"m":2,"n":2},
+				"removeRow":1,
+				"removeColumn":1,
+				"menuTag":"wall"
+			},
+			"tank":{
+				"volumePerTile":2.5,
+				
+			},
+			"paintable":{
+				"paintable":["tank_wall_1_access_edge_theme","tank_wall_1_access_access_corner_theme","tank_wall_1_access_observer_corner_theme","tank_wall_1_observer_access_corner_theme","tank_wall_1_observer_edge_theme","tank_wall_1_observer_joinleft_theme","tank_wall_1_observer_joinright_theme","tank_wall_1_observer_observer_corner_1_theme","tank_wall_1_observer_observer_corner_2_theme","tank_wall_1_observer_insidecorner_theme","tank_wall_1_access_insidecorner_theme"],
+				"paintCount":3,
+			},
+			"unlockable":{
+				"type":"Science",
+				"availableLevel":2,
+				"autoUnlock": true,
+				"category": "exhibit",
+				"unlockTags":["1deeptank"],
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":3.4,"y":0.8,"z":2.4}
+			},
+			"map":{
+				"map":" \
+				 aaaa \
+				 aaaa \
+				 aaaa \
+				 ---- \
+				{7889} \
+				{4556} \
+				{o223} \
+				 ____ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["c"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]}
+				],
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":5},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"5_wall_1side_4_3_1",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_1_access_access_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_wall_1_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_1_access_access_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_wall_1_access_edge","angle":270},
+					"5":{"fbx":"tank_wall_1_center","angle":180},
+					"6":{"fbx":"tank_wall_1_access_edge","angle":90},
+					"7":{"fbx":"tank_wall_1_access_observer_corner","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_wall_1_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_1_observer_access_corner","angle":0,"lightAngle":180},
+				},
+				"center":{"x":1.5,"z":1},
+				"guiScale":0.15,
+				"guiOffset":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"tank_wall_2side",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"2x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":3,"n":3},
+				"minSize":{"m":2,"n":2},
+				"removeRow":1,
+				"removeColumn":1,
+				"menuTag":"wall"
+			},
+			"tank":{
+				"volumePerTile":2.5,
+			},
+			"paintable":{
+				"paintable":["tank_wall_1_access_edge_theme","tank_wall_1_access_access_corner_theme","tank_wall_1_access_observer_corner_theme","tank_wall_1_observer_access_corner_theme","tank_wall_1_observer_edge_theme","tank_wall_1_observer_joinleft_theme","tank_wall_1_observer_joinright_theme","tank_wall_1_observer_observer_corner_1_theme","tank_wall_1_observer_observer_corner_2_theme","tank_wall_1_observer_insidecorner_theme","tank_wall_1_access_insidecorner_theme"],
+				"paintCount":3,
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":2.4,"y":0.8,"z":2.4}
+			},
+			"map":{
+				"map":" \
+				 aaaa \
+				 aaaaa \
+				 aaaaaa \
+				 ---aaaa \
+				{789}aaa \
+				{456}aaa \
+				{o23}aaa \
+				 ___ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":5},
+			"pointGenerator":{},
+			"unlockable":{
+				"unlockedBy":"1deeptank",
+			},
+			"fbx":{
+				"name":"tank_wall_2side_3_3_1",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_1_access_access_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_wall_1_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_1_observer_access_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_wall_1_access_edge","angle":270},
+					"5":{"fbx":"tank_wall_1_center","angle":180},
+					"6":{"fbx":"tank_wall_1_observer_edge","angle":90},
+					"7":{"fbx":"tank_wall_1_access_observer_corner","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_wall_1_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_1_observer_observer_corner_1","angle":0,"lightAngle":180},
+				},
+				"center":{"x":1,"z":1},
+				"guiScale":0.15,
+				"guiOffset":{"x":0,"y":0}
+			}
+		},
+		{
+			"id":"tank_wall_3side",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"2x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":3,"n":4},
+				"minSize":{"m":2,"n":3},
+				"removeRow":2,
+				"removeColumn":1,
+				"menuTag":"wall"
+			},
+			"tank":{
+				"volumePerTile":2.5,
+				
+			},
+			"paintable":{
+				"paintable":["tank_wall_1_access_edge_theme","tank_wall_1_access_access_corner_theme","tank_wall_1_access_observer_corner_theme","tank_wall_1_observer_access_corner_theme","tank_wall_1_observer_edge_theme","tank_wall_1_observer_joinleft_theme","tank_wall_1_observer_joinright_theme","tank_wall_1_observer_observer_corner_1_theme","tank_wall_1_observer_observer_corner_2_theme","tank_wall_1_observer_insidecorner_theme","tank_wall_1_access_insidecorner_theme"],
+				"paintCount":3,
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":2.4,"y":0.7,"z":3.4}
+			},
+			"map":{
+				"map":" \
+				   aaaaa \
+				  aaaaaaa \
+				 aaaaaaaaa \
+				aaaa---aaaa \
+				aaa{789}aaa \
+				aaa{456}aaa \
+				aaa{:5;}aaa \
+				   [o23] \
+				    ___ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"[", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"]", "chars":["c"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]},
+					{"code":":", "chars":["x"]},
+					{"code":";", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":5},
+			"pointGenerator":{},
+			"unlockable":{
+				"unlockedBy":"1deeptank",
+			},
+			"fbx":{
+				"name":"tank_wall_3side_3_4_1",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_1_access_access_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_wall_1_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_1_access_access_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_wall_1_observer_edge","angle":270},
+					":":{"fbx":"tank_wall_1_observer_joinleft","angle":270},
+					"5":{"fbx":"tank_wall_1_center","angle":180},
+					"6":{"fbx":"tank_wall_1_observer_edge","angle":90},
+					";":{"fbx":"tank_wall_1_observer_joinright","angle":90},
+					"7":{"fbx":"tank_wall_1_observer_observer_corner_1","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_wall_1_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_1_observer_observer_corner_1","angle":0,"lightAngle":180},
+				},
+				"center":{"x":1,"z":1.5},
+				"guiScale":0.135,
+				"guiOffset":{"x":0,"y":0}
+			}
+		},
+		
+		{
+			"id":"wall_1side_deep",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"3x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":7,"n":4},
+				"minSize":{"m":3,"n":3},
+				"removeRow":2,
+				"removeColumn":1,
+				"menuTag":"deepWall"
+			},
+			"tank":{
+				"volumePerTile":4,
+				"accessHeight":1,
+			},
+			"paintable":{
+				"paintable":["tank_wall_2_access_edge_theme","tank_wall_2_access_access_corner_theme","tank_wall_2_access_observer_corner_theme","tank_wall_2_observer_access_corner_theme","tank_wall_2_observer_edge_theme","tank_wall_2_observer_joinleft_theme","tank_wall_2_observer_joinright_theme","tank_wall_2_observer_observer_corner_1_theme","tank_wall_2_observer_observer_corner_2_theme","tank_wall_2_observer_insidecorner_theme","tank_wall_2_access_insidecorner_theme"],
+				"paintCount":4,
+			},
+			"unlockable":{
+				"number":1,
+				"type":"Science",
+				"availableLevel":4,
+				"category":"exhibit",
+				"unlockTags":["2deeptank"],
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":6.4,"y":1.5,"z":3.4}
+			},
+			"map":{
+				"map":" \
+				 aaaaaaa \
+				 aaaaaaa \
+				 aaaaaaa \
+				 ------- \
+				{7888889} \
+				{4555556} \
+				{4555556} \
+				{o222223} \
+				 _______ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["c"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]}
+				],
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":7},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"wall_1side_7_4_2",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_2_access_access_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_wall_2_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_2_access_access_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_wall_2_access_edge","angle":270},
+					"5":{"fbx":"tank_wall_2_center","angle":180},
+					"6":{"fbx":"tank_wall_2_access_edge","angle":90},
+					"7":{"fbx":"tank_wall_2_access_observer_corner","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_wall_2_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_2_observer_access_corner","angle":0,"lightAngle":180},
+				},
+				"center":{"x":3,"z":1.5},
+				"guiScale":0.11,
+				"guiOffset":{"x":11,"y":22}
+			}
+		},
+		{
+			"id":"tank_wall_2side_deep",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"3x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":5,"n":5},
+				"minSize":{"m":3,"n":3},
+				"removeRow":3,
+				"removeColumn":1,
+				"menuTag":"deepWall"
+			},
+			"tank":{
+				"volumePerTile":4,
+				"accessHeight":1,
+			},
+			"paintable":{
+				"paintable":["tank_wall_2_access_edge_theme","tank_wall_2_access_access_corner_theme","tank_wall_2_access_observer_corner_theme","tank_wall_2_observer_access_corner_theme","tank_wall_2_observer_edge_theme","tank_wall_2_observer_joinleft_theme","tank_wall_2_observer_joinright_theme","tank_wall_2_observer_observer_corner_1_theme","tank_wall_2_observer_observer_corner_2_theme","tank_wall_2_observer_insidecorner_theme","tank_wall_2_access_insidecorner_theme"],
+				"paintCount":4,
+			},
+			"unlockable":{
+				"unlockedBy":"2deeptank",
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":4.4,"y":1.5,"z":4.4}
+			},
+			"map":{
+				"map":" \
+				 aaaaaa \
+				 aaaaaaa \
+				 aaaaaaaa \
+				 -----aaaa \
+				{78889}aaa \
+				{45556}aaa \
+				{45556}aaa \
+				{45556}aaa \
+				{o2223}aaa \
+				 _____ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":7},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"tank_wall_2side_5_5_2",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_2_access_access_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_wall_2_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_2_observer_access_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_wall_2_access_edge","angle":270},
+					"5":{"fbx":"tank_wall_2_center","angle":180},
+					"6":{"fbx":"tank_wall_2_observer_edge","angle":90},
+					"7":{"fbx":"tank_wall_2_access_observer_corner","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_wall_2_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_2_observer_observer_corner_1","angle":0,"lightAngle":180},
+				},
+				"center":{"x":2,"z":2},
+				"guiScale":0.12,
+				"guiOffset":{"x":0,"y":20}
+			}
+		},
+		{
+			"id":"tank_wall_3side_deep",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"3x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":5,"n":6},
+				"minSize":{"m":3,"n":3},
+				"removeRow":4,
+				"removeColumn":1,
+				"menuTag":"deepWall"
+			},
+			"tank":{
+				"volumePerTile":4,
+				"accessHeight":1,
+			},
+			"paintable":{
+				"paintable":["tank_wall_2_access_edge_theme","tank_wall_2_access_access_corner_theme","tank_wall_2_access_observer_corner_theme","tank_wall_2_observer_access_corner_theme","tank_wall_2_observer_edge_theme","tank_wall_2_observer_joinleft_theme","tank_wall_2_observer_joinright_theme","tank_wall_2_observer_observer_corner_1_theme","tank_wall_2_observer_observer_corner_2_theme","tank_wall_2_observer_insidecorner_theme","tank_wall_2_access_insidecorner_theme"],
+				"paintCount":4,
+			},
+			"unlockable":{
+				"unlockedBy":"2deeptank",
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":4.4,"y":1.5,"z":5.4}
+			},
+			"map":{
+				"map":" \
+				   aaaaaaa \
+				  aaaaaaaaa \
+				 aaaaaaaaaaa \
+				aaaa-----aaaa \
+				aaa{78889}aaa \
+				aaa{45556}aaa \
+				aaa{45556}aaa \
+				aaa{45556}aaa \
+				aaa{:555;}aaa \
+				   [o2223] \
+				    _____ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"[", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"]", "chars":["c"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]},
+					{"code":":", "chars":["x"]},
+					{"code":";", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":7},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"tank_wall_3side_5_6_2",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_2_access_access_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_wall_2_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_2_access_access_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_wall_2_observer_edge","angle":270},
+					":":{"fbx":"tank_wall_2_observer_joinleft","angle":270},
+					"5":{"fbx":"tank_wall_2_center","angle":180},
+					"6":{"fbx":"tank_wall_2_observer_edge","angle":90},
+					";":{"fbx":"tank_wall_2_observer_joinright","angle":90},
+					"7":{"fbx":"tank_wall_2_observer_observer_corner_1","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_wall_2_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_2_observer_observer_corner_1","angle":0,"lightAngle":180},
+				},
+				"center":{"x":2,"z":2.5},
+				"guiScale":0.12,
+				"guiOffset":{"x":0,"y":20}
+			}
+		},
+		{
+			"id":"tank_rounded",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"4x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":5,"n":9},
+				"minSize":{"m":3,"n":6},
+				"removeRow":5,
+				"removeColumn":1,
+				"menuTag":"large"
+			},
+			"tank":{
+				"volumePerTile":5,
+				"accessHeight":2,
+				"isRounded":true
+			},
+			"paintable":{
+				"paintable":["tank_wall_3_access_edge_theme","tank_wall_3_access_access_corner_theme","tank_wall_3_access_observer_corner_theme","tank_wall_3_observer_access_corner_theme","tank_wall_3_observer_edge_theme","tank_wall_3_observer_joinleft_theme","tank_wall_3_observer_joinright_theme","tank_wall_3_observer_observer_corner_1_theme","tank_wall_3_observer_observer_corner_2_theme","tank_wall_3_observer_insidecorner_theme","tank_wall_3_access_insidecorner_theme"],
+				"paintableFloor":["2_floor_dark","2_floor_light"],
+				"paintCount":5,
+			},
+			"unlockable":{
+				"number":1,
+				"type":"Science",
+				"availableLevel":5,
+				"category":"exhibit"
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":4.4,"y":2.2,"z":8.4}
+			},
+			"map":{
+				"map":" \
+				  aaaaaaa \
+				 aaaaaaaaa \
+				aaa-----aaa \
+				aa{78889}aa \
+				aa{:5556}aa \
+				  @[5556}aa \
+				  @[5556}aa \
+				  @[5556}aa \
+				  @[5556}aa \
+				  @[5556}aa \
+				aa{,5556}aa \
+				aa{o2223}aa \
+				aaa_____aaa \
+				 aaaaaaaaa \
+				  aaaaaaa \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x","b"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"(", "chars":["v"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"_", "chars":["v"], "angle":270},
+					{"code":"=", "chars":["v"], "angle":270},
+					{"code":"@", "chars":["c"], "angle":0},
+					{"code":"~", "chars":["c"], "angle":180},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x","b"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x","b"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x","b"]},
+					{"code":":", "chars":["x"]},
+					{"code":"[", "chars":["x"]},
+					{"code":"]", "chars":["x"]},
+					{"code":",", "chars":["x"]},
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":9},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"tank_rounded_5_9_3",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_3_observer_observer_corner_2","angle":180},
+					"2":{"fbx":"tank_wall_3_observer_edge","angle":180},
+					"3":{"fbx":"tank_wall_3_observer_observer_corner_2","angle":90},
+					"4":{"fbx":"tank_wall_3_observer_edge","angle":270},
+					":":{"fbx":"tank_wall_3_observer_joinleft","angle":270},
+					",":{"fbx":"tank_wall_3_observer_joinright","angle":270},
+					"[":{"fbx":"tank_wall_3_access_edge","angle":270},
+					"5":{"fbx":"tank_wall_3_center","angle":180},
+					"6":{"fbx":"tank_wall_3_observer_edge","angle":90},
+					"]":{"fbx":"tank_wall_3_access_edge","angle":90},
+					"7":{"fbx":"tank_wall_3_observer_observer_corner_2","angle":270},
+					"8":{"fbx":"tank_wall_3_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_3_observer_observer_corner_2","angle":0},
+				},
+				"center":{"x":2,"z":4},
+				"guiScale":0.08,
+				"guiOffset":{"x":-25,"y":25},
+				"adjustColliderForPaintingUnder":true
+			}
+		},
+		{
+			"id":"tank_small_kreisel",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"2x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":4,"n":4},
+				"minSize":{"m":3,"n":2},
+				"removeRow":2,
+				"removeColumn":1,
+				"menuTag":"speciality"
+			},
+			"tank":{
+				"volumePerTile":4,
+				"accessHeight":1,
+				"isKreisel":true,
+				"fixedSubstrate":true,
+				"isNoSceneryOK":true
+			},
+			"paintable":{
+				"paintable":["tank_kreisel_backleft_corner_theme","tank_kreisel_access_edge_theme","tank_kreisel_backright_corner_theme","tank_kreisel_round_edge_theme","tank_kreisel_center_theme","tank_kreisel_round_edge_theme","tank_kreisel_frontleft_corner_theme","tank_kreisel_observer_edge_theme","tank_kreisel_frontright_corner_theme"],
+				"paintableFloor":["2_floor_dark","2_floor_light"],
+				"paintCount":4,
+			},
+			"unlockable":{
+				"number":1,
+				"type":"Science",
+				"availableLevel":6,
+				"category":"exhibit"
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":3.4,"y":1.5,"z":3.4}
+			},
+			"map":{
+				"map":" \
+				   aaaaaa \
+				  aaaaaaaa \
+				 aaaaaaaaaa \
+				aaaa----aaaa \
+				aaa{78h9}aaa \
+				aaa{4556}aaa \
+				aaa{4556}aaa \
+				aaa{o2g3}aaa \
+				    =__= \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x","b"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"=", "chars":["v"], "angle":270},
+					{"code":"2", "chars":["x","b"]},
+					{"code":"g", "chars":["x","b"]},
+					{"code":"3", "chars":["x","b"]},
+					{"code":"4", "chars":["x","b"]},
+					{"code":"5", "chars":["x","b"]},
+					{"code":"6", "chars":["x","b"]},
+					{"code":"7", "chars":["x","b"]},
+					{"code":"8", "chars":["x","b"]},
+					{"code":"h", "chars":["x","b"]},
+					{"code":"9", "chars":["x","b"]},
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":8},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"tank_wall_3side_5_6_2",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_kreisel_backleft_corner","angle":180},
+					"2":{"fbx":"tank_kreisel_access_edge","angle":180,"lightAngle":1},
+					"g":{"fbx":"tank_kreisel_access_edge","angle":180,"lightAngle":270},
+					"3":{"fbx":"tank_kreisel_backright_corner","angle":90},
+					"4":{"fbx":"tank_kreisel_round_edge","angle":270},
+					"5":{"fbx":"tank_kreisel_center","angle":180},
+					"6":{"fbx":"tank_kreisel_round_edge","angle":90},
+					"7":{"fbx":"tank_kreisel_frontleft_corner","angle":270},
+					"8":{"fbx":"tank_kreisel_observer_edge","angle":0,"lightAngle":90},
+					"h":{"fbx":"tank_kreisel_observer_edge","angle":0,"lightAngle":180},
+					"9":{"fbx":"tank_kreisel_frontright_corner","angle":0},
+				},
+				"center":{"x":1.5,"z":1.5},
+				"guiScale":0.12,
+				"guiOffset":{"x":0,"y":0},
+				"adjustColliderForPaintingUnder":true
+			}
+		},
+		{
+			"id":"small_tunnel_tank",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"4x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":5,"n":9},
+				"minSize":{"m":3,"n":5},
+				"removeRow":7,
+				"removeColumn":1,
+				"menuTag":"large"
+			},
+			"tank":{
+				"volumePerTile":6,
+				"accessHeight":2,
+				"isRounded":true,
+				"sunken":true
+			},
+			"aquascaping":{
+				"stats": {
+					"prestige": {"value":5},
+				},
+				"uniqueThoughtCode":"tunnelThought",
+			},
+			"paintable":{
+				"paintable":["tank_wall_3_s1_access_edge_theme","tank_wall_3_s1_access_access_corner_theme","tank_wall_3_s1_access_observer_corner_theme","tank_wall_3_s1_observer_access_corner_theme","tank_wall_3_s1_observer_edge_theme","tank_wall_3_s1_observer_joinleft_theme","tank_wall_3_s1_observer_joinright_theme","tank_wall_3_s1_observer_observer_corner_1_theme","tank_wall_3_s1_observer_observer_corner_2_theme","tank_wall_3_s1_observer_insidecorner_theme","tank_wall_3_s1_access_insidecorner_theme","tank_wall_3_s1_tunnel_entrance_theme","tank_wall_3_s1_tunnel_mid_theme"],
+				"paintableFloor":["2_floor_dark","2_floor_light"],
+				"paintCount":5,
+			},
+			"unlockable":{
+				"number":1,
+				"type":"Science",
+				"availableLevel":7,
+				"category":"exhibit"
+			},
+			"container":{
+				"min":{"x":-0.4,"y":-0.6,"z":3.6},
+				"max":{"x":4.4,"y":2.2,"z":8.4},
+				
+				"extra":[
+					{
+						"min":{"x":-0.4,"y":-0.6,"z":-0.4},
+						"max":{"x":4.4,"y":2.2,"z":2.4},
+						"dontScaleZ":true
+					},
+					/*
+					{
+						"min":{"x":-0.4,"y":1.6,"z":-0.4},
+						"max":{"x":4.4,"y":2.2,"z":8.4},
+					},*/
+				]
+			},
+			"map":{
+				"map":" \
+				   aaaaaaa \
+				  aaaaaaaaa \
+				 aaaaaaaaaaa \
+				aaaa-----aaaa \
+				aaa{78889}aaa \
+				aaa{45556}aaa \
+				aaa{45556}aaa \
+				aaa{45556}aaa \
+				aaa{45556}aaa \
+				aaaahjjjkaaaa \
+				aaa{45556}aaa \
+				aaa{:555;}aaa \
+				   [o2223] \
+				    _____ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"[", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"]", "chars":["c"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x","b"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x","b"]},
+					{"code":":", "chars":["x"]},
+					{"code":";", "chars":["x"]},
+					{"code":"h", "chars":[".","v","b","s"], "angle":270},
+					{"code":"j", "chars":[".","v","b","s"], "angle":90},
+					{"code":"k", "chars":[".","v","b","s"], "angle":270},
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":9},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"small_tunnel_tank",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_3_s1_access_access_corner","angle":180},
+					"2":{"fbx":"tank_wall_3_s1_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_3_s1_access_access_corner","angle":90},
+					"4":{"fbx":"tank_wall_3_s1_observer_edge","angle":270},
+					":":{"fbx":"tank_wall_3_s1_observer_joinleft","angle":270},
+					";":{"fbx":"tank_wall_3_s1_observer_joinright","angle":90},
+					"5":{"fbx":"tank_wall_3_s1_center","angle":180},
+					"6":{"fbx":"tank_wall_3_s1_observer_edge","angle":90},
+					"7":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":270},
+					"8":{"fbx":"tank_wall_3_s1_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":0},
+					"h":{"fbx":"tank_wall_3_s1_tunnel_entrance","angle":270},
+					"j":{"fbx":"tank_wall_3_s1_tunnel_mid","angle":90},
+					"k":{"fbx":"tank_wall_3_s1_tunnel_entrance","angle":90},
+				},
+				"center":{"x":2,"z":4},
+				"guiScale":0.08,
+				"guiOffset":{"x":-25,"y":25}
+			}
+		},
+		
+		{
+			"id":"tank_wall_outcrop_deep",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"3x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":2,"n":11},
+				"minSize":{"m":2,"n":7},
+				"removeRow":9,
+				"removeColumn":1,
+				"menuTag":"deepWall"
+			},
+			"tank":{
+				"volumePerTile":4,
+				"accessHeight":1,
+			},
+			"paintable":{
+				"paintable":["tank_wall_2_access_edge_theme","tank_wall_2_access_access_corner_theme","tank_wall_2_access_observer_corner_theme","tank_wall_2_observer_access_corner_theme","tank_wall_2_observer_edge_theme","tank_wall_2_observer_joinleft_theme","tank_wall_2_observer_joinright_theme","tank_wall_2_observer_observer_corner_1_theme","tank_wall_2_observer_observer_corner_2_theme","tank_wall_2_observer_insidecorner_theme","tank_wall_2_access_insidecorner_theme"],
+				"paintCount":4,
+			},
+			"unlockable":{
+				"number":1,
+				"type":"Science",
+				"availableLevel":7,
+				"category":"exhibit"
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":1.4,"y":1.5,"z":10.4}
+			},
+			"map":{
+				"map":" \
+				   aaaa \
+				  aaaaaa \
+				 aaaaaaaa \
+				aaaa--aaaa \
+				aaa{79}aaa \
+				aaa{46}aaa \
+				aaa{46}aaa \
+				aaa{46}aaa \
+				aaa{46}aaa \
+				aaa{46}aaa \
+				aaa{46}aaa \
+				aaa{:;}aaa \
+				   [,'] \
+				   [,'] \
+				   [o3] \
+				    __ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"[", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"]", "chars":["c"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]},
+					{"code":":", "chars":["x"]},
+					{"code":";", "chars":["x"]},
+					{"code":",", "chars":["x"]},
+					{"code":"'", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":7},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"tank_wall_outcrop_deep",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_2_access_access_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_wall_2_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_2_access_access_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_wall_2_observer_edge","angle":270},
+					":":{"fbx":"tank_wall_2_observer_joinleft","angle":270},
+					"5":{"fbx":"tank_wall_2_center","angle":180},
+					"6":{"fbx":"tank_wall_2_observer_edge","angle":90},
+					";":{"fbx":"tank_wall_2_observer_joinright","angle":90},
+					"7":{"fbx":"tank_wall_2_observer_observer_corner_1","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_wall_2_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_2_observer_observer_corner_1","angle":0,"lightAngle":180},
+					",":{"fbx":"tank_wall_2_access_edge","angle":270},
+					"'":{"fbx":"tank_wall_2_access_edge","angle":90},
+				},
+				"center":{"x":0.5,"z":5.5},
+				"guiScale":0.085,
+				"guiOffset":{"x":-35,"y":25}
+			}
+		},
+		{
+			"id":"u_lagoon_tank",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"3x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":11,"n":7},
+				"minSize":{"m":8,"n":5},
+				"removeRows":[1,4],
+				"removeColumns":[5,1,8],
+				"menuTag":"freestanding"
+			},
+			"tank":{
+				"volumePerTile":3.5,
+				"sunken":true
+				
+			},
+			"paintable":{
+				"paintable":["tank_freeatanding_2_observer_edge_theme","tank_freeatanding_2_observer_observer_corner_theme","tank_freeatanding_2_observer_insidecorner_theme"],
+				"paintCount":3,
+			},
+			"container":{
+				"useContainersForColliders":true,
+				"min":{"x":-0.4,"y":-0.6,"z":-0.4},
+				"max":{"x":3.4,"y":0.8,"z":6.4},
+				"maxMultisize":[{"z":-1},{"x":-1,"z":-1},{}],
+				"extra":[
+					{
+						"min":{"x":6.6,"y":-0.6,"z":-0.4},
+						"max":{"x":10.4,"y":0.8,"z":6.4},
+						"maxMultisize":[{"x":-1,"z":-1},{"x":-1,"z":-1},{"x":-1}],
+						"minMultisize":[{"x":-1},{"x":-1},{}],
+					},
+					{
+						"min":{"x":-0.4,"y":-0.6,"z":2.6},
+						"max":{"x":10.4,"y":0.8,"z":6.4},
+						"maxMultisize":[{"x":-1,"z":-1},{"x":-1,"z":-1},{"x":-1}],
+						"minMultisize":[{"z":-1},{},{}],
+					}
+				]
+				
+			},
+			"map":{
+				"map":" \
+				 ----------- \
+				{78888888889} \
+				{45555555556} \
+				{45555555556} \
+				{455~222#556} \
+				{4556}_{4556} \
+				{4556} {4556} \
+				{o223} {1223} \
+				 ____   ____ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"1", "chars":["x"]},
+					{"code":"{", "chars":["v","c"], "angle":0},
+					{"code":"-", "chars":["v","c"], "angle":90},
+					{"code":"}", "chars":["v","c"], "angle":180},
+					{"code":"_", "chars":["v","c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]},
+					{"code":"~", "chars":["x"]},
+					{"code":"#", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":9},
+			"pointGenerator":{},
+			"unlockable": {
+				"number": 1,
+				"type":"Science",
+				"availableLevel":8,
+				"category": "exhibit"
+			  },
+			"fbx":{
+				"name":"u_lagoon_tank",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":180,"lightAngle":1},
+					"1":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_freeatanding_2_observer_edge","angle":180},
+					"3":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_freeatanding_2_observer_edge","angle":270},
+					"5":{"fbx":"tank_freeatanding_2_center","angle":0},
+					"6":{"fbx":"tank_freeatanding_2_observer_edge","angle":90},
+					"7":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_freeatanding_2_observer_edge","angle":0},
+					"9":{"fbx":"tank_freeatanding_2_observer_observer_corner","angle":0,"lightAngle":180},
+					"~":{"fbx":"tank_freeatanding_2_observer_insidecorner","angle":90,"lightAngle":270},
+					"#":{"fbx":"tank_freeatanding_2_observer_insidecorner","angle":180,"lightAngle":1},
+				},
+				"center":{"x":5,"z":3},
+				"guiScale":0.076,
+				"guiOffset":{"x":22,"y":49}
+			}
+		},
+		{
+			"id":"large_tunnel_tank",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"4x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank","cornerMount"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":9,"n":11},
+				"minSize":{"m":3,"n":11},
+				"removeRows":[5,7,2],
+				"removeColumn":1,
+				"menuTag":"large"
+			},
+			"tank":{
+				"volumePerTile":6,
+				"accessHeight":3,
+			},
+			"aquascaping":{
+				"stats": {
+					"prestige": {"value":6},
+				},
+				"uniqueThoughtCode":"tunnelThought",
+			},
+			"paintable":{
+				"paintable":["tank_wall_4_access_edge_theme","tank_wall_4_access_access_corner_theme","tank_wall_4_access_observer_corner_theme","tank_wall_4_observer_access_corner_theme","tank_wall_4_observer_edge_theme","tank_wall_4_observer_joinleft_theme","tank_wall_4_observer_joinright_theme","tank_wall_4_observer_observer_corner_1_theme","tank_wall_4_observer_observer_corner_2_theme","tank_wall_4_observer_insidecorner_theme","tank_wall_4_access_insidecorner_theme","tank_wall_4_tunnel_entranceright_theme","tank_wall_4_tunnel_midleft_theme","tank_wall_4_tunnel_entranceleft_theme","tank_wall_4_tunnel_midmid_theme","tank_wall_4_tunnel_entrancemid_theme","tank_wall_4_tunnel_midright_theme"],
+				"paintableFloor":["2_floor_dark","2_floor_light"],
+				"paintCount":4,
+			},
+			"unlockable":{
+				"number":1,
+				"type":"Science",
+				"availableLevel":9,
+				"category":"exhibit"
+			},
+			"container":{
+				"min":{"x":-0.4,"y":0.1,"z":-0.4},
+				"max":{"x":8.4,"y":2.2,"z":3.4},
+				
+				"extra":[
+					{
+						"min":{"x":-0.4,"y":0.1,"z":6.6},
+						"max":{"x":8.4,"y":2.2,"z":10.4},	
+					}
+				]
+			},
+			"map":{
+				"map":" \
+				     --------- \
+				    [788888889] \
+				aaaa{@5555555'}aaaa \
+				aaaa{455555556}aaaa \
+				aaaa{455555556}aaaa \
+				aaaaayuuuuuuuiaaaaa \
+				aaaaahjjjjjjjkaaaaa \
+				aaaaapnnnnnnnmaaaaa \
+				aaaa{455555556}aaaa \
+				aaaa{455555556}aaaa \
+				aaaa{:5555555;}aaaa \
+				    [o22222223] \
+				     _________ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"[", "chars":["c"], "angle":0},
+					{"code":"-", "chars":["c"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"]", "chars":["c"], "angle":180},
+					{"code":"_", "chars":["c"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x"]},
+					{"code":":", "chars":["x"]},
+					{"code":";", "chars":["x"]},
+					{"code":"@", "chars":["x"]},
+					{"code":"'", "chars":["x"]},
+					{"code":"y", "chars":[".","v","b"], "angle":270},
+					{"code":"u", "chars":[".","v","b"], "angle":270},
+					{"code":"i", "chars":[".","v","b"], "angle":270},
+					{"code":"h", "chars":[".","b"]},
+					{"code":"j", "chars":[".","b"]},
+					{"code":"k", "chars":[".","b"]},
+					{"code":"p", "chars":[".","v","b"], "angle":90},
+					{"code":"n", "chars":[".","v","b"], "angle":90},
+					{"code":"m", "chars":[".","v","b"], "angle":90},
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":12},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"large_tunnel_tank",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_4_access_access_corner","angle":180,"lightAngle":1},
+					"2":{"fbx":"tank_wall_4_access_edge","angle":180},
+					"3":{"fbx":"tank_wall_4_access_access_corner","angle":90,"lightAngle":270},
+					"4":{"fbx":"tank_wall_4_observer_edge","angle":270},
+					":":{"fbx":"tank_wall_4_observer_joinleft","angle":270},
+					";":{"fbx":"tank_wall_4_observer_joinright","angle":90},
+					"@":{"fbx":"tank_wall_4_observer_joinright","angle":270},
+					"'":{"fbx":"tank_wall_4_observer_joinleft","angle":90},
+					"5":{"fbx":"tank_wall_4_center","angle":180},
+					"6":{"fbx":"tank_wall_4_observer_edge","angle":90},
+					"7":{"fbx":"tank_wall_4_access_access_corner","angle":270,"lightAngle":90},
+					"8":{"fbx":"tank_wall_4_access_edge","angle":0},
+					"9":{"fbx":"tank_wall_4_access_access_corner","angle":0,"lightAngle":180},
+					"y":{"fbx":"tank_wall_4_tunnel_entranceright","angle":270},
+					"u":{"fbx":"tank_wall_4_tunnel_midleft","angle":90},
+					"i":{"fbx":"tank_wall_4_tunnel_entranceleft","angle":90},
+					"h":{"fbx":"tank_wall_4_tunnel_entrancemid","angle":270},
+					"j":{"fbx":"tank_wall_4_tunnel_midmid","angle":90},
+					"k":{"fbx":"tank_wall_4_tunnel_entrancemid","angle":90},
+					"p":{"fbx":"tank_wall_4_tunnel_entranceleft","angle":270},
+					"n":{"fbx":"tank_wall_4_tunnel_midright","angle":90},
+					"m":{"fbx":"tank_wall_4_tunnel_entranceright","angle":90},
+				},
+				"center":{"x":4,"z":5},
+				"guiScale":0.063,
+				"guiOffset":{"x":-15,"y":35}
+			}
+		},
+		
+		{
+			"id":"tank_rounded_corner_external",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"4x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":9,"n":9},
+				"minSize":{"m":7,"n":7},
+				"removeRow":3,
+				"removeColumn":6,
+				"menuTag":"large"
+			},
+			"tank":{
+				"volumePerTile":6,
+				"accessHeight":2,
+				"isRounded":true,
+				"sunken":true
+			},
+			"paintable":{
+				"paintable":["tank_wall_3_s1_access_edge_theme","tank_wall_3_s1_access_access_corner_theme","tank_wall_3_s1_access_observer_corner_theme","tank_wall_3_s1_observer_access_corner_theme","tank_wall_3_s1_observer_edge_theme","tank_wall_3_s1_observer_joinleft_theme","tank_wall_3_s1_observer_joinright_theme","tank_wall_3_s1_observer_observer_corner_1_theme","tank_wall_3_s1_observer_observer_corner_2_theme","tank_wall_3_s1_observer_insidecorner_theme","tank_wall_3_s1_access_insidecorner_theme","tank_wall_3_s1_tunnel_entrance_theme","tank_wall_3_s1_tunnel_mid_theme"],
+				"paintableFloor":["2_floor_dark","2_floor_light"],
+				"paintCount":6,
+			},
+			"unlockable":{
+				"number":1,
+				"type":"Science",
+				"availableLevel":10,
+				"category":"exhibit",
+				"unlockTags":["chicago"]
+			},
+			"container":{
+				"useContainersForColliders":true,
+				"min":{"x":-0.4,"y":-0.6,"z":-0.4},
+				"max":{"x":4.4,"y":2.2,"z":9.4},
+				"dontScaleX":true,
+				"extra":[
+					{
+						"min":{"x":-0.4,"y":-0.6,"z":4.6},
+						"max":{"x":9.4,"y":2.2,"z":9.4},
+						"moveOriginZ":true
+					}
+				]
+			},
+			"map":{
+				"map":" \
+				 ---------- \
+				{7888888889} \
+				{4555555556} \
+				{4555555556} \
+				{4555555556} \
+				{4555@===+3} \
+				{4555])~~'' \
+				{4555]) \
+				{4555]) \
+				{4555#, \
+				{o2223, \
+				 _____ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x","b"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":")", "chars":["c"], "angle":180},
+					{"code":",", "chars":["v"], "angle":180},
+					{"code":"_", "chars":["v"], "angle":270},
+					{"code":"~", "chars":["c"], "angle":270},
+					{"code":"'", "chars":["v"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"=", "chars":["x"]},
+					{"code":"+", "chars":["x"]},
+					{"code":"3", "chars":["x","b"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"#", "chars":["x"]},
+					{"code":"]", "chars":["x"]},
+					{"code":"7", "chars":["x","b"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x","b"]},
+					{"code":"@", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":11},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"tank_rounded_corner_external",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":180},
+					"2":{"fbx":"tank_wall_3_s1_observer_edge","angle":180},
+					"=":{"fbx":"tank_wall_3_s1_access_edge","angle":180},
+					"+":{"fbx":"tank_wall_3_s1_observer_joinright","angle":180},
+					"3":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":90},
+					"4":{"fbx":"tank_wall_3_s1_observer_edge","angle":270},
+					"5":{"fbx":"tank_wall_3_s1_center","angle":180},
+					"]":{"fbx":"tank_wall_3_s1_access_edge","angle":90},
+					"6":{"fbx":"tank_wall_3_s1_observer_edge","angle":90},
+					"#":{"fbx":"tank_wall_3_s1_observer_joinleft","angle":90},
+					"7":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":270},
+					"8":{"fbx":"tank_wall_3_s1_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":0},
+					"@":{"fbx":"tank_wall_3_s1_access_insidecorner","angle":90},
+					
+				},
+				"center":{"x":4.5,"z":4.5},
+				"guiScale":0.065,
+				"guiOffset":{"x":-17,"y":45}
+			}
+		},
+		
+		{
+			"id":"tank_rounded_corner_internal",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"4x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":9,"n":9},
+				"minSize":{"m":7,"n":7},
+				"removeRow":3,
+				"removeColumn":6,
+				"menuTag":"large"
+			},
+			"tank":{
+				"volumePerTile":6,
+				"accessHeight":2,
+				"isRounded":true,
+				"sunken":true
+			},
+			"paintable":{
+				"paintable":["tank_wall_3_s1_access_edge_theme","tank_wall_3_s1_access_access_corner_theme","tank_wall_3_s1_access_observer_corner_theme","tank_wall_3_s1_observer_access_corner_theme","tank_wall_3_s1_observer_edge_theme","tank_wall_3_s1_observer_joinleft_theme","tank_wall_3_s1_observer_joinright_theme","tank_wall_3_s1_observer_observer_corner_1_theme","tank_wall_3_s1_observer_observer_corner_2_theme","tank_wall_3_s1_observer_insidecorner_theme","tank_wall_3_s1_access_insidecorner_theme","tank_wall_3_s1_tunnel_entrance_theme","tank_wall_3_s1_tunnel_mid_theme"],
+				"paintableFloor":["2_floor_dark","2_floor_light"],
+				"paintCount":6,
+			},
+			"unlockable":{
+				"unlockedBy":"chicago"
+			},
+			"container":{
+				"useContainersForColliders":true,
+				"min":{"x":-0.4,"y":-0.6,"z":-0.4},
+				"max":{"x":4.4,"y":2.2,"z":9.4},
+				"dontScaleX":true,
+				"extra":[
+					{
+						"min":{"x":-0.4,"y":-0.6,"z":4.6},
+						"max":{"x":9.4,"y":2.2,"z":9.4},
+						"moveOriginZ":true
+					}
+				]
+			},
+			"map":{
+				"map":" \
+				 ::------:: \
+				(7+888888=9} \
+				(~555555556} \
+				{4555555556} \
+				{4555555556} \
+				{4555@22223} \
+				{45556:____ \
+				{45556} \
+				{45556} \
+				(#5556} \
+				(o2223} \
+				 _____ \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x","b"]},
+					{"code":"{", "chars":["c"], "angle":0},
+					{"code":"(", "chars":["v"], "angle":0},
+					{"code":"-", "chars":["c"], "angle":90},
+					{"code":":", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":":", "chars":["v"], "angle":180},
+					{"code":"_", "chars":["v"], "angle":270},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x","b"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"~", "chars":["x"]},
+					{"code":"#", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x","b"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"+", "chars":["x"]},
+					{"code":"=", "chars":["x"]},
+					{"code":"9", "chars":["x","b"]},
+					{"code":"@", "chars":["x"]}
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":11},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"tank_rounded_corner_internal",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":180},
+					"2":{"fbx":"tank_wall_3_s1_observer_edge","angle":180},
+					"3":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":90},
+					"4":{"fbx":"tank_wall_3_s1_access_edge","angle":270},
+					"~":{"fbx":"tank_wall_3_s1_observer_joinleft","angle":270},
+					"#":{"fbx":"tank_wall_3_s1_observer_joinright","angle":270},
+					"5":{"fbx":"tank_wall_3_s1_center","angle":180},
+					"6":{"fbx":"tank_wall_3_s1_observer_edge","angle":90},
+					"7":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":270},
+					"8":{"fbx":"tank_wall_3_s1_access_edge","angle":0},
+					"+":{"fbx":"tank_wall_3_s1_observer_joinright","angle":0},
+					"=":{"fbx":"tank_wall_3_s1_observer_joinleft","angle":0},
+					"9":{"fbx":"tank_wall_3_s1_observer_observer_corner_2","angle":0},
+					"@":{"fbx":"tank_wall_3_s1_observer_insidecorner","angle":90},
+					
+				},
+				"center":{"x":4.5,"z":4.5},
+				"guiScale":0.065,
+				"guiOffset":{"x":-17,"y":45}
+			}
+		},
+		
+		{
+			"id":"tank_mega",
+			"sound":{
+				"placeSound":"tank_place",
+				"loopSound":"4x2_tank_loop"
+			},
+			"tags":["tank"],
+			"hosting":{
+				"hostTags":["tank"],
+				"hostedOn":["floor"]
+			},
+			"multisize":{
+				"baseSize":{"m":20,"n":20},
+				"minSize":{"m":8,"n":8},
+				"removeRow":17,
+				"removeColumn":1,
+				"menuTag":"large"
+			},
+			"tank":{
+				"volumePerTile":7,
+				"accessHeight":3,
+				"isRounded":true,
+				"sunken":true
+			},
+			"paintable":{
+				"paintable":["tank_wall_4_s2_access_edge_theme","tank_wall_4_s2_access_access_corner_theme","tank_wall_4_s2_access_observer_corner_theme","tank_wall_4_s2_observer_access_corner_theme","tank_wall_4_s2_observer_edge_theme","tank_wall_4_s2_observer_joinleft_theme","tank_wall_4_s2_observer_joinright_theme","tank_wall_4_s2_observer_observer_corner_1_theme","tank_wall_4_s2_observer_observer_corner_2_theme","tank_wall_4_s2_observer_insidecorner_theme","tank_wall_4_s2_access_insidecorner_theme"],
+				"paintableFloor":["2_floor_dark","2_floor_light"],
+				"paintCount":7,
+			},
+			"unlockable":{
+				"number":1,
+				"type":"Science",
+				"availableLevel":12,
+				"category":"exhibit"
+			},
+			"container":{
+				"min":{"x":-0.4,"y":-1.3,"z":-0.4},
+				"max":{"x":19.4,"y":2.9,"z":19.4}
+			},
+			"map":{
+				"map":" \
+				    aaaaaaaaaaaaaaaaaaaaaa \
+				   aaaaaaaaaaaaaaaaaaaaaaaa \
+				  aaaaaaaaaaaaaaaaaaaaaaaaaa \
+				 aaaaaaaaaaaaaaaaaaaaaaaaaaaa \
+				aaaaa--------------------aaaaa \
+				aaaa{78888888888888888889}aaaa \
+				aaaa{:5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				    @[5555555555555555556}aaaa \
+				aaaa{,5555555555555555556}aaaa \
+				aaaa{o2222222222222222223}aaaa \
+				aaaaa____________________aaaaa \
+				 aaaaaaaaaaaaaaaaaaaaaaaaaaaa \
+				  aaaaaaaaaaaaaaaaaaaaaaaaaa \
+				   aaaaaaaaaaaaaaaaaaaaaaaa \
+				    aaaaaaaaaaaaaaaaaaaaaa \
+				",
+				"multiCodes":[
+					{"code":"o", "chars":["x","b"]},
+					{"code":"{", "chars":["v"], "angle":0},
+					{"code":"-", "chars":["v"], "angle":90},
+					{"code":"}", "chars":["v"], "angle":180},
+					{"code":"_", "chars":["v"], "angle":270},
+					{"code":"@", "chars":["c"], "angle":0},
+					{"code":"~", "chars":["c"], "angle":180},
+					{"code":"2", "chars":["x"]},
+					{"code":"3", "chars":["x","b"]},
+					{"code":"4", "chars":["x"]},
+					{"code":"5", "chars":["x"]},
+					{"code":"6", "chars":["x"]},
+					{"code":"7", "chars":["x","b"]},
+					{"code":"8", "chars":["x"]},
+					{"code":"9", "chars":["x","b"]},
+					{"code":":", "chars":["x"]},
+					{"code":"[", "chars":["x"]},
+					{"code":"]", "chars":["x"]},
+					{"code":",", "chars":["x"]},
+				]
+			},
+			"immobile":{
+				"rotatable":true,
+				"occupiesEdgeAswell":true
+			},
+			"attraction":{"limit1Visit":true,"range":13},
+			"pointGenerator":{},
+			"fbx":{
+				"name":"tank_mega_22_10_3",
+				"voCollection":"tanks",
+				"tileFbx":{
+					"o":{"fbx":"tank_wall_4_s2_observer_observer_corner_2","angle":180},
+					"2":{"fbx":"tank_wall_4_s2_observer_edge","angle":180},
+					"3":{"fbx":"tank_wall_4_s2_observer_observer_corner_2","angle":90},
+					"4":{"fbx":"tank_wall_4_s2_observer_edge","angle":270},
+					":":{"fbx":"tank_wall_4_s2_observer_joinleft","angle":270},
+					",":{"fbx":"tank_wall_4_s2_observer_joinright","angle":270},
+					"[":{"fbx":"tank_wall_4_s2_access_edge","angle":270},
+					"5":{"fbx":"tank_wall_4_s2_center","angle":180},
+					"6":{"fbx":"tank_wall_4_s2_observer_edge","angle":90},
+					"]":{"fbx":"tank_wall_4_s2_access_edge","angle":90},
+					"7":{"fbx":"tank_wall_4_s2_observer_observer_corner_2","angle":270},
+					"8":{"fbx":"tank_wall_4_s2_observer_edge","angle":0},
+					"9":{"fbx":"tank_wall_4_s2_observer_observer_corner_2","angle":0},
+				},
+				"center":{"x":9.5,"z":9.5},
+				"guiScale":0.03,
+				"guiOffset":{"x":8,"y":50}
+			}
+		},
+	]
+}

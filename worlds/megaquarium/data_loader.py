@@ -90,10 +90,19 @@ def load_equipment_from_json(db,dataname) -> None:
         db.add_equipment(equipment)
 
 
+def load_tanks_from_json(db,dataname) -> None:
+    data = load_json5_data(dataname)
+    for json_tanks in data["objects"]:
+        ident = db.get_id()
+        tanks = Tank(idNo=ident,gameId=json_tanks["id"])
+        db.add_tank(tank)
+
+
 
 MEGAQUARIUM_DB = MegaquariumDB()
 # load game data into database
 load_animals_from_json(MEGAQUARIUM_DB , "animals.data")
 load_food_sources_from_json(MEGAQUARIUM_DB, "fishFood.data")
 load_equipment_from_json(MEGAQUARIUM_DB, "equipment.data")
+load_equipment_from_json(MEGAQUARIUM_DB, "tanks.data")
 

@@ -14,8 +14,8 @@ from Options import (Choice, DeathLink, DefaultOnToggle, OptionSet, NamedRange, 
                      PerGameCommonOptions, OptionGroup, StartInventory)
 from BaseClasses import CollectionState, ItemClassification, Region
 from .data_loader import MEGAQUARIUM_DB
-from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition, UnlockableManager, MegaqScenario
-
+from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition, UnlockableManager, MegaqScenario, TankWithAnimalsCondition 
+import random
 
 class MegaquariumWebWorld(WebWorld):
     """
@@ -75,11 +75,18 @@ class MegaquariumWorld(World):
 
     def generate_early(self) -> None:
 
-        N_RANDOM_TANKS = 2
 
         for i in range(2,12):
             MEGAQUARIUM_DB.add_rank_objective(i)
 
+        random_animals = list(MEGAQUARIUM_DB.animals.keys())
+        random.shuffle(random_animals)
+        N_RANDOM_TANKS = min(len(random_animals), 100)
+        for i in range(N_RANDOM_TANKS):
+            target_animal = random_animals[i]
+            animal = MEGAQUARIUM_DB.animals[random_animals[i]]
+            condition = TankWithAnimalsCondition(items=[(animal,1)], filtered=False)
+            MEGAQUARIUM_DB.add_tank_objective(tankid=f"tank{i}",conditions=[condition])
         
 
     def create_regions(self) -> None:
@@ -89,9 +96,12 @@ class MegaquariumWorld(World):
         # regions = sections
         # regions = objectives
         menu_region = Region("Menu", self.player, self.multiworld)
-        for rank_obj in MEGAQUARIUM_DB.rank_objs.values():
-            menu_region.locations.append(rank_obj.to_location(self.player,menu_region))
+        
+        #for rank_obj in MEGAQUARIUM_DB.rank_objs.values():
+        #    menu_region.locations.append(rank_obj.to_location(self.player,menu_region))
 
+        for tank_obj in MEGAQUARIUM_DB.tank_objs.values():
+            menu_region.locations.append(tank_obj.to_location(self.player,menu_region))
 
         self.multiworld.regions.extend([menu_region])
 
@@ -117,19 +127,25 @@ class MegaquariumWorld(World):
 
 
         unlockables = UnlockableManager(excluded=[], available=[])
+        last_objective = None
         for loc in filter(lambda loc: loc.item.game == "Megaquarium" and loc.item.player == self.player, filled_locs):
             item = MEGAQUARIUM_DB.get_item_by_item_id(loc.item.name)
-            MEGAQUARIUM_DB.get_objective_by_location_id(loc.name).actions.append(UnlockItemAction(item))
-            unlockables.excluded.append(item)
+            objective = MEGAQUARIUM_DB.get_objective_by_location_id(loc.name)
+            objective.actions.append(UnlockItemAction(item))
+            lastObjective = objective
+            #unlockables.excluded.append(item)
 
 
-        obj = MegaqObjective(objectiveId="reachRankX",conditions=[ReachRankCondition(12)])
-        obj.conditions.append(ReachRankCondition(12))
+        #reachRankX
+        obj = MegaqObjective(objectiveId="tankWithXAnimal",conditions=[lastObjective.conditions[0]])
+        #obj.conditions.append(ReachRankCondition(12))
 
-        sec = Section(sectionId="mainSection", triggers=list(map(lambda x: x, MEGAQUARIUM_DB.rank_objs.values())), reward=AddMoneyAction(2000), doOnComplete=[], objectives=[obj])
+        #triggers = list(map(lambda x: x, MEGAQUARIUM_DB.rank_objs.values()))
+        #triggers = list(map(lambda x: x, MEGAQUARIUM_DB.tank_objs.values()))
+        sec = Section(sectionId="mainSection",  triggers=[], reward=lastObjective.actions[-1], doOnComplete=lastObjective.actions, objectives=[obj])
         sec.mainSection = True
         
-        campaign = MegaqScenario(startSection=sec, sections=[sec], unlockables=unlockables, startRank=1, money=10000)
+        campaign = MegaqScenario(startSection=sec, sections=[sec], unlockables=unlockables, startRank=10, money=10000)
 
         output_file = output_directory + os.path.sep + "archipelago_map.sav"
         campaign.write(output_file)

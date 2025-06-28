@@ -34,7 +34,8 @@ class TankRequirements(Enum):
 
 
 class MegaqCondition:
-    pass
+    gameId: str
+
 
 class MegaqAction:
     pass
@@ -84,14 +85,36 @@ class Equipment(MegaqItem):
     itemClass: ItemClassification = ItemClassification.filler
 
     
+@dataclass(kw_only=True)
+class Tank(MegaqItem):
+    itemClass: ItemClassification = ItemClassification.filler
+
+
 
 
 @dataclass
 class ReachRankCondition(MegaqCondition):
     rankNo: int
+    gameId: str = "reachRankX"
 
     def to_json(self):
         return {"rank": {"value": self.rankNo, "insert": True}}
+
+
+@dataclass
+class TankWithAnimalsCondition(MegaqCondition):
+    items: List[Tuple[MegaqItem, int]]
+    filtered: bool = False
+    gameId: str = "tankWithXAnimal"
+
+
+    def required_items():
+        return map(lambda x: x[0], self.items)
+
+    def to_json(self):
+        tankItems = list(map(lambda arg: {"id":arg[0].gameId,"quantity":arg[1]}, self.items))
+        return {"tank": {"hostsMany":tankItems, "insert":True, "filtered":self.filtered} }
+
 
 @dataclass
 class AddMoneyAction(MegaqAction):
@@ -113,7 +136,15 @@ class VisitLocationAction(MegaqAction):
     locationId: str
 
     def to_json(self):
-        return {"moveOnToSection": self.locationId}
+        return {"popupMessage": self.locationId}
+
+@dataclass 
+class MoveSectionAction(MegaqAction):
+    sectionId: str
+
+    def to_json(self):
+        return {"moveOnToSection": self.sectionId}
+
 
 @dataclass
 class MegaqTrigger:
@@ -164,6 +195,9 @@ class Section:
             "doOnComplete": list(map(lambda a: a.to_json(), self.doOnComplete))
         }
 
+'''
+Any scenario objectives involving excluded fish are automatically removed.
+'''
 @dataclass
 class UnlockableManager:
     excluded: List[MegaqItem]
@@ -194,7 +228,7 @@ class MegaqScenario:
 
         new_save["playerData"]["scenario"]["startSection"] = self.startSection.sectionId
         
-        new_save["playerData"]["scenario"]["unlockableManager"] = self.unlockables.to_json()
+        new_save["playerData"]["unlockableManager"] = self.unlockables.to_json()
 
         new_save["playerData"]["resources"]["money"] = self.money
         new_save["playerData"]["resources"]["rankNumber"] = self.startRank
@@ -211,6 +245,7 @@ class MegaquariumDB:
         self.animals = {}
         self.food_sources = {}
         self.equipment = {}
+        self.tanks = {}
         # goals that unlock items
         self.tank_objs= {}
         self.rank_objs= {}
@@ -222,7 +257,7 @@ class MegaquariumDB:
 
         self.loc_id_to_obj = {}
         self.item_id_to_item = {}
-
+        
         self._count = 1234
 
     def get_id(self):
@@ -241,12 +276,29 @@ class MegaquariumDB:
         self.loc_name_to_id[trigger.location] = trigger.idNo
         self.loc_id_to_obj[trigger.location] =  trigger
 
+    def add_tank_objective(self, tankid:str, conditions: List[MegaqCondition]) -> None:
+        idNo = self.get_id()
+        location_id = f"ALOC_TANK_{tankid}"
+        act = VisitLocationAction(location_id)
+        trigger = MegaqTrigger(idNo=idNo, location=location_id, conditions=conditions, actions=[act])
+        self.tank_objs[tankid] = trigger
+        self.location_groups["tanks"].append(trigger.location)
+        self.loc_name_to_id[trigger.location] = trigger.idNo
+        self.loc_id_to_obj[trigger.location] =  trigger
 
     def add_animal(self, animal: Animal) -> None:
         self.animals[animal.gameId] = animal
         self.item_groups["animals"].append(animal.to_item_id())
         self.item_name_to_id[animal.to_item_id()] = animal.idNo
         self.item_id_to_item[animal.to_item_id()] = animal  
+
+    def add_tank(self, tank: Tank) -> None:
+        self.food_sources[food_source.gameId] = tank
+    
+        self.item_groups["tank"].append(tank.to_item_id())
+        self.item_name_to_id[tank.to_item_id()] = tank.idNo
+        self.item_id_to_item[tank.to_item_id()] = tank 
+
 
     def add_food_source(self, food_source: Food) -> None:
         self.food_sources[food_source.gameId] = food_source
@@ -269,41 +321,19 @@ class MegaquariumDB:
     def get_item_by_item_id(self, itemid):
         return self.item_id_to_item.get(itemid, None)
 
- 
-    def get_item_groups(self):
-        items = {}
-        items["animals"] = []
-        for animal in self.animals:
-            items["animals"].append(animal.to_item())
-
-        items["equipment"] = []
-        for equipment in self.equipment:
-            items["equipment"].append(equipment.to_item())
-
-    def get_location_groups(self):
-
-        items["food_sources"] = []
-        for food_source in self.food_sources:
-            items["food_sources"].append(food_source.to_item())
 
 
     def all_items(self,player):
         for animal in self.animals.values():
             yield animal.to_item(player)
 
+        '''
         for equip in self.equipment.values():
             yield equip.to_item(player)
 
-    def all_locations(self,player):
-        for animal in self.animals.values():
-            yield animal.to_location(player)
-
-        for equip in self.equipment.values():
-            yield equip.to_location(player)
+        for tank in self.tanks.values():
+            yield tank.to_item(player)
 
         for food in self.food_sources.values():
-            yield food.to_location(player)
-
-
-
-
+            yield food.to_item(player)
+        '''
