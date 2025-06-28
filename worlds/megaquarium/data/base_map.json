@@ -24,52 +24,7 @@
       "campaign": "sandbox",
       "currentSections": [],
       "sections": [],
-      "globalTriggers": [
-        {
-          "conditions": [
-            {
-              "havePoints": {
-                "id": 2,
-                "quantity": 5
-              }
-            }
-          ],
-          "doOnTrigger": [
-            {
-              "moveOnToSection": "ALOC_0"
-            }
-          ]
-        },
-        {
-          "conditions": [
-            {
-              "havePoints": {
-                "quantity": 5
-              }
-            }
-          ],
-          "doOnTrigger": [
-            {
-              "moveOnToSection": "ALOC_1"
-            }
-          ]
-        },
-        {
-          "conditions": [
-            {
-              "havePoints": {
-                "id": 1,
-                "quantity": 5
-              }
-            }
-          ],
-          "doOnTrigger": [
-            {
-              "moveOnToSection": "ALOC_2"
-            }
-          ]
-        }
-      ]
+      "globalTriggers": []
     },
     "resources": {
       "money": 4000,
