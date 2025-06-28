@@ -14,7 +14,7 @@ from Options import (Choice, DeathLink, DefaultOnToggle, OptionSet, NamedRange, 
                      PerGameCommonOptions, OptionGroup, StartInventory)
 from BaseClasses import CollectionState, ItemClassification, Region
 from .data_loader import MEGAQUARIUM_DB, MEGAQUARIUM_BASE_MAP
-from .data import Section, ReachRank
+from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition
 
 
 class MegaquariumWebWorld(WebWorld):
@@ -74,9 +74,11 @@ class MegaquariumWorld(World):
         super(MegaquariumWorld, self).__init__(multiworld, player)
 
     def generate_early(self) -> None:
+
+        N_RANDOM_TANKS = 2
+
         for i in range(2,12):
-            idx = MEGAQUARIUM_DB.get_id()
-            MEGAQUARIUM_DB.add_rank_objective(ReachRank(idNo=idx, rankNo=i))
+            MEGAQUARIUM_DB.add_rank_objective(i)
 
         
 
@@ -111,11 +113,16 @@ class MegaquariumWorld(World):
 
         filled_locs = self.multiworld.get_filled_locations(self.player)
         precollected_items = self.multiworld.precollected_items[self.player]
-        print(filled_locs)
-        print(precollected_items)
+        for loc in filter(lambda loc: loc.item.game == "Megaquarium" and loc.item.player == self.player, filled_locs):
+            item = MEGAQUARIUM_DB.get_item_by_item_id(loc.item.name)
+            MEGAQUARIUM_DB.get_objective_by_location_id(loc.name).actions.append(UnlockItemAction(item))
 
-        sec = Section("mainSection", triggers=list(map(lambda x: x, MEGAQUARIUM_DB.rank_objs.values())))
 
+        obj = MegaqObjective(objectiveId="reachRankX",conditions=[ReachRankCondition(12)])
+        obj.conditions.append(ReachRankCondition(12))
+
+        sec = Section(sectionId="mainSection", triggers=list(map(lambda x: x, MEGAQUARIUM_DB.rank_objs.values())), reward=AddMoneyAction(2000), doOnComplete=[], objectives=[obj])
+        sec.mainSection = True
         new_save = dict(MEGAQUARIUM_BASE_MAP)
         new_save["playerData"]["scenario"]["sections"].append(sec.to_json())
         new_save["playerData"]["scenario"]["startSection"] = sec.sectionId

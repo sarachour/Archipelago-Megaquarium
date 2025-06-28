@@ -5,6 +5,7 @@ from enum import IntEnum, Enum
 import pkgutil
 import pkg_resources
 import json5 
+from dataclasses import dataclass
 
 #from BaseClasses import ItemClassification
 from BaseClasses import Location, Entrance, Item, ItemClassification
@@ -59,7 +60,7 @@ class Animal(AnimalData):
         return True
 
     def to_item_id(self)-> str:
-        return f"AITEM_FISH_{self.gameId}"
+        return f"AITEM_{self.gameId}"
 
     def to_item(self,player) -> Item:
         return MegaquariumItem(name=self.to_item_id(), classification=ItemClassification.filler, code=self.idNo, player=player)
@@ -73,7 +74,7 @@ class FoodData(NamedTuple):
 class Food(FoodData):
 
     def to_item_id(self)-> str:
-        return f"AITEM_FOOD_{self.gameId}"
+        return f"AITEM_{self.gameId}"
 
     def to_item(self,player) -> Location:
         return MegaquariumItem(name=self.to_item_id(), classification=ItemClassification.filler, code=self.idNo, player=player)
@@ -88,65 +89,99 @@ class EquipmentData(NamedTuple):
 class Equipment(EquipmentData):
 
     def to_item_id(self)-> str:
-        return f"AITEM_EQUIP_{self.gameId}"
+        return f"AITEM_{self.gameId}"
 
-    def to_location(self,player) -> Location:
+    def to_location(self,player,) -> Location:
         return MegaquariumLocation(name=self.to_location_id(), player=player)
 
     def to_item(self,player) -> Item:
         return MegaquariumItem(name=self.to_item_id(), classification=ItemClassification.filler, code=self.idNo, player=player)
 
 
-class ReachRankData(NamedTuple):
-    idNo: int
+class MegaqCondition:
+    pass
+
+class MegaqAction:
+    pass
+
+
+@dataclass
+class ReachRankCondition(MegaqCondition):
     rankNo: int
 
+    def to_json(self):
+        return {"rank": {"value": self.rankNo, "insert": True}}
 
-class ReachRank(ReachRankData):
-    def to_location_id(self)-> str:
-        return f"ALOC_RANK_{self.rankNo}"
+@dataclass
+class AddMoneyAction(MegaqAction):
+    amount: str
 
-    def to_location(self,player,region) -> Location:
-        return MegaquariumLocation(name=self.to_location_id(), player=player, parent=region)
+    def to_json(self):
+        return {"money": self.amount}
+
+
+@dataclass
+class UnlockItemAction(MegaqAction):
+    item: str
+
+    def to_json(self):
+        return {"unlock": self.item.gameId}
+
+@dataclass 
+class VisitLocationAction(MegaqAction):
+    locationId: str
+
+    def to_json(self):
+        return {"moveOnToSection": self.locationId}
+
+@dataclass
+class MegaqTrigger:
+    idNo: int
+    location: str 
+    conditions: List[MegaqCondition]
+    actions: List[MegaqAction]
+
+    def to_json(self):
+        conds_json = list(map(lambda c: c.to_json(), self.conditions))
+        acts_json = list(map(lambda c: c.to_json(), self.actions))
+        return {
+            "conditions": conds_json,
+            "doOnTrigger": acts_json
+        }
+
+    def to_location(self, player, region) -> Location:
+        return MegaquariumLocation(name=self.location, player=player, parent=region)
+
+@dataclass
+class MegaqObjective:
+    objectiveId: str
+    conditions: List[MegaqCondition]
+    
 
     def to_json(self):
         return {
-            "conditions":[
-                {"rank":{"value":self.rankNo,"insert":True}}
-            ],
-            "doOnTrigger":[{"moveOnToSection":self.to_location_id()}],
+            "id": self.objectiveId,
+            "conditions": list(map(lambda c: c.to_json(), self.conditions))
         }
 
-
-class SectionData(NamedTuple):
+@dataclass
+class Section:
     sectionId: str
-    triggers: FrozenSet[NamedTuple]
-
-
-class  Section(SectionData):
-
+    triggers: List[MegaqTrigger]
+    reward: MegaqAction 
+    doOnComplete: List[MegaqAction]
+    objectives: List[MegaqObjective]
+    mainSection: bool = True
 
     def to_json(self):
-        triggers_json = []
-        for trig in self.triggers:
-            triggers_json.append(trig.to_json())
-
-        return {	
-			"sectionId":self.sectionId,
-			"reward":{"money":10000},
-			"mainSection":True,
-			"doOnStart":[],
-			"objectives":[
-				{
-					"id":"reachRankX",
-					"conditions":[
-						{"rank":{"value":12,"insert":True}}
-					]
-				},
-			],
-			"triggers":triggers_json,
-            "doOnComplete":[{"money":10000}]	
-		}
+        return {
+            "sectionId": self.sectionId,
+            "reward": self.reward.to_json(),
+            "mainSection": self.mainSection,
+            "objectives": list(map(lambda o: o.to_json(), self.objectives)),
+            "triggers": list(map(lambda t: t.to_json(), self.triggers)),
+            "doOnComplete": list(map(lambda a: a.to_json(), self.doOnComplete))
+        }
 
 
 
@@ -164,6 +199,10 @@ class MegaquariumDB:
         self.location_groups = {"tanks":[], "ranks": []}
         self.item_name_to_id = {}
         self.loc_name_to_id = {}
+
+        self.loc_id_to_obj = {}
+        self.item_id_to_item = {}
+
         self._count = 1234
 
     def get_id(self):
@@ -171,22 +210,30 @@ class MegaquariumDB:
         self._count += 1
         return ident 
 
-    def add_rank_objective(self, rank: ReachRank) -> None:
-        self.rank_objs[rank.rankNo] = rank
-        self.location_groups["ranks"].append(rank.to_location_id())
-        self.loc_name_to_id[rank.to_location_id()] = rank.idNo
+    def add_rank_objective(self, rank: int) -> None:
+        idNo = self.get_id()
+        location_id = f"ALOC_RANK_{rank}"
+        cond = ReachRankCondition(rank)
+        act = VisitLocationAction(location_id)
+        trigger = MegaqTrigger(idNo=idNo, location=location_id, conditions=[cond], actions=[act])
+        self.rank_objs[cond.rankNo] = trigger 
+        self.location_groups["ranks"].append(trigger.location)
+        self.loc_name_to_id[trigger.location] = trigger.idNo
+        self.loc_id_to_obj[trigger.location] =  trigger
 
 
     def add_animal(self, animal: AnimalData) -> None:
         self.animals[animal.gameId] = animal
         self.item_groups["animals"].append(animal.to_item_id())
         self.item_name_to_id[animal.to_item_id()] = animal.idNo
+        self.item_id_to_item[animal.to_item_id()] = animal  
 
     def add_food_source(self, food_source: FoodData) -> None:
         self.food_sources[food_source.gameId] = food_source
     
         self.item_groups["food_sources"].append(food_source.to_item_id())
         self.item_name_to_id[food_source.to_item_id()] = food_source.idNo
+        self.item_id_to_item[food_source.to_item_id()] = food_source 
 
 
     def add_equipment(self, equipment: EquipmentData) -> None:
@@ -194,8 +241,15 @@ class MegaquariumDB:
         
         self.item_groups["equipment"].append(equipment.to_item_id())
         self.item_name_to_id[equipment.to_item_id()] = equipment.idNo
+        self.item_id_to_item[equipment.to_item_id()] = equipment
 
+    def get_objective_by_location_id(self, locid):
+        return self.loc_id_to_obj.get(locid, None)
 
+    def get_item_by_item_id(self, itemid):
+        return self.item_id_to_item.get(itemid, None)
+
+ 
     def get_item_groups(self):
         items = {}
         items["animals"] = []
