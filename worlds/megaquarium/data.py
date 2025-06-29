@@ -1,5 +1,5 @@
 
-from typing import Dict, List, NamedTuple, Optional, Set, FrozenSet, Tuple, Any, Union
+from typing import Dict, List, NamedTuple, Optional, Set, FrozenSet, Tuple, Any, Union 
 from enum import IntEnum, Enum
 import pkgutil
 import pkg_resources
@@ -17,8 +17,9 @@ class MegaquariumItem(Item):
     game = "Megaquarium"
 
 
-class FishRequirements(Enum):
+class Requirements(Enum):
     is_tropical = "is_tropical"
+    is_coldwater = "is_coldwater"
     dislikes_lights = "dislikes_lights"
     dislikes_congeners = "dislikes_congeners"
     dislikes_conspecifics = "dislikes_conspecifics"
@@ -27,11 +28,14 @@ class FishRequirements(Enum):
     eats_fish = "eats_fish"
     eats_crustaceans = "eats_crustaceans"
 
-class TankRequirements(Enum):
     likes_caves = "likes_caves"
     likes_rocks = "likes_rocks"
     likes_plants = "likes_plants"
+    tank_rounded_corners = "tank_rounded_corners"
+    tank_kriesel = "tank_kriesel"
 
+class PointsType(Enum):
+    prestige = "Prestige"
 
 class MegaqCondition:
     gameId: str
@@ -61,10 +65,11 @@ class Animal(MegaqItem):
     waterQuality: int
     defaultUnlocked: bool
     size: int
-    fishRequirements: FrozenSet[str]
-    tankRequirements: FrozenSet[str]
+    requirements: FrozenSet[str]
     itemClass: ItemClassification = ItemClassification.filler 
-
+    num_rocks: int = 0
+    num_plants: int = 0
+    num_caves: int = 0
 
     def compatible(self, other) -> bool:
         if FishRequirements.wimp in self.fishRequirements and FishRequirements.bully in other.fishRequirements:
@@ -83,14 +88,51 @@ class Food(MegaqItem):
 @dataclass(kw_only=True)
 class Equipment(MegaqItem):
     itemClass: ItemClassification = ItemClassification.filler
+    rank: int 
+    autoUnlock : bool = False
+    chilling: Optional[int] = False
+    heating: Optional[int] = False
+    filtering: Optional[int] = False
+    skimming: Optional[int] = False
+    light: Optional[int] = False
+    nitrateReacting: Optional[int] = False
+    uvSterilizing: Optional[int] = False
+    chilling: Optional[int] = False
+    isPump:bool = True
 
-    
+
 @dataclass(kw_only=True)
 class Tank(MegaqItem):
     itemClass: ItemClassification = ItemClassification.filler
+    rank : int
+    volumePerTile: float
+    hasRoundedCorners : bool = False
+    isKriesel: bool = False
+    autoUnlock: bool = False
+    unlockTag: Optional[str] = None
+
+class AnimalFilter:
+    # filter by genus
+    genus: str = None
+    # filter by what it eats
+    eats: str = None
+    # filter by shoaler
+    shoaler: bool = False
+    # different species
+    numSpecies: int = None
 
 
-
+    def to_json(self):
+        obj = {}
+        obj["tag"] = "animal" if self.genus is None else self.genus
+        if not self.numSpecies is None:
+            obj["differentSpec"] = True 
+            obj["quantity"] = self.numSpecies if self.numSpecies is not None else 1
+        if not self.eats is None:
+            obj["eats"] = self.eats
+        if self.shoaler:
+            obj["shoaler"] = True
+        return obj
 
 @dataclass
 class ReachRankCondition(MegaqCondition):
@@ -101,10 +143,21 @@ class ReachRankCondition(MegaqCondition):
         return {"rank": {"value": self.rankNo, "insert": True}}
 
 
+class HavePointsCondition(MegaqCondition):
+    points: PointsType
+    amount: int
+
+    def to_json(self):
+        return {"havePoints": {"id": self.points.name, "quantity": self.amount}}
+
+
 @dataclass
 class TankWithAnimalsCondition(MegaqCondition):
-    items: List[Tuple[MegaqItem, int]]
+    # specific item or fish, or a tag
+    items: List[Tuple[Union[MegaqItem, AnimalFilter], int]]
     filtered: bool = False
+    heated: bool = False
+    timer: Optional[int] = None
     gameId: str = "tankWithXAnimal"
 
 
@@ -112,7 +165,13 @@ class TankWithAnimalsCondition(MegaqCondition):
         return map(lambda x: x[0], self.items)
 
     def to_json(self):
-        tankItems = list(map(lambda arg: {"id":arg[0].gameId,"quantity":arg[1]}, self.items))
+        def convert_item(arg):
+            if isinstance(arg[0], AnimalFilter):
+                return arg[0].to_json()
+            else:
+                return {"id": arg[0].gameId, "quantity": arg[1]}
+
+        tankItems = list(map(lambda arg: convert_item(arg), self.items))
         return {"tank": {"hostsMany":tankItems, "insert":True, "filtered":self.filtered} }
 
 
@@ -175,6 +234,28 @@ class MegaqObjective:
             "id": self.objectiveId,
             "conditions": list(map(lambda c: c.to_json(), self.conditions))
         }
+
+@dataclass
+class SideObjectiveStartAction(MegaqAction):
+    sideSectionId: str
+
+    def to_json(self):
+        #{"sideObjectiveAvailable":self.sideSectionId}
+        {"sideObjectiveStart":self.sideSectionId}
+
+class SponsoredExhibitQuest:
+    pass
+
+
+class TradeQuest:
+    want : List[MegaqItem]
+    give : List[MegaqItem]
+
+
+
+    pass
+
+
 
 @dataclass
 class Section:
@@ -250,7 +331,7 @@ class MegaquariumDB:
         self.tank_objs= {}
         self.rank_objs= {}
 
-        self.item_groups = {"animals":[], "equipment": [], "food_sources": []}
+        self.item_groups = {"animals":[], "equipment": [], "food_sources": [], "tanks": []}
         self.location_groups = {"tanks":[], "ranks": []}
         self.item_name_to_id = {}
         self.loc_name_to_id = {}
@@ -259,6 +340,12 @@ class MegaquariumDB:
         self.item_id_to_item = {}
         
         self._count = 1234
+
+    def num_items(self):
+        return len(list(self.item_id_to_item.keys()))
+
+    def num_locations(self):
+        return len(list(self.loc_id_to_obj.keys()))
 
     def get_id(self):
         ident = self._count
@@ -293,15 +380,16 @@ class MegaquariumDB:
         self.item_id_to_item[animal.to_item_id()] = animal  
 
     def add_tank(self, tank: Tank) -> None:
-        self.food_sources[food_source.gameId] = tank
+        self.tanks[tank.gameId] = tank
     
-        self.item_groups["tank"].append(tank.to_item_id())
+        self.item_groups["tanks"].append(tank.to_item_id())
         self.item_name_to_id[tank.to_item_id()] = tank.idNo
         self.item_id_to_item[tank.to_item_id()] = tank 
 
 
     def add_food_source(self, food_source: Food) -> None:
-        self.food_sources[food_source.gameId] = food_source
+        assert(not food_source.food in self.food_sources), f"Food source {food_source.food} already exists in database"
+        self.food_sources[food_source.food] = food_source
     
         self.item_groups["food_sources"].append(food_source.to_item_id())
         self.item_name_to_id[food_source.to_item_id()] = food_source.idNo
@@ -327,7 +415,6 @@ class MegaquariumDB:
         for animal in self.animals.values():
             yield animal.to_item(player)
 
-        '''
         for equip in self.equipment.values():
             yield equip.to_item(player)
 
@@ -336,4 +423,17 @@ class MegaquariumDB:
 
         for food in self.food_sources.values():
             yield food.to_item(player)
-        '''
+
+    def get_equipment(self,filterfn):
+        if filterfn is None:
+            return self.equipment.values()
+        else:
+            return filter(lambda e: filterfn(e), self.equipment.values())
+
+
+
+    def get_tanks(self,filterfn):
+        if filterfn is None:
+            return self.tanks.values()
+        else:
+            return filter(lambda e: filterfn(e), self.tanks.values())
