@@ -42,6 +42,8 @@ def add_objective_ruleset(db,world, conditions,location):
                     for req in get_animal_requirements(db,item):
                         required_items.append(req)
 
+        else:
+            print("condition: {cond}")
 
     print(location, required_items) 
     set_rule(location, lambda state: state.has_all(required_items, world.player))

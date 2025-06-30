@@ -14,9 +14,10 @@ from Options import (Choice, DeathLink, DefaultOnToggle, OptionSet, NamedRange, 
                      PerGameCommonOptions, OptionGroup, StartInventory)
 from BaseClasses import CollectionState, ItemClassification, Region
 from .data_loader import MEGAQUARIUM_DB
-from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition, UnlockableManager, MegaqScenario, TankWithAnimalsCondition, MegaquariumLocation, MoveSectionAction 
+from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition, UnlockableManager, MegaqScenario, TankWithAnimalsCondition, MegaquariumLocation, MoveSectionAction, SideObjectiveAvailableAction 
 import random
 
+from .randomizer import random_tank
 from .rules import set_rules 
 
 class MegaquariumWebWorld(WebWorld):
@@ -67,51 +68,44 @@ class MegaquariumWorld(World):
 
     def __init__(self, multiworld, player):
         super(MegaquariumWorld, self).__init__(multiworld, player)
-        self.FREE_ITEMS = 30
 
     def generate_early(self) -> None:
-
-
-        for i in range(2,12):
-            MEGAQUARIUM_DB.add_rank_objective(i)
-
-        random_animals = list(MEGAQUARIUM_DB.animals.keys())
-        random.shuffle(random_animals)
-
-        N_RANDOM_TANKS =  150 - self.FREE_ITEMS
+        self.unlocked_items_per_rank = 8
+        self.min_rank = 1 
+        self.max_rank = 3 
+        N_RANDOM_TANKS =  150 - self.unlocked_items_per_rank*(self.max_rank-self.min_rank + 1) - 109
         for i in range(N_RANDOM_TANKS):
-            target_animal = random_animals[i % len(random_animals)]
-            animal = MEGAQUARIUM_DB.animals[target_animal]
-            condition = TankWithAnimalsCondition(items=[(animal,1)], filtered=False)
-            MEGAQUARIUM_DB.add_tank_objective(tankid=f"tank{i}",conditions=[condition])
+            rank = random.randint(self.min_rank, self.max_rank)
+            new_tank = random_tank(MEGAQUARIUM_DB, max_rank=rank)
+            MEGAQUARIUM_DB.add_tank_objective(tankid=f"tank{i}",rank=rank,conditions=[new_tank])
         
 
     def create_regions(self) -> None:
-        num_regions = 2
-        num_locations = 2
         # locations = tanks built with requirement, rank ups, full_grown_fish
         # regions = sections
         # regions = objectives
         menu_region = Region("Menu", self.player, self.multiworld)
-        
+        min_rank, max_rank = 1,3
+        rank_regions = {}
+        for i in range(self.min_rank,self.max_rank+1):
+            rank_regions[i] = Region(f"Rank {i}", self.player, self.multiworld)
+            for idx in range(self.unlocked_items_per_rank):
+                free_item = MegaquariumLocation(self.player, f"FreeItem_R{i}_{idx}", None, rank_regions[i])
+                rank_regions[i].locations.append(free_item)
+
         #for rank_obj in MEGAQUARIUM_DB.rank_objs.values():
         #    menu_region.locations.append(rank_obj.to_location(self.player,menu_region))
 
         for tank_obj in MEGAQUARIUM_DB.tank_objs.values():
-            menu_region.locations.append(tank_obj.to_location(self.player,menu_region))
+            region = rank_regions[tank_obj.rank]
+            region.locations.append(tank_obj.to_location(self.player,region))
 
 
-        # 
-        N_FREE_LOCS = self.FREE_ITEMS
-        print(f"number of free locations: {N_FREE_LOCS}")
-        for idx in range(N_FREE_LOCS):
-            freeItem = MegaquariumLocation(self.player, f"FreeItem_{idx}", None, menu_region)
-            menu_region.locations.append(freeItem)
-
-        self.multiworld.regions.extend([menu_region])
+        self.multiworld.regions.extend([menu_region] + list(rank_regions.values()))
 
     def create_items(self) -> None:
-        self.item_pool =  MEGAQUARIUM_DB.all_items(self.player)
+        self.item_pool =  map(lambda it: it.to_item(self.player), 
+            MEGAQUARIUM_DB.get_items(lambda it: it.rank is None or it.rank <= self.max_rank))
         self.multiworld.itempool += self.item_pool 
 
 
@@ -131,6 +125,10 @@ class MegaquariumWorld(World):
 
         unlockables = UnlockableManager(excluded=[], available=[])
         last_objective = None
+        sectionsByRank = {}
+        for i in range(self.min_rank, self.max_rank + 1):
+            sectionsByRank[i] = []
+
         sections = []
         for idx,loc in enumerate(filter(lambda loc: loc.item.game == "Megaquarium" and loc.item.player == self.player, filled_locs)):
             if "FreeItem" in loc.name:
@@ -142,19 +140,33 @@ class MegaquariumWorld(World):
 
                 objective = MEGAQUARIUM_DB.get_objective_by_location_id(loc.name)
                 objective.actions.append(unlockedItem)
-                objective.actions.append(MoveSectionAction(f"section{idx+1}"))
+                #objective.actions.append(MoveSectionAction(f"section{idx+1}"))
                 obj = MegaqObjective(objectiveId="tankWithXAnimal",conditions=[objective.conditions[0]])
-                sec = Section(sectionId=f"section{idx}", triggers=[], reward=unlockedItem, doOnComplete=objective.actions, objectives=[obj])
-                sec.mainSection = True
+                sec = Section(sectionId=f"section{idx}", triggers=[], reward=unlockedItem, doOnStart=[], doOnComplete=objective.actions, objectives=[obj])
+                sectionsByRank[objective.rank].append(sec)
+                unlockables.excluded.append(item)
                 sections.append(sec)
 
+        prevPrimary = None
+        for i,secs in sectionsByRank.items():
+            if len(secs) > 1:
+                secs[0].mainSection = True
+
+                otherSecs = []
+                for sec in secs[1:]:
+                    sec.mainSection = False
+                    secs[0].doOnStart.append(SideObjectiveAvailableAction(sec.sectionId))
+
+                if prevPrimary is not None:
+                    secs[0].doOnComplete.append(MoveSectionAction(prevPrimary.sectionId)) 
+
+                prevPrimary = secs[0] 
+
                 # make this fish not unlockable via research
-                unlockables.excluded.append(item)
 
 
         #reachRankX
-        sections[0].mainSection = True
-        campaign = MegaqScenario(startSection=sections[0], sections=sections, unlockables=unlockables, startRank=10, money=10000)
+        campaign = MegaqScenario(startSection=sections[0], sections=sections, unlockables=unlockables, startRank=self.min_rank, money=10000)
 
         output_file = output_directory + os.path.sep + "archipelago_map.sav"
         campaign.write(output_file)

@@ -71,19 +71,35 @@ class Animal(MegaqItem):
     num_plants: int = 0
     num_caves: int = 0
 
-    def compatible(self, other) -> bool:
-        if FishRequirements.wimp in self.fishRequirements and FishRequirements.bully in other.fishRequirements:
+    def _compatible_with(self, other) -> bool:
+        if Requirements.is_tropical in self.requirements and not Requirements.is_tropical in other.requirements:
             return False
 
-        if FishRequirements.dislikes_congeners in self.fishRequirements and other.genus == self.genus:
+        if Requirements.is_coldwater in self.requirements and not Requirements.is_coldwater in other.requirements:
+            return False
+
+        if Requirements.wimp in self.requirements and Requirements.bully in other.requirements:
+            return False
+
+        if Requirements.dislikes_congeners in self.requirements and other.genus == self.genus:
+            return False
+        
+        if Requirements.dislikes_conspecifics in self.requirements and other.gameId == self.gameId:
             return False
 
         return True
+
+    def compatible_with(self,other) -> bool:
+        if isinstance(other, Animal):
+            return self._compatible_with(other)
+        else:
+            return all(map(lambda x: self._compatible_with(x), other))
 
 @dataclass(kw_only=True)
 class Food(MegaqItem):
     food: str
     itemClass: ItemClassification = ItemClassification.filler
+    rank: int = 0
 
 @dataclass(kw_only=True)
 class Equipment(MegaqItem):
@@ -211,6 +227,7 @@ class MegaqTrigger:
     location: str 
     conditions: List[MegaqCondition]
     actions: List[MegaqAction]
+    rank: int
 
     def to_json(self):
         conds_json = list(map(lambda c: c.to_json(), self.conditions))
@@ -236,12 +253,21 @@ class MegaqObjective:
         }
 
 @dataclass
+class SideObjectiveAvailableAction(MegaqAction):
+    sideSectionId: str
+
+    def to_json(self):
+        #{"sideObjectiveAvailable":self.sideSectionId}
+        return {"sideObjectiveAvailable":self.sideSectionId}
+
+
+@dataclass
 class SideObjectiveStartAction(MegaqAction):
     sideSectionId: str
 
     def to_json(self):
         #{"sideObjectiveAvailable":self.sideSectionId}
-        {"sideObjectiveStart":self.sideSectionId}
+        return {"sideObjectiveStart":self.sideSectionId}
 
 class SponsoredExhibitQuest:
     pass
@@ -263,6 +289,7 @@ class Section:
     triggers: List[MegaqTrigger]
     reward: MegaqAction 
     doOnComplete: List[MegaqAction]
+    doOnStart: List[MegaqAction]
     objectives: List[MegaqObjective]
     mainSection: bool = True
 
@@ -273,7 +300,8 @@ class Section:
             "mainSection": self.mainSection,
             "objectives": list(map(lambda o: o.to_json(), self.objectives)),
             "triggers": list(map(lambda t: t.to_json(), self.triggers)),
-            "doOnComplete": list(map(lambda a: a.to_json(), self.doOnComplete))
+            "doOnComplete": list(map(lambda a: a.to_json(), self.doOnComplete)),
+            "doOnStart": list(map(lambda a: a.to_json(), self.doOnStart))
         }
 
 '''
@@ -352,22 +380,12 @@ class MegaquariumDB:
         self._count += 1
         return ident 
 
-    def add_rank_objective(self, rank: int) -> None:
+    def add_tank_objective(self, tankid:str, rank: int, conditions: List[MegaqCondition]) -> None:
         idNo = self.get_id()
-        location_id = f"ALOC_RANK_{rank}"
-        cond = ReachRankCondition(rank)
+        # TODO: objective, not trigger
+        location_id = f"ALOC_TANK_{rank}_{tankid}"
         act = VisitLocationAction(location_id)
-        trigger = MegaqTrigger(idNo=idNo, location=location_id, conditions=[cond], actions=[act])
-        self.rank_objs[cond.rankNo] = trigger 
-        self.location_groups["ranks"].append(trigger.location)
-        self.loc_name_to_id[trigger.location] = trigger.idNo
-        self.loc_id_to_obj[trigger.location] =  trigger
-
-    def add_tank_objective(self, tankid:str, conditions: List[MegaqCondition]) -> None:
-        idNo = self.get_id()
-        location_id = f"ALOC_TANK_{tankid}"
-        act = VisitLocationAction(location_id)
-        trigger = MegaqTrigger(idNo=idNo, location=location_id, conditions=conditions, actions=[act])
+        trigger = MegaqTrigger(idNo=idNo, location=location_id, conditions=conditions+[ReachRankCondition(rank)], rank=rank,  actions=[act])
         self.tank_objs[tankid] = trigger
         self.location_groups["tanks"].append(trigger.location)
         self.loc_name_to_id[trigger.location] = trigger.idNo
@@ -411,18 +429,24 @@ class MegaquariumDB:
 
 
 
-    def all_items(self,player):
+    def all_items(self):
         for animal in self.animals.values():
-            yield animal.to_item(player)
+            yield animal
 
         for equip in self.equipment.values():
-            yield equip.to_item(player)
+            yield equip
 
         for tank in self.tanks.values():
-            yield tank.to_item(player)
+            yield tank
 
         for food in self.food_sources.values():
-            yield food.to_item(player)
+            yield food
+
+    def get_items(self,filterfn):
+        if not filterfn is None:
+            return filter(lambda it: filterfn(it), self.all_items())
+        else:
+            return self.all_items()
 
     def get_equipment(self,filterfn):
         if filterfn is None:
@@ -437,3 +461,9 @@ class MegaquariumDB:
             return self.tanks.values()
         else:
             return filter(lambda e: filterfn(e), self.tanks.values())
+
+    def get_animals(self, filterfn):
+        if filterfn is None:
+            return self.animals.values()
+        else:
+            return filter(lambda e: filterfn(e), self.animals.values())
