@@ -7,14 +7,14 @@ import pkg_resources
 import json5 
 
 from .data import MegaquariumDB, Requirements, Animal, Food, Equipment, Tank
-from .utils import load_json5_data
+from .utils import load_json5_data,load_strings_from_locale_file
 
 def existsOrTrue(dicti, field):
     if field in dicti:
         return dicti[field]
     return False
 
-def load_animals_from_json(db,dataname) -> None:
+def load_animals_from_json(db,stringdata,stringdataLatin,dataname) -> None:
     data = load_json5_data(dataname)
     for json_animal in data["objects"]:
         json_animal_stats = json_animal["animal"]["stats"]
@@ -63,6 +63,10 @@ def load_animals_from_json(db,dataname) -> None:
 
         ident = db.get_id()
         animal = Animal(idNo=ident, gameId=json_animal["id"], \
+            name=stringdata[json_animal["id"]], \
+            description=stringdata["%s.desc" % json_animal["id"]], \
+            namePlural=stringdata["%s.pl" % json_animal["id"]], \
+            nameLatin=stringdataLatin["%s.latin" % json_animal["id"]], \
             rank=json_animal["unlockable"]["availableLevel"], \
             food=json_animal["animal"]["stats"]["eats"]["item"] if "eats" in json_animal["animal"]["stats"] else None, \
             waterQuality=json_animal["animal"]["stats"]["waterQuality"]["value"], 
@@ -78,17 +82,22 @@ def load_animals_from_json(db,dataname) -> None:
 
 
 
-def load_food_sources_from_json(db,dataname) -> None:
+def load_food_sources_from_json(db,locale_strings, dataname) -> None:
     data = load_json5_data(dataname)
     for json_food in data["objects"]:
         if not "foodDispenser" in json_food["tags"]:
             continue
         
         ident = db.get_id()
-        food = Food(idNo=ident, gameId=json_food["id"],  food=json_food["itemBox"]["items"][0])
+        food = Food(idNo=ident, 
+            name=locale_strings[json_food["id"]], 
+            description=locale_strings["%s.desc" % json_food["id"]], \
+            foodName=locale_strings[json_food["itemBox"]["items"][0]], 
+            gameId=json_food["id"],  
+            food=json_food["itemBox"]["items"][0])
         db.add_food_source(food)
 
-def load_equipment_from_json(db,dataname) -> None:
+def load_equipment_from_json(db,locale_strings,dataname) -> None:
     data = load_json5_data(dataname)
     for json_equipment in data["objects"]:
         ident = db.get_id()
@@ -112,6 +121,8 @@ def load_equipment_from_json(db,dataname) -> None:
 
         equipment = Equipment(idNo=ident, 
             gameId=json_equipment["id"],
+            name=locale_strings[json_equipment["id"]],
+            description=locale_strings["%s.desc" % json_equipment["id"]], \
             rank=json_equipment["unlockable"]["availableLevel"],    
             autoUnlock=existsOrTrue(json_equipment["unlockable"], "autoUnlock"), 
             heating=heating_score, filtering=filter_score,skimming=skimming_score, 
@@ -120,11 +131,13 @@ def load_equipment_from_json(db,dataname) -> None:
 
         db.add_equipment(equipment)
 
-def load_tanks_from_json(db,dataname) -> None:
+def load_tanks_from_json(db,locale_strings,dataname) -> None:
     data = load_json5_data(dataname)
     for json_tank in data["objects"]:
         ident = db.get_id()
-        tank = Tank(idNo=ident,gameId=json_tank["id"], 
+        tank = Tank(idNo=ident,gameId=json_tank["id"],
+            name=locale_strings[json_tank["id"]],
+            description=locale_strings["%s.desc" % json_tank["id"]], \
             volumePerTile=json_tank["tank"]["volumePerTile"],
             autoUnlock=existsOrTrue(json_tank["unlockable"], "autoUnlock"),
             rank=json_tank["unlockable"]["availableLevel"] if "availableLevel" in json_tank["unlockable"] else None,
@@ -137,8 +150,20 @@ def load_tanks_from_json(db,dataname) -> None:
 
 MEGAQUARIUM_DB = MegaquariumDB()
 # load game data into database
-load_animals_from_json(MEGAQUARIUM_DB , "animals.data")
-load_food_sources_from_json(MEGAQUARIUM_DB, "fishFood.data")
-load_equipment_from_json(MEGAQUARIUM_DB, "equipment.data")
-load_tanks_from_json(MEGAQUARIUM_DB, "tanks.data")
+
+
+
+animals_strings = load_strings_from_locale_file("animals.json")
+animalsLatin_strings = load_strings_from_locale_file("animalsLatin.json")
+load_animals_from_json(MEGAQUARIUM_DB , animals_strings, animalsLatin_strings, "animals.data")
+
+
+fishfood_strings = load_strings_from_locale_file("fishFood.json")
+load_food_sources_from_json(MEGAQUARIUM_DB, fishfood_strings, "fishFood.data")
+
+equipment_strings = load_strings_from_locale_file("equipment.json")
+load_equipment_from_json(MEGAQUARIUM_DB, equipment_strings, "equipment.data")
+
+tank_strings = load_strings_from_locale_file("tanks.json")
+load_tanks_from_json(MEGAQUARIUM_DB, tank_strings,"tanks.data")
 

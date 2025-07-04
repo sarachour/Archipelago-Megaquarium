@@ -14,10 +14,10 @@ from Options import (Choice, DeathLink, DefaultOnToggle, OptionSet, NamedRange, 
                      PerGameCommonOptions, OptionGroup, StartInventory)
 from BaseClasses import CollectionState, ItemClassification, Region
 from .data_loader import MEGAQUARIUM_DB
-from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition, UnlockableManager, MegaqScenario, TankWithAnimalsCondition, MegaquariumLocation, MoveSectionAction, SideObjectiveAvailableAction, Tank, MegaquariumItem, YouWinAction, createBuildTankSection 
+from .data import Section, UnlockItemAction, AddMoneyAction, MegaqObjective, ReachRankCondition, UnlockableManager, MegaqScenario, TankWithAnimalsCondition, ArchiMegaquariumLocation, MoveSectionAction, SideObjectiveAvailableAction, Tank, ArchiMegaquariumItem, YouWinAction, createBuildTankSection 
 import random
 
-from .randomizer import random_tank
+from .randomizer import random_tank, generate_random_tank_set
 from .rules import set_rules 
 from .options import MegaquariumOptions, OPTION_GROUPS
 import itertools
@@ -69,47 +69,33 @@ class MegaquariumWorld(World):
     def __init__(self, multiworld, player):
         super(MegaquariumWorld, self).__init__(multiworld, player)
 
-    def _get_unlockable_items(self) -> List[MegaquariumItem]:
+    def _get_unlockable_items(self) -> List[ArchiMegaquariumItem]:
         return MEGAQUARIUM_DB.get_items(lambda it: (it.rank is None or it.rank <= self.max_rank) and not isinstance(it, Tank))
 
     def generate_early(self) -> None:
         self.unlocked_items_per_rank = 8
         self.min_rank = 1 
-        self.max_rank = 3 
+        self.max_rank = 6 
         TOTAL_ITEMS = len(list(self._get_unlockable_items()))
 
         N_RANDOM_TANKS =  TOTAL_ITEMS- self.unlocked_items_per_rank*(self.max_rank-self.min_rank + 1)
-        N_TRIES = 20
-        tank_hashes = []
-        for i in range(N_RANDOM_TANKS):
+        generated_tanks = generate_random_tank_set(MEGAQUARIUM_DB,self.min_rank,self.max_rank, 50)
 
-            hashv = None
-            for _ in range(N_TRIES):
-                rank = random.randint(self.min_rank, self.max_rank)
-                new_tank = random_tank(MEGAQUARIUM_DB, max_rank=rank)
-                hashv = new_tank.content_id()
-                if not hashv in tank_hashes:
-                    break
-                    
-            if hashv is None:
-                print("f{i}/{N_RANDOM_TANKS}: Failed to generate a unique tank after {N_TRIES} tries")
-            tank_hashes.append(hashv)
-            print(f"{i}/{N_RANDOM_TANKS}: {hashv}")
-
-            MEGAQUARIUM_DB.add_tank_objective(tankid=f"tank{i}",rank=rank,conditions=[new_tank])
-        
+           
+        for i,(content_id,new_tank) in filter(lambda t: t[0] < N_RANDOM_TANKS, enumerate(generated_tanks.items())):
+            print(f"TANK {content_id}")
+            MEGAQUARIUM_DB.add_tank_objective(tankid=f"tank{i}-{content_id}",rank=new_tank.rank,conditions=[new_tank])
 
     def create_regions(self) -> None:
         # locations = tanks built with requirement, rank ups, full_grown_fish
         # regions = sections
         # regions = objectives
         menu_region = Region("Menu", self.player, self.multiworld)
-        min_rank, max_rank = 1,3
         rank_regions = {}
         for i in range(self.min_rank,self.max_rank+1):
             rank_regions[i] = Region(f"Rank {i}", self.player, self.multiworld)
             for idx in range(self.unlocked_items_per_rank):
-                free_item = MegaquariumLocation(self.player, f"FreeItem_R{i}_{idx}", None, rank_regions[i])
+                free_item = ArchiMegaquariumLocation(self.player, f"FreeItem_R{i}_{idx}", None, rank_regions[i])
                 rank_regions[i].locations.append(free_item)
 
         for tank_obj in MEGAQUARIUM_DB.tank_objs.values():
@@ -118,6 +104,7 @@ class MegaquariumWorld(World):
 
 
         self.multiworld.regions.extend([menu_region] + list(rank_regions.values()))
+
 
     def create_items(self) -> None:
         self.item_pool =  map(lambda it: it.to_item(self.player), 

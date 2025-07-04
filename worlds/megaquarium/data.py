@@ -9,11 +9,11 @@ from BaseClasses import Location, Entrance, Item, ItemClassification
 
 from .utils import load_json5_data
 
-class MegaquariumLocation(Location):
+class ArchiMegaquariumLocation(Location):
     game = "Megaquarium"
 
 
-class MegaquariumItem(Item):
+class ArchiMegaquariumItem(Item):
     game = "Megaquarium"
 
 
@@ -49,6 +49,8 @@ class MegaqAction:
 class MegaqItem:
     idNo: int
     gameId: str
+    name: str
+    description: str
     itemClass: ItemClassification
     autoUnlock: bool = False
 
@@ -56,7 +58,10 @@ class MegaqItem:
         return f"AITEM_{self.gameId}"
 
     def to_item(self,player) -> Item:
-        return MegaquariumItem(name=self.to_item_id(), classification=self.itemClass, code=self.idNo, player=player)
+        item = ArchiMegaquariumItem(name=self.to_item_id(), classification=self.itemClass, code=self.idNo, player=player, )
+        item._hint_text = self.name
+        return item
+
 
     def __hash__(self):
         return hash(self.gameId)
@@ -64,6 +69,8 @@ class MegaqItem:
 @dataclass(kw_only=True)
 class Animal(MegaqItem):
     rank: int
+    nameLatin : str 
+    namePlural: str
     genus: str
     food: str
     waterQuality: int
@@ -75,23 +82,27 @@ class Animal(MegaqItem):
     num_caves: int = 0
 
     def _compatible_with(self, other) -> bool:
-        if Requirements.is_tropical in self.requirements and not Requirements.is_tropical in other.requirements:
-            return False
+        IMPLICATIONS = [(Requirements.is_tropical, Requirements.is_tropical), (Requirements.is_coldwater, Requirements.is_coldwater)]
+        INCOMPATIBILITIES = [(Requirements.bully, Requirements.wimp)]
+        for req1, implies_req1 in IMPLICATIONS:
+            if req1 in self.requirements and implies_req1 not in other.requirements:
+                return False
+        
+        for req1, req2 in INCOMPATIBILITIES:
+            if req1 in self.requirements and req2 in other.requirements:
+                return False
+            if req2 in self.requirements and req1 in other.requirements:
+                return False
 
-        if Requirements.is_coldwater in self.requirements and not Requirements.is_coldwater in other.requirements:
-            return False
 
-        if Requirements.wimp in self.requirements and Requirements.bully in other.requirements:
-            return False
-
-        if Requirements.dislikes_congeners in self.requirements and other.genus == self.genus:
+        if (Requirements.dislikes_congeners in self.requirements or Requirements.dislikes_congeners in other.requirements) and other.genus == self.genus:
             return False
         
-        if Requirements.dislikes_conspecifics in self.requirements and other.gameId == self.gameId:
+        if (Requirements.dislikes_conspecifics in self.requirements or Requirements.dislikes_conspecifics in other.requirements) and other.gameId == self.gameId:
             return False
 
         return True
-
+    
     def compatible_with(self,other) -> bool:
         if isinstance(other, Animal):
             return self._compatible_with(other)
@@ -103,11 +114,14 @@ class Food(MegaqItem):
     food: str
     itemClass: ItemClassification = ItemClassification.filler
     rank: int = 0
+    foodName: str
+    description: str
 
 @dataclass(kw_only=True)
 class Equipment(MegaqItem):
     itemClass: ItemClassification = ItemClassification.filler
     rank: int 
+    
     chilling: Optional[int] = False
     heating: Optional[int] = False
     filtering: Optional[int] = False
@@ -143,6 +157,18 @@ class AnimalFilter:
     # different species
     numSpecies: int = 1
 
+
+    def trivially_satisfies(self, other):
+        satisfied = self.genus == other.genus and \
+                self.eats == other.eats and \
+                self.shoaler == other.shoaler and \
+                self.numSpecies >= other.numSpecies
+
+        # this is an any species tank
+        satisfied |= other.genus is None and other.eats is None and \
+            not other.shoaler and self.numSpecies >= other.numSpecies
+
+        return satisfied 
 
     def animal_satisfies(self, anim):
         if not self.genus is None:
@@ -221,11 +247,62 @@ class TimerCondition(MegaqCondition):
 class TankWithAnimalsCondition(MegaqCondition):
     # specific item or fish, or a tag
     items: List[Tuple[Union[MegaqItem, AnimalFilter], int]]
+    rank: int
+    compatGraph : List[List[Animal]] = None
     filtered: bool = False
     heated: bool = False
-    lit: bool = False 
-    #gameId: str = "tankWithXAnimal"
-    
+    lit: bool = False
+
+    def get_mutually_valid_solution(self,other):
+        pset = list(map(lambda xs: set(map(lambda x: x.gameId, xs)), self.compatGraph))
+        cset = list(map(lambda xs: set(map(lambda x: x.gameId, xs)), other.compatGraph))
+        idmap = {}
+        for tank in self.compatGraph + other.compatGraph:
+            for anim in tank:
+                idmap[anim.gameId] = anim
+
+        result_ids = []
+        for cs in cset:
+            slns = list(filter(lambda x: len(x) > 0, map(lambda x:  cs.intersection(x), pset)))
+            if len(slns) == 0:
+                return None
+            result_ids += slns 
+
+        result = []
+        for tank_ids in result_ids:
+            tank = list(map(lambda tank_id: idmap[tank_id], tank_ids))
+            result.append(tank)
+        return result
+
+    def has_mutually_valid_solution(self,other):
+        return not self.get_mutually_valid_solution(other) is None
+
+    def merge(self,other):
+        compatTanks = self.get_mutually_valid_solution(other)
+        return TankWithAnimalsCondition(
+            compatGraph=compatTanks,
+            rank=max(self.rank, other.rank),
+            items=self.items+other.items,
+            filtered=self.filtered or other.filtered, 
+            heated=self.heated or other.heated, 
+            lit=self.lit or other.lit)
+
+    def trivially_satisfies(self,other):
+        for item,qty in other.items:
+
+            satisfied = False
+            for item2,qty2 in self.items: 
+                if isinstance(item2,AnimalFilter) and isinstance(item,AnimalFilter):
+                    satisfied |= item2.trivially_satisfies(item)
+                elif isinstance(item2,MegaqItem) and isinstance(item,MegaqItem):
+                    satisfied |= (item.gameId == item2.gameId and qty2 >= qty)
+            
+            if not satisfied:
+                return False
+        
+        if satisfied:
+            return True
+
 
     def required_items():
         return map(lambda x: x[0], self.items)
@@ -242,21 +319,20 @@ class TankWithAnimalsCondition(MegaqCondition):
             if isinstance(self.items[i], Animal):
                 yield "tankWithXAnimal", TankWithAnimalsCondition(items=items[:i+1])
             else:
-                yield "tankWithXDecoration", TankWithAnimalsCondition(items=self.items[:i+1])
+                yield "tankWithXDecoration", TankWithAnimalsCondition(rank=self.rank,items=self.items[:i+1])
 
         if self.filtered:
-            yield "tankWithWaterQuality",TankWithAnimalsCondition(items=self.items, filtered=self.filtered)
+            yield "tankWithWaterQuality",TankWithAnimalsCondition(rank=self.rank,items=self.items, filtered=self.filtered)
         
         if self.heated:
-            yield "tankWithHeating",TankWithAnimalsCondition(items=self.items, filtered=self.filtered, heated=self.heated)
+            yield "tankWithHeating",TankWithAnimalsCondition(rank=self.rank,items=self.items, filtered=self.filtered, heated=self.heated)
          
         if self.lit:
-            yield "tankWithSufficientLighting",TankWithAnimalsCondition(items=self.items, filtered=self.filtered, heated=self.heated, lit=self.lit)
+            yield "tankWithSufficientLighting",TankWithAnimalsCondition(rank=self.rank,items=self.items, filtered=self.filtered, heated=self.heated, lit=self.lit)
         
 
        
 
-        pass 
 
     def to_json(self):
         def convert_item(arg):
@@ -331,7 +407,7 @@ class MegaqTrigger:
         }
 
     def to_location(self, player, region) -> Location:
-        return MegaquariumLocation(name=self.location, player=player, parent=region)
+        return ArchiMegaquariumLocation(name=self.location, player=player, parent=region)
 
 @dataclass
 class MegaqObjective:

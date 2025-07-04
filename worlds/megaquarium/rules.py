@@ -13,19 +13,30 @@ from typing import TYPE_CHECKING, Callable, Dict
 from typing import Dict, List, NamedTuple, Optional, Set, FrozenSet, Tuple, Any, Union
 from dataclasses import dataclass
 
-from .data import TankWithAnimalsCondition, Animal, Tank, MegaquariumDB, Requirements, MegaquariumItem, AnimalFilter
+from .data import TankWithAnimalsCondition, Animal, Tank, MegaquariumDB, Requirements, ArchiMegaquariumItem, AnimalFilter, MegaqItem
+
+
+class SpeciesEquipmentDependencyGraph:
+
+    def __init__(self,species,equipment,food, tanks):
+        pass
 
 
 #TODO, make sure species count is enough
 @dataclass
 class MQRule:
-    items: List[MegaquariumItem]
+    items: List[MegaqItem]
 
-    def item_ids():
-        return map(lambda i: i.item_id(), items)
+    def item_ids(self):
+        return list(map(lambda i: i.to_item_id(), self.items))
 
 @dataclass
 class MQRuleOr(MQRule):
+
+
+    def __repr__(self):
+        return f"any({self.item_ids()})"
+
 
 
     def test(self, player: CollectionState):
@@ -34,6 +45,10 @@ class MQRuleOr(MQRule):
         return False
 
 class MQRuleAll(MQRule):
+
+    def __repr__(self):
+        return f"all({self.item_ids()})"
+
 
     def test(self,state: CollectionState, player:int):
         if state.has_all(self.item_ids(), player):
@@ -44,25 +59,33 @@ class MQRuleAll(MQRule):
 class MQRuleAtLeast(MQRule):
     count: int
 
+    def __repr__(self):
+        return f"at-least[{self.count}]({self.item_ids()})"
+
     def test(self, state:CollectionState, player: int):
         if state.has_from_list(self.item_ids(), player,self.count):
             return True
         return False
 
+@dataclass
 class MQRuleSet:
     rules: List[MQRule]
+
+    def __repr__(self):
+        return " AND ".join(map(lambda r: str(r), self.rules))
 
     def test(self, state, player):
         for rule in self.rules:
             if not rule.test(state,player):
                 return False
 
+        return True
 
 
 
 def get_animal_requirements(db, animal):
     if not animal.food is None:
-        yield MQRuleOr(db.food_sources[animal.food])
+        yield MQRuleOr([db.food_sources[animal.food]])
 
     if Requirements.is_tropical in animal.requirements:
         yield MQRuleOr(db.get_equipment(lambda e: not e.heating is None))
@@ -86,20 +109,21 @@ def add_objective_ruleset(db,world, obj ,location):
         valid_animals = list(db.get_animals(lambda animal: animal.rank <= objective_rank))
         if isinstance(cond, TankWithAnimalsCondition):
             for item, count in cond.items:
-                if isinstance(item, MegaquariumItem):
-                    required_items.append(item.to_item_id())
+                if isinstance(item, MegaqItem):
+                    required_items.append(MQRuleAll([item]))
                     if isinstance(item, Animal):
                         for req in get_animal_requirements(db,item):
-                            required_items.append(MQRuleAll(req))
+                            required_items.append(req)
 
                 elif isinstance(item, AnimalFilter):
                     any_animal = list(filter(lambda a: item.animal_satisfies(a), valid_animals))
-                    required_items.append(MQRuleOr(any_animal))
+                    required_items.append(MQRuleAtLeast(any_animal, count))
         else:
-            print("condition: {cond}")
+            print(f"unknown condition: {cond}")
 
-    print(location, required_items) 
-    set_rule(location, lambda state: state.has_all(required_items, world.player))
+    ruleset = MQRuleSet(rules=required_items)
+    print(f"LOC={location} REQS={ruleset}")
+    set_rule(location, lambda state: ruleset.test(state, world.player))
 
 
 
