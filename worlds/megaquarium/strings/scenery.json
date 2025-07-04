@@ -1,0 +1,65 @@
+{
+	 "55_sea_lettuce":"Sea Lettuce",
+	"55_sea_lettuce.desc":"Often found in nutrient rich or even polluted areas in the wild. Suitable for temperate or tropical conditions.",
+
+	"56_eel_grass":"Eel Grass",
+	"56_eel_grass.desc":"Dense beds of this grass create the perfect habitat for delicate slow-moving animals including seahorses, pipefish and seadragons.",
+
+	"57_kelp":"Kelp",
+	"57_kelp.desc":"This giant seaweed creates underwater forests perfect for larger fish and sharks. Species of kelp can grow up to half a meter daily, reaching up to 80m in height.",
+
+	"42_feather_calurpa":"Feather Calurpa",
+	"42_feather_calurpa.desc":"This algae sends out chains of runners that attach to rocks and substrate. Shoots of feathery foliage grow from all angles of the runners.",
+
+	"43_triangle_turbinweed":"Triangle Turbinweed",
+	"43_triangle_turbinweed.desc":"Found on the outer reef flats where it is exposed to strong surge, Turbinweed is tough.",
+
+	"44_asparagus_weed":"Asparagus Weed",
+	"44_asparagus_weed.desc":"This seaweed with its fluffy swaying branches could be mistaken for a coral. Asparagus Weed is popularly eaten in Hawaii, principally as a condiment.",
+
+	"58_egg_wrack":"Egg Wrack",
+	"58_egg_wrack.desc":"The “eggs” of Egg Wrack are actually capsules of floating air that enable this seaweed to stand vertically and reach as much light as possible.",
+	
+	"73_sea_grapes":"Sea Grapes",
+	"73_sea_grapes.desc":"Sea Grapes taste as good as they look and can be eaten.",
+		
+	"74_velvet_horn":"Velvet Horn",
+	"74_velvet_horn.desc":"Found in deep tidal pools. The leaves have a felt-like texture.",
+		
+	"75_rubberweed":"Rubberweed",
+	"75_rubberweed.desc":"So toughened and rubbery, it's hard to detach from rocks.",
+		
+	"76_chain_halimeda":"Chain Halimeda",
+	"76_chain_halimeda.desc":"Found on shady coral slopes, the discs form chains of 50cm.",
+		
+	"77_shellweed":"Shell Weed",
+	"77_shellweed.desc":"This distinctively shaped weed is calcareous making it hard and brittle.",
+	
+	"3_small_rock":"Small Rocks",
+	"3_small_rock.desc":"Rocks provide a surface for microscopic bacteria and zoo plankton to live on. This 'live' surface lends a small amount of filtering to the tank.",
+	
+	"60_rubble":"Rubble",
+	"60_rubble.desc":"This large field of rocks provides additional filtering and a place for certain fish to hide and play.",
+	
+	"51_small_live_rock":"Live Rocks",
+	"51_small_live_rock.desc":"Live Rocks arrive with a full complement of zoo plankton already on them. The result: better filtration right out of the box!",
+	
+	"52_large_live_rock":"Live Rubble",
+	"52_large_live_rock.desc":"This large field of live rocks provides the perfect place for small fish to forage and play.",
+	
+	"53_driftwood_cave":"Driftwood Cave",
+	"53_driftwood_cave.desc":"This carelessly strewn driftwood forms the perfect shelter for small cave loving animals.",
+	
+	"45_rocky_overhang":"Rocky Overhang",
+	"45_rocky_overhang.desc":"This rocky tunnel provides a larger shelter for cave loving animals.",
+	
+	"54_pitted_column":"Pitted Column",
+	"54_pitted_column.desc":"The Pitted Column is perfect for deep tanks which house many cave loving animals.",
+	
+	"62_gaping_cavern":"Gaping Cavern",
+	"62_gaping_cavern.desc":"The Gaping Cavern provides a shelter for the largest of cave loving animals.",
+	
+	"plant":"Plants",
+	"cave":"Caves",
+	"rock":"Rocks"
+}

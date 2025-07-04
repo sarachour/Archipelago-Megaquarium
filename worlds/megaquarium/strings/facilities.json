@@ -1,0 +1,69 @@
+{
+	"1_bench":"Bench",
+	"1_bench.desc":"The Bench is a basic seat for your Guests allowing them to take a rest.",
+	
+	"24_padded_bench":"Padded Bench",
+	"24_padded_bench.desc":"The Padded Bench is an improved seat for your Guests allowing them to regain their energy quicker.",
+	
+	"25_massage_chair":"Massage Chair",
+	"25_massage_chair.desc":"The ultimate in Guest seating, the Massage Chair is an attraction in its own right. The only downside is the complicated mechanisms inside can break down from time to time.",
+	
+	"2_vending_machine_fizzy_drinks":"Fizzy Drink Vending Machine",
+	"2_vending_machine_fizzy_drinks.desc":"The Fizzy Drink Vending Machine allows your guests to quench their thirst while you pocket a little profit. Watch out for the litter!",
+	
+	"20_coffee_vendor":"Coffee Machine",
+	"20_coffee_vendor.desc":"Help your Guests maintain their caffeine addiction while you enjoy the increased profit margins! One small caveat, they have been known to break down from time to time.",
+	
+	"21_orange_vendor":"OJ Squeezer",
+	"21_orange_vendor.desc":"Freshly squeezed orange juice, a luxury no Guest can turn down. The vend time is a little longer, and the complicated squeezing mechanism is prone to breaking, but the huge margins make it all worth it!",
+	
+	"3_vending_machine_chocolate":"Chocolate Vending Machine",
+	"3_vending_machine_chocolate.desc":"Avoid hungry Guests by giving them something sweet to nibble on while they take in your exhibits.",
+	
+	"22_popcorn_vendor":"Popcorn Cart",
+	"22_popcorn_vendor.desc":"While the internal popping engine is prone to breakdown, you'll forget all about it once you see how much you can charge for a handful of corn and some sugar.",
+	
+	"23_froyo_vendor":"Self-Serve Froyo",
+	"23_froyo_vendor.desc":"Guests can't resist the double-cool treat known as Frozen Yoghurt. Just don't tell them you're charging by the sprinkle!",
+	
+	"4_toilet_cubicle":"Basic Toilet",
+	"4_toilet_cubicle.desc":"This basic toilet will allow your Guests to void their bladders without embarrassing themselves or your fish! May require cleaning after concentrated use...",
+
+	"26_deluxe_toilet":"Deluxe Toilet",
+	"26_deluxe_toilet.desc":"With velvet hand towels and silk toilet paper, the Deluxe Toilet allows your Guests to \"powder their nose\" in the most opulent of settings.",
+
+	
+	"floor_arrow":"Floor Arrow",
+	"floor_arrow.desc":"Send Guests in the right direction using these handy floor arrows.",
+
+	"oneway":"One-way Gate",
+	"oneway.desc":"Prohibit Guests from entering certain areas from the wrong direction using these one-way gates.",
+	
+	"bin":"Bin",
+	"bin.desc":"Place bins in appropriate locations so Guests throw their litter in the bin rather than on the ground!",
+	
+	
+	"fizzy_drink":"Fizzy Drink",
+	"fizzy_drink_rubbish":"Discarded Fizzy Drink",
+	"coffee":"Coffee",
+	"coffee_rubbish":"Discarded Coffee",
+	"orange_juice":"OJ",
+	"orange_juice_rubbish":"Discarded OJ",
+	"chocolate":"Chocolate",
+	"chocolate_rubbish":"Discarded Chocolate",
+	"popcorn":"Popcorn",
+	"popcorn_rubbish":"Discarded Popcorn",
+	"froyo":"Froyo",
+	"froyo_rubbish":"Discarded Froyo",
+	
+	"seat":"Seating",
+	"drink":"Drinks",
+	"food":"Food",
+	"toilet":"Toilets",
+	"floorArrow":"Floor Arrows",
+	"facilities":"Facilities",
+	"visitorFlow":"Visitor Flow",
+	"otherAttractions":"Other Attractions",
+	"vendingMachine":"Vending Machine",
+	"binsCategory":"Bins",
+}

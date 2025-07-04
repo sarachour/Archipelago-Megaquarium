@@ -1,0 +1,33 @@
+{
+	"live_cultures.title":"Live Cultures",
+	"live_cultures.text.0":"You've just unlocked your first animal that eats live food. To maintain a supply of food you'll need to use a Live Culture.",
+	"live_cultures.infobutton.1":"artemia_box",
+	"live_cultures.text.2":"These work like regular food dispensers except they themselves require a supply of food. Keep it well fed and the capacity of the Live Culture will grow, providing even more food for your picky animals!",
+	"live_cultures.model.3":"coralFood_box",
+	"live_cultures.text.4":"Tip: place a supply of the food the Live Culture requires nearby to reduce the amount of walking your staff need to do.",
+	
+	"search_tutorial.title":"Search",
+	"search_tutorial.text.0":"Did you know that you can search the build menu to find what you're looking for. To access this useful feature: click the button with the magnifying glass at the top of the build menu.",
+	"search_tutorial.image.1":"search",
+	"search_tutorial.text.2":"Alternatively, press the search hotkey which is the Return key by default.",
+	
+	"ledger_tutorial.title":"Ledger",
+	"ledger_tutorial.text.0":"Have you tried the Ledger yet? It allows you to keep track of all your tanks and animals in one handy place. You can find it by clicking the following icon in the bottom right.",
+	"ledger_tutorial.image.1":"animal_window",
+	"ledger_tutorial.text.2":"You can view your animals either grouped by tank or individually.\n\nYou can also use the Ledger to quickly identify animals whose care requirements are not met by selecting the 'Problems' filter. Why not give it a try?",
+	
+	"1st_person_tutorial.title":"1st person mode",
+	"1st_person_tutorial.text.0":"Did you know that you can go into first person mode by zooming all the way in?",
+	"1st_person_tutorial.rawimage.1":"1st_person_mode",
+	"1st_person_tutorial.text.2":"Once you're in first person mode, you can move around using the same keys that you use to pan the camera (WASD by default). To exit first person mode, press 'Esc' or zoom out.",
+	
+	"oneway_tutorial.title":"One way gates",
+	"oneway_tutorial.text.0":"The One-way Gate is now available.\n\nThese handy gates allow passage in one direction only. This makes them the perfect tool for enforcing a one-way system. This could be just a small area, or even your entire aquarium!",
+	"oneway_tutorial.infobutton.1":"oneway",
+	"oneway_tutorial.text.2":"However, be warned, it's possible to completely cut off a part of your aquarium from the entrance using One-way Gates. This will lead to Guests complaining that they cannot find the exit. They also stop Guests tracking back to find Facilities. In summary: use them carefully!\n\nThankfully One-way Gates allow Staff to pass through in both directions so that's one thing you won't have to worry about.",
+	
+	"arrow_tutorial.title":"Floor Arrows",
+	"arrow_tutorial.text.0":"The Floor Arrow is now available. This useful arrow attracts Guests and then sends them on their way in the direction it points.",
+	"arrow_tutorial.infobutton.1":"floor_arrow",
+	"arrow_tutorial.text.2":"Guests will explore all the attractions in an area first, before paying attention to the floor arrow. This makes Floor Arrows best used to help Guests find their way from one area of your aquarium to the next.\n\nGuests will only follow each arrow once during their visit, so it's important to have a carefully planned route around the aquarium when placing them.",
+}

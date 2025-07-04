@@ -1,0 +1,103 @@
+{
+	"campaign-4-valberg":"4. Valberg",
+	"campaign-4-valberg.desc":"Restore this historic aquarium to profitability!",
+	
+	"valberg_intro.title":"Welcome to Valberg",
+	"valberg_intro.text.0":"This historic aquarium has been in decline for years. It needs a new curator willing to shake things up. Are you up to the challenge?\n\nPart of the problem is the weather is so cold in Valberg that none of the Heaters work at full capacity. Just <color=#D3644EFF>66%</color> to be exact. See if you can turn the cold temperatures to your advantage with this new piece of equipment: the Chiller.",
+	"valberg_intro.model.1":"basic_chiller",
+	"valberg_intro.text.2":"Chillers are used to keep tanks at Coldwater temperatures, allowing us to keep Coldwater animals like this Cuckoo Wrasse.",
+	"valberg_intro.model.3":"102_cuckoo_wrasse",
+	"valberg_intro.text.4":"It gets better, here in Valberg, they are <color=#8FD67C>50%</color> more effective than normal. In other words, you can chill bigger tanks with fewer Chillers.\n\nYour mission is to exploit Coldwater displays to get this aquarium back in the limelight!",
+	
+	"valberg_first_coldwater":"Coldwater Debut",
+	
+	"valberg_section_2_popup.title":"You're So Cool!",
+	"valberg_section_2_popup.text.0":"Did you see that? You just got a bump to your Base Prestige <sprite name=\"prestige\"> for exhibiting the first Coldwater fish in the history of Valberg Aquarium.\n\nBase Prestige <sprite name=\"prestige\"> doesn't degrade over time like normal Prestige <sprite name=\"prestige\"> so it's very handy for ranking up. You receive it for completing special Objectives like the one you just did.\n\nAnyway, onto the next challenge. Continue to expand your range of animals (both Tropical and Coldwater) with the aim of reaching Rank 6.",
+	
+	"valberg_section_2":"Rank Up",
+	
+	"opt_coldwater_trio":"Coldwater Trio",
+	"opt_coldwater_trio.title":"Valberg Tourism Board",
+	"opt_coldwater_trio.text.0":"Hello, we represent the Valberg Tourism Board. We are very pleased with the changes you are making here; especially the introduction of Coldwater species. People are flocking to Valberg from the surrounding villages to see the new display.\n\nWe would love to see the range of Coldwater species expanded even further. We would be happy to make a donation to facilitate this.",
+	"opt_coldwater_trio.reply.0":"You had me at 'donation'.",
+	
+	"opt_coldwater_trio_complete.title":"Glorious Specimens",
+	"opt_coldwater_trio_complete.text.0":"Excellent job! These new Coldwater specimens are simply fascinating, and they are sure to make the Tourism Board over in Linholm jealous.\n\nTalking of the Linholm Tourism Board, they sent this to our office as a sort of practical joke. We're not sure what to do with it, can you look after it?",
+	"opt_coldwater_trio_complete.infobutton.1":"101_turbot",
+	
+	"valberg_section_3_popup.title":"Final Stretch",
+	"valberg_section_3_popup.text.0":"Fantastic work! Valberg is definitely back on the map.\n\nWhile you've been expanding, I've been talking to the aquarium's board of directors. Together we've come up with a set of final Objectives.\n\nThis will be the first time where you have been set a Daily Revenue Objective. The simplest way to increase your revenue is to increase your Prestige <sprite name=\"prestige\">.\n\nOther sources of revenue include Food, Drink and Gift Shop sales.",
+	"valberg_section_3_popup.model.1":"guide_book_shelf",
+	"valberg_section_3_popup.text.2":"Good luck, I know you can do it!",
+	
+	"valberg_section_3":"Increase Revenue",
+	
+	"opt_guidebook":"Guide Books",
+	"opt_guidebook.title":"Custom Guide Books",
+	"opt_guidebook.text.0":"An aquarium without a Guide Book is barely an aquarium at all. Don't you think?\n\nOn a completely unrelated topic, would you be interested in selling a custom Guide Book in your aquarium? We design, print and deliver all the books, you just have to sell them!\n\nWhy not try this free sample, it'll fly off the shelves, I promise!",
+	"opt_guidebook.model.1":"guide_book",
+	"opt_guidebook.reply.0":"This is a no-obligation trial right?",
+	
+	"opt_guidebook_start.title":"Guide Book Trial",
+	"opt_guidebook_start.text.0":"Just place these down anywhere you like, ideally, not too far apart. A staff member with the Gift Shop role will automatically fill the shelf from the Guide Book Supply.\n\nIt couldn't be simpler!",
+	
+	"placeGuideBookShelf":"Place Guide Book Shelf",
+	"placeGuideBookShelf.tooltip":"Grab the Guide Book Shelf from the message and place it somewhere that your Guests will see it.",
+	"placeGuideBookBox":"Place Guide Book Supply",
+	"placeGuideBookBox.tooltip":"Grab the Guide Book Supply from the message and place it somewhere nearby the Guide Book Shelf, but where your Guests <b>cannot</b> access it.",
+	"guideBookSell":"Guide Books Sold {0}/{1}",
+	"guideBookSell.tooltip":"Watch as your Guests buy the Guide Books. If they aren't selling well you can try reducing the price or putting it somewhere with more Guests.",
+	
+	"opt_guidebook_complete.title":"A Beautiful Partnership",
+	"opt_guidebook_complete.text.0":"They've sold out already? Looks like the start of a beautiful partnership. I'll sell you as many as you like, you'll find the Shelf and Supply in the Facilities section of the Build Menu.\n\nA word of warning: If you leave the Guide Book Supply out where Guests can access it, some might steal from it.",
+	
+
+
+	"opt_jellyfish":"Go With The Flow",
+	"opt_jellyfish.title":"A Science Experiment",
+	"opt_jellyfish.text.0":"Hello, we are conducting research on the Moon Jellyfish.",
+	"opt_jellyfish.infobutton.1":"78_moon_jelly",
+	"opt_jellyfish.text.2":"These Jellyfish need a special enclosure called a Kreisel Tank, which provides constant circular flow.",
+	"opt_jellyfish.model.3":"tank_small_kreisel_4_3",
+	"opt_jellyfish.text.4":"We'll arrange the suppliers and provide some up-front capital for the experiment, we just need you to operate it for the necessary period.",
+	"opt_jellyfish.reply.0":"In the name of Science, I agree!",
+	
+	"opt_jellyfish_complete.title":"A Scientific Breakthrough?",
+	"opt_jellyfish_complete.text.0":"The findings are... inconclusive. This is excellent news, now we can apply for additional funding. Thank you!",
+	
+	"valberg_win_message.title":"You win!",
+	"valberg_win_message.text.0":"By working with the ambient temperature and modernising the Valberg Aquarium, you've brought it from the brink of bankruptcy to a level of extreme profitability.\n\nThe board of directors are immensely proud of what you have achieved, but they understand that such a capable curator has to leave eventually.\n\nIt's time you branched out on your own, and built an aquarium free from the whims of investors or directors. It just so happens that I have found the perfect opportunity for you in the City of Culture, Napalos.",
+	"valberg_win_message.rawimage.1":"campaign-5-napalos,0xffffffff,Napalos",
+	"valberg_win_message.text.2":"You can continue to build here at Valberg for as long as you want, this message will stay in your message log (accessible via the button in the bottom-left) until you're ready.\n\nWhen you're ready to move on, let me know.",
+	"valberg_win_message.reply.0":"I'm ready to create my own aquarium in Napalos.",
+	
+	"staffManagementB.title":"Staff levelling",
+	"staffManagementB.text.0":"One of your staff is about to level up. This will allow you to choose to increase one of their skills or to learn a new one.",
+	"staffManagementB.image.1":"skill_levelling",
+	"staffManagementB.text.2":"Simply click the skill you wish the staff to learn or increase.\n\nHigher skill levels increase the speed at which staff complete those tasks. Some animals/equipment require skilled staff and are disproportionaly time-consuming for unskilled staff to complete.",
+	
+	"valberg_hunger":"Hungry guests",
+	"valberg_hunger.title":"Hungry guest",
+	"valberg_hunger.text.0":"One of your Guests is hungry!",
+	"valberg_hunger.image.1":"low_hunger",
+	"valberg_hunger.text.2":"Build some chocolate vending machines so they can get something to eat.",
+	"valberg_hunger.model.3":"3_vending_machine_chocolate",
+	"valberg_hunger.text.4":"Did you know you can change the price you charge for refreshments? Increase your profit margins or make your guests happy with cheap prices, the choice is yours!",
+	"buildChocoVend":"Build Chocolate Vending Machines {0}/{1}",
+	"buildChocoVend.tooltip":"Find the Chocolate Vending Machine in the Facilities section of the Build Menu.",
+	
+	"valberg_french_angel.title":"French Angelfish",
+	"valberg_french_angel.text.0":"You've just unlocked the French Angelfish.",
+	"valberg_french_angel.infobutton.1":"37_french_angelfish",
+	"valberg_french_angel.text.2":"The French Angelfish is a danger to Soft Corals. Avoid putting them with Soft Corals unless you want your corals to be eaten!",
+	
+	"valberg_pollock.title":"Atlantic Pollock",
+	"valberg_pollock.text.0":"You've just unlocked the Atlantic Pollock.",
+	"valberg_pollock.infobutton.1":"107_atlantic_pollock",
+	"valberg_pollock.text.2":"The Atlantic Pollock only needs to be fed every other day. This is useful as it reduces the feeding demands on your staff.\n\nYou can find the frequency which an animal needs feeding by hovering over its food icon.",
+	
+	"valberg_prestige_analysis.title":"Prestige Analysis",
+	"valberg_prestige_analysis.text.0":"Your aquarium is quite large now, so it can be difficult to keep track of where all your <sprite name=\"prestige\"> is coming from. Luckily there is a tool to help with that.",
+	"valberg_prestige_analysis.image.1":"prestige_analysis",
+	"valberg_prestige_analysis.text.2":"The Prestige Analysis <sprite name=\"prestige\"> window can be accessed from the bottom right bar. Here you will find a breakdown of where all your Prestige <sprite name=\"prestige\"> is coming from as well as insights telling you what you can do to improve."
+}

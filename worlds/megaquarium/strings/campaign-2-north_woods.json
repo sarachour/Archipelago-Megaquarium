@@ -1,0 +1,127 @@
+{
+	"campaign-2-north_woods":"2. North Woods",
+	"campaign-2-north_woods.desc":"Establish your name by refurbishing this old aquarium.",
+	
+	"north_woods_intro.title":"Welcome to North Woods",
+	"north_woods_intro.text.0":"You've been tasked with refurbishing this old aquarium. It already has several tanks, some decorations and even a couple of surviving fish.",
+	"north_woods_intro.model.1":"63_barrel",
+	"north_woods_intro.text.2":"The aquarium has a healthy source of Ecology <sprite name=\"ecology\"> Points but these only unlock new animals. To unlock other things we need Science Points!",
+	"north_woods_intro.image.3":"science",
+	"north_woods_intro.text.4":"Science <sprite name=\"science\"> points are used to unlock new pieces of equipment, tanks and facilities for your guests.\n\nBoth types of points are crucial to running a successful aquarium. Make sure you have an adequate supply of both!",
+	
+	"north_woods_restock":"Restock",
+	"hireAtLeastOneStaff":"Hire at least 1 staff",
+	"hireAtLeastOneStaff.tooltip":"Hire staff via the Staff Window. Open it using the button with the man and woman in the bottom right of the screen.",
+	
+	
+	"north_woods_wall_tank_popup.title":"Wall Tanks",
+	"north_woods_wall_tank_popup.text.0":"Good work! The aquarium is restocked and it's open to the public once more.\n\nYou may have noticed that all the tanks at North Woods are embedded into the walls. They are called, unimaginatively, Wall Tanks!",
+	"north_woods_wall_tank_popup.model.1":"5_wall_1side_2_2",
+	"north_woods_wall_tank_popup.text.2":"Wall Tanks are viewed by Guests from one side and accessed by Staff via the other. This allows you to keep your equipment behind closed doors. Speaking of doors, the Staff Door allows your Staff through, while blocking Guests. Handy!",
+	"north_woods_wall_tank_popup.model.3":"Staff Door",
+	"north_woods_wall_tank_popup.text.4":"All of this is useful, because from Rank 3, Guests expect your equipment to be hidden away and they will complain otherwise!\n\nYour next objective is to build your own Wall Tank matching the specification in your Objectives.",
+	
+	"north_woods_wall_tank":"Master the Wall Tank",
+	"guestsCantAccess":"Guests cannot access",
+	"guestsCantAccess.tooltip":"Build walls using the Wall Tool, located in the top left of the screen, to separate the rear of the tank from where your Guests walk. Use a Staff Door to allow access for your Staff.",
+	
+	"north_woods_between_wall_and_pump_popup.title":"Over to you!",
+	"north_woods_between_wall_and_pump_popup.text.0":"Nicely done. The next stage of the aquarium's expansion is down to you.\n\nYou'll need to fund the expansion using ticket sales, so keep an eye on your cashflow, accessible by clicking on your current funds.",
+	"north_woods_between_wall_and_pump_popup.image.1":"cashflow",
+	"north_woods_between_wall_and_pump_popup.text.2":"I'll be in touch again once you've grown to a moderate size. Good luck!",
+	
+	"north_woods_between_wall_and_pump":"Grow",
+	
+	"north_woods_pump_tank_popup.title":"Pumps",
+	"north_woods_pump_tank_popup.text.0":"Impressive work on the latest expansion. You've proven you're ready for even more advanced aquarium design techniques.\n\nIt's time to learn about Pumps.",
+	"north_woods_pump_tank_popup.model.1":"basic_pump",
+	"north_woods_pump_tank_popup.text.2":"Pumps allow you to remotely locate your equipment away from your Tanks. Instead of attaching your Heaters, Filters etc. directly to the Tank, you attach them to the Pump, which is several tiles away.",
+	"north_woods_pump_tank_popup.image.3":"pump_example",
+	"north_woods_pump_tank_popup.text.4":"Demonstrate your understanding of Pumps by building a Pump and Tank configuration matching the specification in your Objectives.",
+	
+	"north_woods_pump_tank":"Master the Pump",
+	"withPump":"A Pump at least 3 tiles away",
+	"withPump.tooltip":"Build the tank first. Then build a pump at least 3 tiles away.",
+	"noEquipmentDirectlyConnected":"Equipment connected to Tank via Pump",
+	"noEquipmentDirectlyConnected.tooltip":"When you place your Heaters and Filters, connect them to the Pump, not the tank!",
+	
+	"north_woods_thirsty":"Thirsty Guests",
+	"north_woods_thirsty.title":"Thirsty Guests",
+	"north_woods_thirsty.text.0":"One of your Guests is thirsty.",
+	"north_woods_thirsty.image.1":"low_thirst",
+	"north_woods_thirsty.text.2":"Build some Vending Machines so they have somewhere to purchase a drink. Selling your guests refreshments is also a great way to boost your income!",
+	"north_woods_thirsty.model.3":"2_vending_machine_fizzy_drinks",
+	"buildDrinkVend":"Build Vending Machines {0}/{1}",
+	"buildDrinkVend.tooltip":"Find the Fizzy Drink Vending Machine in the Facilities section of the Build Menu.",
+	
+	"north_woods_reach_rank_4":"Rank up",
+	
+	"north_woods_final_popup.title":"Crabs and more!",
+	"north_woods_final_popup.text.0":"Congratulations on reaching Rank 4! Among the new animals you can unlock at this rank are the first Crustaceans. This Blue Knuckle Hermit Crab is a great support animal because it doesn't need feeding and actually provides additional filtering!",
+	"north_woods_final_popup.infobutton.1":"53_blue_knuckle_hermit_crab",
+	"north_woods_final_popup.text.2":"You now have your final Objective. You may also receive optional Objectives from third parties. In return for fulfilling certain requirements, they'll offer you a reward.\n\nIt's completely up to you whether you comply with their requests, but you may find it easier to meet your Objectives if you do!",
+	
+	"north_woods_final":"Accumulate <sprite name=\"prestige\">",
+	
+	"north_woods_win_message.title":"You win!",
+	"north_woods_win_message.text.0":"You've accomplished a lot here at North Woods. When you arrived it was dilapidated. You restocked it, reinvested your profits and transformed it into the impressive aquarium you see before you.\n\nAnother job offer has come in, this time from a private collector in Elmshorn looking for an architect to design their dream aquarium.",
+	"north_woods_win_message.rawimage.1":"campaign-3-elmshorn,0xffffffff,Elmshorn",
+	"north_woods_win_message.text.2":"You can continue to build here at North Woods for as long as you want, this message will stay in your message log (accessible via the button in the bottom-left) until you're ready.\n\nWhen you're ready for a new challenge, let me know.",
+	"north_woods_win_message.reply.0":"I'm ready to take the job in Elmshorn.",
+	
+	
+	"opt_decorations":"Decorate",
+	"opt_decorations.title":"Interested in some decorations?",
+	"opt_decorations.text.0":"Howdy! I found this load of junk washed up on the sea front. I thought you might be able to use it to decorate some of your tanks.",
+	"opt_decorations.model.1":"12_conch",
+	"opt_decorations.model.2":"63_barrel",
+	"opt_decorations.model.3":"10_anchor",
+	"opt_decorations.model.4":"16_spiral_shell",
+	"opt_decorations.text.5":"If you want it just let me know. If you manage to create something with it, I could probably supply you with more...",
+	"opt_decorations.reply.0":"Sure, I'll take it off your hands.",
+	
+	"opt_decorations_gift_decorations.title":"Decoration delivery",
+	"opt_decorations_gift_decorations.text.0":"Here you go:",
+	
+	"opt_decorations_complete.title":"You have a talent",
+	"opt_decorations_complete.text.0":"Wow, I'm impressed. When I look at that tank I'm transported to another time... this morning actually, when I found that pile of junk on the beach. Now that's art!\n\nThere's plenty more where that came from, I'll supply you with as much as you need, subject to a small handling fee. I also have some paint available which you can use to decorate your walls, floors and tanks.\n\nYou'll find it all in the Infrastructure section of the Build Menu.",
+	"opt_decorations_complete.model.1":"ship_wreck_paint",
+	"opt_decorations_complete.model.2":"tropical_paint",
+	
+	"north_woods_grouper.title":"Coral Grouper",
+	"north_woods_grouper.text.0":"You've just unlocked the Coral Grouper. Let's take a look.",
+	"north_woods_grouper.infobutton.1":"10_coral_hind",
+	"north_woods_grouper.text.2":"The Coral Grouper has a couple of Care Requirements you haven't seen before.\n\nThey are Greedy, which means they eat more and lower water quality more than other animals.\n\nThey Dislike Conspecifics which means only one may be kept per tank.\n\nFinally they may eat fish and crustaceans which are smaller than itself. Hover over the 'Warning' icon to find out more.",
+	
+	"north_woods_flame_angelfish.title":"Flame Angelfish",
+	"north_woods_flame_angelfish.text.0":"You've just unlocked the Flame Angelfish.",
+	"north_woods_flame_angelfish.infobutton.1":"38_flame_angelfish",
+	"north_woods_flame_angelfish.text.2":"The Flame Angelfish Dislikes Conspecifics which means only one may be kept per tank.",
+	
+	"north_woods_zebra_moray_eel.title":"Zebra Moray Eel",
+	"north_woods_zebra_moray_eel.text.0":"You just placed your first Zebra Moray Eel.",
+	"north_woods_zebra_moray_eel.infobutton.1":"80_zebra_moray_eel",
+	"north_woods_zebra_moray_eel.text.2":"The Zebra Moray starts small but will grow larger over time. Grown up animals are worth more points but they will only grow if you fulfil all of their Care Requirements and make sure there is enough space in the tank for them to grow into.",
+	"north_woods_zebra_moray_eel.image.3":"growth",
+	"north_woods_zebra_moray_eel.text.4":"Hover over the growth time icon to find out how many days it takes to grow up, and what size it will be when it does.",
+	
+	
+	"north_woods_brooms.title":"Litter",
+	"north_woods_brooms.text.0":"Oh dear, one of your guests has thrown their Fizzy Drink litter on the ground.",
+	"north_woods_brooms.model.1":"fizzy_drink_rubbish",
+	"north_woods_brooms.text.2":"Build a Broom Stand and get one of your staff to clean it up.",
+	"north_woods_brooms.model.3":"64_broom_box",
+	
+	"opt_clean_broom":"Clean up",
+	"staffWithCleaning":"Staff with Cleaning skill",
+	"staffWithCleaning.tooltip":"Hire a staff with the Cleaning skill via the Staff menu in the bottom right.",
+	"opt_clean_broom_complete.title":"Sweep less!",
+	"opt_clean_broom_complete.text.0":"You can reduce the amount of time your staff spend sweeping up after your guests by placing bins around your aquarium.",
+	"opt_clean_broom_complete.model.1":"bin",
+	
+	"move_decorations.title":"Moving decorations and animals",
+	"move_decorations.text.0":"Did you know you can move animals and decorations between tanks?\n\nFirst, select the tank containing the object you wish to move. Then select the Move Tool by pressing M or using the button in the top left. Now click on the icon of the object you want to move directly beneath the tank's window.",
+	"move_decorations.image.1":"move_object_in_tank",
+	"move_decorations.text.2":"Now you have picked up the object you can place it somewhere else as normal.\n\n(PS You can also sell objects this way using the Demolish Tool (X) )!"
+	
+}

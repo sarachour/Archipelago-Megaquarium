@@ -1,0 +1,21 @@
+{
+	"campaign-8-le_dufont":"8. Le Dufont",
+	"campaign-8-le_dufont.desc":"Turn a shabby warehouse into shabby-chic!",
+	
+	"le_dufont_intro.title":"Welcome to Le Dufont",
+	"le_dufont_intro.text.0":"The denizens of bourgeois Le Dufont don't like anything too flashy, and they certainly won't stand for anything that isn't one-of-a-kind.\n\nDue to this, you operate under a peculiar restriction in Le Dufont: <u>you are only allowed one of each species</u>.\n\nWith this in mind, you will have to craft an aquarium that is small but perfectly formed. Fortunately for you, the discarded items in this warehouse may help get you started. Unsurprisingly, up-cycling is very fashionable in Le Dufont.\n\nYour goal is to reach Rank 10 and attain a high daily revenue. Prove that the best things come in small packages!",
+	
+	"le_dufont_main":"Small but perfectly formed",
+	
+	
+	"le_dufont_win_message.title":"You win!",
+	"le_dufont_win_message.text.0":"Impressive work. Even with only a single animal of each species you've managed to create an aquarium of high regard and even higher profits.\n\nYour next role is to take over the sizeable Carbon City aquarium, which is in dire need of upgrading.",
+	"le_dufont_win_message.rawimage.1":"campaign-9-carbon_city,0xffffffff,Carbon City",
+	"le_dufont_win_message.text.2":"You can continue to build here at Le Dufont for as long as you want, this message will stay in your message log (accessible via the button in the bottom-left) until you're ready.\n\nWhen you're ready to move to Carbon City, let me know.",
+	"le_dufont_win_message.reply.0":"I'm ready to settle down in Carbon City.",
+	
+	"le_dufont_uv.title":"UV Sterilising",
+	"le_dufont_uv.text.0":"You've just unlocked the UV Steriliser.",
+	"le_dufont_uv.infobutton.1":"uv_steriliser",
+	"le_dufont_uv.text.2":"UV Sterilising is the 4th and final way to increase water quality. Combine filtering, protein skimming, nitrate reacting and UV sterilising to achieve the very highest water quality.\n\nBut be warned, UV Sterilisers are the most expensive way of increasing water quality and they need skilled Fixers to maintain. Ensure you are only using them when you need the very highest water quality."
+}

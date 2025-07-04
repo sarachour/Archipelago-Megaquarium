@@ -1,0 +1,24 @@
+{
+	"campaign-9-carbon_city":"9. Carbon City",
+	"campaign-9-carbon_city.desc":"Upgrade this old aquarium into a state of the art attraction!",
+	
+	"carbon_city_intro.title":"Welcome to Carbon City",
+	"carbon_city_intro.text.0":"Carbon City Aquarium used to be top-of-the-line but as technology has moved on it has failed to keep up.\n\nIt has a good selection of tanks and livestock but the tanks are understocked, held back by a lack of new filtration equipment.\n\nYour mission is to invest in new equipment and livestock and fulfil the potential of this old aquarium! Best of luck!",
+	
+	"carbon_city_main":"Modernise",
+	
+	"opt_carbon_gift_shop":"Create a gift shop",
+	"opt_carbon_gift_shop.title":"Gift shop opportunity",
+	"opt_carbon_gift_shop.text.0":"If we can get our gift shop sales high enough we may be able to negotiate a licensing deal with the major film franchise \"Finding Bertie\".",
+	"opt_carbon_gift_shop.model.1":"copperband",
+	"opt_carbon_gift_shop.text.2":"We would have to prove we can sell a certain amount of Balloons, Copperband Toys and Shark Hats to secure the deal. Are you interested?",
+	"opt_carbon_gift_shop.reply.0":"I'm a lean, mean, selling machine!",
+	"opt_carbon_gift_shop_complete.title":"License Deal Acquired",
+	"opt_carbon_gift_shop_complete.text.0":"The contracts are signed. All of our gift shop items are now official \"Finding Bertie\" merchandise.\n\nAs a result the aquarium has gained a moderate boost to Base Prestige <sprite name=\"prestige\">.",
+	
+	"carbon_city_win_message.title":"You win!",
+	"carbon_city_win_message.text.0":"Nicely done. You made smart choices on where to invest your time and money and have built Carbon City Aquarium into a state of the art attraction, with some of the most prestigious livestock around!\n\nYou are now ready for the final challenge. It's time to build a true <b>Megaquarium</b>. We're going to Megalopolis!",
+	"carbon_city_win_message.rawimage.1":"campaign-10-megalopolis,0xffffffff,Megalopolis",
+	"carbon_city_win_message.text.2":"You can continue to build here at Carbon City for as long as you want, this message will stay in your message log (accessible via the button in the bottom-left) until you're ready.\n\nWhen you're ready to move to Megalopolis, let me know.",
+	"carbon_city_win_message.reply.0":"I'm ready for the ultimate challenge."
+}

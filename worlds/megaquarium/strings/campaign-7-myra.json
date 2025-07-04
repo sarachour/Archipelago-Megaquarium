@@ -1,0 +1,49 @@
+{
+	"campaign-7-myra":"7. Myra",
+	"campaign-7-myra.desc":"Take charge of Myra aquarium where the only size that fits is LARGE!",
+	
+	"myra_intro.title":"Welcome to Myra",
+	"myra_intro.text.0":"The new owners of Myra aquarium have decided that its collection of smaller animals just won't cut it any more. In fact they have charged you with an ambitious goal: obtain and house a collection of 5 awe-inspiring sharks!\n\nIt doesn't stop there. So convinced that size is all that matters, they have forbidden you to purchase anything they deem too small. Even small tanks and filters are off the menu.\n\nOn the plus side, each time you obtain a new shark they'll reward you with a bunch of cash and animals, so they should be your priority.\n\nAre you ready to think big? Get to it!",
+	
+	"myra_main":"Collect sharks",
+	
+	"myra_reward.title":"{0} has arrived!",
+	"myra_reward.text.0":"Excellent work on adding the {0}. Here is your reward:",
+	"myra_reward.infobutton.1":"{1}",
+	
+	"myra_reward2.title":"{0} has arrived!",
+	"myra_reward2.text.0":"Excellent work on adding the {0}. Here is your reward:",
+	"myra_reward2.infobutton.1":"{1}",
+	"myra_reward2.infobutton.2":"{2}",
+	
+	"opt_starry.title":"Starry Smoothhound Enclosure",
+	"opt_starry.text.0":"We hear that you're interested in a Starry Smoothhound for the aquarium. We are able to supply you with one but you must first prove that you are able to take care of it.",
+	"opt_starry.model.1":"114_starry_smoothhound",
+	"opt_starry.text.2":"Starry Smoothhounds need a large rounded tank and enjoy the company of smaller fish. Build a suitable tank and we'll happily provide you with the livestock.",
+	"opt_starry.reply.0":"I'll get to work on the tank.",
+	
+	"opt_starry":"Starry Enclosure",
+	
+	"opt_starry_complete.title":"Inspection report",
+	"opt_starry_complete.text.0":"We've checked the tank and we're delighted to say that it looks perfect for a Starry Smoothhound to move in.",
+	"opt_starry_complete.infobutton.1":"114_starry_smoothhound",
+	"opt_starry_complete.text.2":"We're happy to supply you with baby Starry Smoothhounds now (find them in the Livestock section of the Build Menu). Thanks to the tank you've built them, they'll grow up very happy.",
+	
+	"opt_blacktip.title":"Blacktip Reef Shark Donation",
+	"opt_blacktip.text.0":"I hear you have plans to bring a Blacktip Reef Shark to the aquarium. I have three in my collection but unfortunately for me they will soon outgrow my private tank. I would be happy to donate them to the aquarium, provided that you make the exhibit as close to real life as possible.",
+	"opt_blacktip.model.1":"23_blacktip_reef_shark",
+	"opt_blacktip.text.2":"As the name suggests, Blacktip Reef Sharks are found near reefs. The tank should have a variety of species and lots of rocks. Build a suitable tank and I'll transport the sharks to you.",
+	"opt_blacktip.reply.0":"I'll look after your sharks, they are in safe hands.",
+	
+	"opt_blacktip":"Blacktip Reef Tank",
+	
+	"opt_blacktip_complete.title":"Blacktip Reef Shark Donation",
+	"opt_blacktip_complete.text.0":"The new exhibit looks fantastic and really communicates the natural habitat of these magnificent beasts! As promised here are the sharks:",
+	"opt_blacktip_complete.infobutton.1":"23_blacktip_reef_shark",
+	
+	"myra_win_message.title":"You win!",
+	"myra_win_message.text.0":"Nicely done. Despite the owners' restrictions, you have managed to fulfil their wishes and create an aquarium of epic proportions.\n\nNow for something a little different, have you ever wished for a more bijou assignment. Your wish is granted, in Le Dufont.",
+	"myra_win_message.rawimage.1":"campaign-8-le_dufont,0xffffffff,Le Dufont",
+	"myra_win_message.text.2":"You can continue to build here at Myra for as long as you want, this message will stay in your message log (accessible via the button in the bottom-left) until you're ready.\n\nWhen you're ready to move to the charming city of Le Dufont, let me know.",
+	"myra_win_message.reply.0":"I'm ready to see what all the fuss is about in Le Dufont."
+}

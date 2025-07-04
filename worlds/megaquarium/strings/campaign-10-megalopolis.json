@@ -1,0 +1,62 @@
+{
+	"campaign-10-megalopolis":"10. Megalopolis",
+	"campaign-10-megalopolis.desc":"Build a Megaquarium containing the largest fish on the planet!",
+	
+	"megalopolis_intro.title":"Welcome to Megalopolis",
+	"megalopolis_intro.text.0":"The final challenge awaits. Here in Megalopolis you are tasked with building an aquarium fit for the largest fish in the world - the Whale Shark!",
+	"megalopolis_intro.model.1":"88_whale_shark",
+	"megalopolis_intro.text.2":"It's a long road ahead, first you must build your aquarium from scratch, using everything you have learned, until you reach the lofty heights of Rank 12.\n\nRank 12 is the maximum rank achieveable and you will have access to all the tools required to house the Whale Shark.\n\nYour aquarium will eventually grow to a colossal size so you should plan your layout carefully so that it is easy to expand.\n\nI will be in touch once you have grown to a moderate size. Happy building!",
+	
+	"megalopolis_main":"Work through the ranks",
+	
+	"megalopolis_raise_money":"Fund construction",
+	"megalopolis_raise_money.title":"Fund the construction",
+	"megalopolis_raise_money.text.0":"The construction of the Whale Shark tank will be incredibly expensive. You would be wise to invest in revenue generating projects such as additional gift shop items and luxury food and drink.",
+	"megalopolis_raise_money.model.1":"shark_hat",
+	"megalopolis_raise_money.model.2":"orange_juice",
+	"megalopolis_raise_money.text.3":"See if you can hit these targets, you'll get a cash injection as a reward.",
+	"megalopolis_raise_money.reply.0":"Sell stuff. Got it.",
+	
+	"megalopolis_rank_12.title":"The final quest begins!",
+	"megalopolis_rank_12.text.0":"Congratulations! Now you are Rank 12 you can start unlocking the specific tools required for the Whale Shark tank.\n\nThe first thing you'll need is the Auto-Feeder. This device is required to feed the Whale Shark as nothing else can provide the constant flow of zoo plankton it needs.",
+	"megalopolis_rank_12.model.1":"auto_feeder",
+	"megalopolis_rank_12.text.2":"Next we'll need to source the tank. Not just any old tank will do, the sheer volume of water that it will contain means it needs to be reinforced with advanced materials and built by a specialist constructor. We need a Mega Tank!",
+	"megalopolis_rank_12.model.3":"tank_mega_18_10",
+	"megalopolis_rank_12.text.4":"I've identified a suitable constructor, they will contact you via the message log.",
+	
+	"megalopolis_rank_12_a":"Source equipment",
+	"megalopolis_unlock_mega_tank":"Unlock the Mega Tank\n<color=#86ABC6>(Check message log)</color>",
+	"megalopolis_unlock_mega_tank.tooltip":"Check your message log and look for the message about the tank construction enquiry.",
+	
+	"megalopolis_constructor":"Builder Blackmail",
+	"megalopolis_constructor.title":"Tank construction enquiry",
+	"megalopolis_constructor.text.0":"I'm told you need a Mega Tank. We can build it for you, but our schedule is completely full, it'll be months before it's ready.\n\nTell you what, I might be able to shift a few things around as I do love an aquarium. If you can build a tank with my favourite fish in it, I'll bump you up the schedule!",
+	"megalopolis_constructor.reply.0":"Blackmail is it? I suppose I have no choice...",
+	"megalopolis_constructor_complete.title":"Tank construction ready to start",
+	"megalopolis_constructor_complete.text.0":"You've made an old builder very happy. A deal is a deal, I've made some room in the schedule, tank construction can start as soon as you are ready.\n\n(You'll find the Mega Tank in the Tank section of the Build Menu.)",
+	
+	"megalopolis_the_habitat.title":"The perfect habitat",
+	"megalopolis_the_habitat.text.0":"We are tantalisingly close. A Whale Shark has been rescued from an illegal slaughterhouse but there are concerns about releasing it back into the wild.\n\nThe group responsible for the rescue are willing to donate it to your aquarium, provided that it has the perfect habitat. Whale Sharks have a very low survival rate in captivity, so everything has to be perfect.",
+	"megalopolis_the_habitat.model.1":"88_whale_shark",
+	"megalopolis_the_habitat.text.2":"A Whale Shark needs lots of room to swim and rocks and plants would provide good landmarks for it to use when navigating the tank. They are also keen for the shark to be housed with other large peaceful tankmates so it isn't completely alone.\n\nThis is it! Fulfill the requirements for the habitat and the Whale Shark is yours!",
+	
+	"megalopolis_rank_12_b":"Perfect Habitat",
+	
+	"megalopolis_the_whale_shark.title":"Whale Shark has arrived!",
+	"megalopolis_the_whale_shark.text.0":"As promised, here is an adult Whale Shark. Add it to its habitat. Fulfil your destiny.",
+	
+	"megalopolis_rank_12_c":"Whale Shark Incoming",
+	
+	"megalopolis_win_message.title":"You did it!",
+	"megalopolis_win_message.text.0":"Congratulations! You have completed the Megaquarium campaign.\n\nYou can carry on here in Megalopolis for as long as you like, but when you are finished you can try out the Sandbox mode where you can find unlimited gameplay. Enjoy!",
+	
+	"megalopolis_auto_feeder.title":"Auto-Feeder",
+	"megalopolis_auto_feeder.text.0":"The Auto-Feeder isn't just useful for Whale Sharks. It can also be used to reduce the feeding requirements put upon your staff.",
+	"megalopolis_auto_feeder.infobutton.1":"auto_feeder",
+	"megalopolis_auto_feeder.text.2":"After attaching an Auto-Feeder to a tank, open its window by selecting it. Then select a food type using the drop down menu contained in its window.",
+	"megalopolis_auto_feeder.image.3":"auto_feeder_pic",
+	"megalopolis_auto_feeder.text.4":"The food will be dispensed automatically to the tank whenever required and it will automatically refill at the beginning of each day.\n\nNote that staff members will need platforms to access Auto-Feeders attached to deep tanks.",
+	
+	"krillAutofeeders":"Krill Auto-Feeders {0}/{1}",
+	"krillAutofeeders.tooltip":"The tank must have {1} Auto-Feeders attached with food type set to Krill."
+}

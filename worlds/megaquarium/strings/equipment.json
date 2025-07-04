@@ -1,0 +1,120 @@
+{
+	
+	"basic_filter":"Basic Filter",
+	"basic_filter.desc":"The Basic Filter will maintain acceptable water quality on small tanks.",
+	
+	"basic_heater":"Basic Heater",
+	"basic_heater.desc":"The Basic Heater will keep the water at tropical temperatures on small tanks.",
+	
+	"combi_mini":"Combi Mini",
+	"combi_mini.desc":"The Combi Mini provides combined heating and filtering, saving you space and maintenance, but is only suitable for the smallest of tanks.",
+	
+	"power_filter":"Power Filter",
+	"power_filter.desc":"The Power Filter will maintain acceptable water quality on medium tanks.",
+	
+	"power_heater":"Power Heater",
+	"power_heater.desc":"The Power Heater will keep the water at tropical temperatures on medium tanks.",
+	
+	"basic_pump":"Basic Pump",
+	"basic_pump.desc":"The Basic Pump allows you to locate your equipment remotely from a tank for convenient access and to keep equipment out of the way of the Guests.",
+	
+	"power_combi":"Power Combi",
+	"power_combi.desc":"The Power Combi provides combined heating and filtering, saving you space and maintenance. It is suitable for small to medium sized tanks.",
+	
+	"18_tanklight":"Basic Light",
+	"18_tanklight.desc":"Provides basic level lighting for less demanding corals.",
+	
+	"basic_skimmer":"Protein Skimmer",
+	"basic_skimmer.desc":"The Protein Skimmer provides additional filtering power and is useful for maintaining higher water qualities on small tanks.",
+	
+	"large_filter":"Large Filter",
+	"large_filter.desc":"The Large Filter will maintain acceptable water quality on large tanks.",
+	
+	"large_heater":"Large Heater",
+	"large_heater.desc":"The Large Heater will keep the water at tropical temperatures on large tanks.",
+	
+	"basic_chiller":"Basic Chiller",
+	"basic_chiller.desc":"The Basic Chiller will keep the water at coldwater temperatures on small and medium tanks.",
+
+	"power_light":"Power Light",
+	"power_light.desc":"Provides moderate level lighting for moderately demanding corals.",
+	
+	"power_pump":"Power Pump",
+	"power_pump.desc":"The Power Pump has a longer range and allows you to connect two tanks so they share the same equipment.",
+	
+	"large_skimmer":"Large Protein Skimmer",
+	"large_skimmer.desc":"The Large Protein Skimmer provides additional filtering power and is useful for maintaining higher water qualities on medium tanks.",
+	
+	"large_chiller":"Large Chiller",
+	"large_chiller.desc":"The Large Chiller will keep the water at coldwater temperatures on large tanks.",
+	
+	"double_filter":"Double Filter",
+	"double_filter.desc":"The Double Filter provides combined filtering and skimming to maintain higher water qualities on smaller tanks with a single piece of equipment.",
+	
+	"nitrate_reactor":"Nitrate Reactor",
+	"nitrate_reactor.desc":"The Nitrate Reactor removes excess nitrates allowing for water quality high enough for sensitive species in medium tanks.",
+	
+	"mega_heater":"Mega Heater",
+	"mega_heater.desc":"The Mega Heater will keep the water at tropical temperatures on huge tanks.",
+	
+	"large_nitrate_reactor":"Large Nitrate Reactor",
+	"large_nitrate_reactor.desc":"The Large Nitrate Reactor removes excess nitrates allowing for water quality high enough for sensitive species in large tanks.",
+	
+	"mega_chiller":"Mega Chiller",
+	"mega_chiller.desc":"The Mega Chiller will keep the water at coldwater temperatures on huge tanks.",
+	
+	"large_double_filter":"Large Double Filter",
+	"large_double_filter.desc":"The Large Double Filter provides combined filtering and skimming to maintain higher water qualities on medium tanks with a single piece of equipment.",
+	
+	"triple_filter":"Triple Filter",
+	"triple_filter.desc":"The Triple Filter provides combined filtering, skimming and nitrate reacting to maintain very high water qualities on medium tanks with a single piece of equipment.",
+	
+	"large_pump":"Large Pump",
+	"large_pump.desc":"The Large Pump has a longer range and can connect to even more tanks, allowing you to take advantage of economies of scale and reduced maintainance requirements.",
+	
+	"large_light":"Large Light",
+	"large_light.desc":"Provides high level lighting for more demanding corals.",
+	
+	"uv_steriliser":"UV Steriliser",
+	"uv_steriliser.desc":"The UV Steriliser removes pathogens from the water allowing the most sensitive species to be kept in smaller tanks.",
+	
+	"mega_double_filter":"Mega Double Filter",
+	"mega_double_filter.desc":"The Mega Double Filter provides combined filtering and skimming for huge tanks.",
+	
+	"calcium_reactor":"Calcium Reactor",
+	"calcium_reactor.desc":"The Calcium Reactor doses the water with calcium, increasing the growth rate of all corals within the system.",
+	
+	"large_triple_filter":"Large Triple Filter",
+	"large_triple_filter.desc":"The Large Triple Filter provides combined filtering, skimming and nitrate reacting to maintain very high water qualities on larger tanks with a single piece of equipment.",
+	
+	"large_uv_steriliser":"Large UV Steriliser",
+	"large_uv_steriliser.desc":"The Large UV Steriliser removes pathogens from the water allowing the most sensitive species to be kept in medium tanks.",
+	
+	"mega_nitrate_reactor":"Mega Nitrate Reactor",
+	"mega_nitrate_reactor.desc":"The Mega Nitrate Reactor removes excess nitrates allowing for water quality high enough for sensitive species in larger tanks.",
+	
+	"mega_light":"Mega Light",
+	"mega_light.desc":"Provides ultra level lighting for the most demanding corals.",
+	
+	"auto_feeder":"Auto-Feeder",
+	"auto_feeder.desc":"Once you've chosen the food type for it to dispense, the Auto-Feeder will release the correct amount of food into the connected tank, at the beginning of each day. Unfortunately the Auto-Feeder cannot dispense Supplements or food for animals which \"Require Skill\". These must be fed by hand.",
+	
+	"mega_pump":"Mega Pump",
+	"mega_pump.desc":"The Mega Pump has such a long range and high tank limit, that it's fathomable that an entire, small aquarium could be run on a single system with a Mega Pump at its center!",
+	
+	"mega_uv_steriliser":"Mega UV Steriliser",
+	"mega_uv_steriliser.desc":"The Mega UV Steriliser removes pathogens from the water allowing the most sensitive species to be kept in larger tanks.",
+	
+	"filter":"Filters",
+	"combinedFilter":"Combined Filters",
+	"skimmer":"Skimmers",
+	"nitrateReactor":"Nitrate Reactors",
+	"uvSteriliser":"UV Sterilisers",
+	"heater":"Heaters",
+	"chiller":"Chillers",
+	"pump":"Pumps",
+	"light":"Lights",
+	"specialEquipment":"Special Equipment",
+	"light":"Lights",
+	"equipment":"Equipment"
+}

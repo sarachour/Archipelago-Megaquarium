@@ -1,0 +1,29 @@
+{
+	"campaign-6-hartcliff":"6. Hartcliff Research Facility",
+	"campaign-6-hartcliff.desc":"Take over this research facility and open it to the public!",
+	
+	"hartcliff_intro.title":"Welcome to Hartcliff",
+	"hartcliff_intro.text.0":"Hartcliff Research Facility presents the biggest challenge you've met so far, but it's also a golden opportunity to create a really special aquarium.\n\nYour access to livestock is severely reduced here in Hartcliff. You'll have to obtain most of your stock from merchants via the message log. Merchants offer a set of animals for a fixed price. It's a one-time thing, so animals from merchants are difficult to replace. Be careful not to let any die!\n\nThe good news is you have inherited a significant amount of equipment with the facility. There is a well designed maintenance room that supplies all the tanks via pumps.",
+	"hartcliff_intro.model.1":"power_pump",
+	"hartcliff_intro.text.2":"You'll need to redesign the aquarium layout to help guests find all the tanks, but if you can continue to house all your equipment in the central maintenance room, you could significantly reduce your staff requirements.\n\nYou have your objectives, good luck!",
+	
+	"hartcliff_main":"Convert the facility",
+	
+	"opt_hartcliff_wimp":"Amass wimps",
+	"opt_hartcliff_active_swimmers":"Room to swim",
+	"opt_hartcliff_corals":"See the light",
+	
+	"hartcliff_stick_feeding.title":"Stick Feeding",
+	"hartcliff_stick_feeding.text.0":"Now you are Rank 8 you have access to the Leopard Shark. This is the first animal you have come across that is Stick Fed. To feed animals like this, your staff will need access to Feeding Sticks.",
+	"hartcliff_stick_feeding.model.1":"84_feeding_stick_box",
+	"hartcliff_stick_feeding.text.2":"Stick feeding is much more time-consuming for unskilled staff, so it is best to focus your best staff on these tasks.\n\nAlso, the time it takes to feed is proportional to the number of animals rather than the total amount of feed. This means feeding many small Stick Fed animals can be quite time-consuming!\n\nDemonstrate your understanding of this new style of feeding by completing the new Optional Objective.",
+	
+	"opt_stick_feeding":"Stick Feeding",
+	
+	
+	"hartcliff_win_message.title":"You win!",
+	"hartcliff_win_message.text.0":"Great job! You started with a few tanks in an old research facility and converted it into a quirky aquarium filled with guests.\n\nYour next assignment is to take over a small aquarium in Myra. The owners have an interesting challenge for you and I think you're going to like it.",
+	"hartcliff_win_message.rawimage.1":"campaign-7-myra,0xffffffff,Myra",
+	"hartcliff_win_message.text.2":"You can continue to build here at Hartcliff for as long as you want, this message will stay in your message log (accessible via the button in the bottom-left) until you're ready.\n\nWhen you're ready to check out Myra, let me know.",
+	"hartcliff_win_message.reply.0":"I'm ready to take on this mysterious challenge."
+}

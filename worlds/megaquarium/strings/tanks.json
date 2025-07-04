@@ -1,0 +1,63 @@
+{
+	"2_freestanding":"Basic Tank",
+	"2_freestanding.desc":"The Basic Tank has a low capacity and can be accessed and viewed from all sides.",
+	
+	"5_wall_1side":"Wall Tank",
+	"5_wall_1side.desc":"The Wall Tank has a medium capacity, one viewing side and is only accessed at the back allowing you to keep your equipment out of the way of guests.",
+	
+	"tank_wall_2side":"Corner Tank",
+	"tank_wall_2side.desc":"The Corner Tank has a medium capacity, has two viewing sides and is only accessed at the back allowing you to keep your equipment out of the way of guests.",
+	
+	"tank_wall_3side":"Observer Tank",
+	"tank_wall_3side.desc":"The Observer Tank has a medium capacity, has three viewing sides and is only accessed at the back allowing you to keep your equipment out of the way of guests.",
+	
+	"lagoon_tank":"Lagoon Tank",
+	"lagoon_tank.desc":"The Lagoon Tank is similar to the Basic Tank but is sunken into the floor, increasing its capacity.",
+	
+	"wall_1side_deep":"Deep Wall Tank",
+	"wall_1side_deep.desc":"The Deep Wall Tank has a high capacity, one viewing side and is only accessed at the back allowing you to keep your equipment out of the way of guests.",
+	
+	"tank_wall_2side_deep":"Deep Corner Tank",
+	"tank_wall_2side_deep.desc":"The Deep Corner Tank has a high capacity, has two viewing sides and is only accessed at the back allowing you to keep your equipment out of the way of guests.",
+	
+	"tank_wall_3side_deep":"Deep Observer Tank",
+	"tank_wall_3side_deep.desc":"The Deep Observer Tank has a high capacity, has three viewing sides and is only accessed at the back allowing you to keep your equipment out of the way of guests.",
+	
+	"tank_small_kreisel":"Kreisel Tank",
+	"tank_small_kreisel.desc":"A Kreisel Tank has a circular current which stops the animals inside from bouncing off the sides.",
+	
+	"tank_rounded":"'Belfast' Tank",
+	"tank_rounded.desc":"The 'Belfast' Tank has a very high capacity, curved windows, and viewing on all sides.",
+	
+	"small_tunnel_tank":"Small Tunnel Tank",
+	"small_tunnel_tank.desc":"The Small Tunnel Tank allows your guests to get right inside the tank leading to greater levels of satisfaction.",
+	
+	"tank_wall_outcrop_deep":"Deep Outcrop Tank",
+	"tank_wall_outcrop_deep.desc":"The Deep Outcrop Tank is useful in situations where you want some tanks down the middle of a room but don't have the width available for regular wall tanks.",
+	
+	"u_lagoon_tank":"'U' Tank",
+	"u_lagoon_tank.desc":"The 'U' Tank is a larger version of the Lagoon Tank and is useful for filling the end of a room while the 'U' shape increases the number of viewing locations.",
+	
+	"tank_large_kreisel":"Large Kreisel Tank",
+	"tank_large_kreisel.desc":"",
+	
+	"large_tunnel_tank":"Large Tunnel Tank",
+	"large_tunnel_tank.desc":"The Large Tunnel Tank is great for dividing two areas while giving a new perspective to your Guests.",
+	
+	"tank_rounded_corner_external":"'Chicago' Tank",
+	"tank_rounded_corner_external.desc":"The 'Chicago' Tank is a high capacity round-edged tank arranged in a corner configuration. It comes in two variants, depending on whether you want the viewing edge to be on the inside or outside edge of the corner.",
+	
+	"tank_rounded_corner_internal":"'Chicago' Tank Internal",
+	"tank_rounded_corner_internal.desc":"The 'Chicago' Tank is a high capacity round-edged tank arranged in a corner configuration. This variant comes with the viewing edge on the inside of the corner.",
+	
+	"tank_mega":"Mega Tank",
+	"tank_mega.desc":"The Mega Tank is made from Titanium Alloy and advanced polymers to give it the strength to hold a vast volume of water.",
+	
+	"tank":"Tank",
+	"freestanding":"Freestanding",
+	"wall":"Wall",
+	"deepWall":"Deep Wall",
+	"large":"Large",
+	"huge":"Huge",
+	"speciality":"Speciality"
+}

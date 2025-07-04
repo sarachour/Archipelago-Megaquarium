@@ -1,0 +1,38 @@
+{
+	"giftShopCategory":"Gift Shop",
+	
+	"guide_book_shelf":"Guide Book Shelf",
+	"guide_book_shelf.desc":"Guests will love the informative Guide Book they can buy from this shelf.",
+	"guide_book":"Guide Book",
+	"guide_book_refill":"Guide Book Refill",
+	"guide_book_box":"Guide Book Supply",
+	"guide_book_box.desc":"Staff can come here to buy stock to refill the Guide Book Shelf.",
+	
+	"balloon_shelf":"Balloon Shelf",
+	"balloon_shelf.desc":"Guests will love the colorful Balloon they can buy from this shelf.",
+	"balloon":"Balloon",
+	"balloon_refill":"Balloon Refill",
+	"balloon_box":"Balloon Supply",
+	"balloon_box.desc":"Staff can come here to buy stock to refill the Balloon Shelf.",
+	
+	"copperband_shelf":"Copperband Toy Shelf",
+	"copperband_shelf.desc":"Guests will love the cuddly Copperband Toy they can buy from this shelf.",
+	"copperband":"Copperband Toy",
+	"copperband_refill":"Copperband Toy Refill",
+	"copperband_box":"Copperband Toy Supply",
+	"copperband_box.desc":"Staff can come here to buy stock to refill the Copperband Toy Shelf.",
+	
+	"shark_hat_shelf":"Shark Hat Shelf",
+	"shark_hat_shelf.desc":"Guests will love the hilarious Shark Hat they can buy from this shelf.",
+	"shark_hat":"Shark Hat",
+	"shark_hat_refill":"Shark Hat Refill",
+	"shark_hat_box":"Shark Hat Supply",
+	"shark_hat_box.desc":"Staff can come here to buy stock to refill the Shark Hat Shelf.",
+	
+	"tshirt_shelf":"T-Shirt Shelf",
+	"tshirt_shelf.desc":"Guests will love the colorful T-Shirt they can buy from this shelf.",
+	"tshirt":"T-Shirt",
+	"tshirt_refill":"T-Shirt Refill",
+	"tshirt_box":"T-Shirt Supply",
+	"tshirt_box.desc":"Staff can come here to buy stock to refill the T-Shirt Shelf."
+}

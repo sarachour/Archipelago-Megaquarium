@@ -1,0 +1,39 @@
+{
+	"Staff Door":"Staff Door",
+	"Staff Door.desc":"Staff Doors block Guests but allow Staff through.",
+
+	"17_toolstation":"Tool Station",
+	"17_toolstation.desc":"The Tool Station provides a toolkit that your staff can use to fix broken down equipment. Note: each Tool Station only comes with a single toolkit, so you'll need more than one if you want two staff to be able to fix things simultaneously.",
+	
+	"64_broom_box":"Broom Stand",
+	"64_broom_box.desc":"The Broom Stand provides a broom that your staff can use to sweep litter from the floor.",
+	
+	"65_sponge_box":"Sponge Sink",
+	"65_sponge_box.desc":"The Sponge Sink provides a sponge that your staff can use to wash things that get dirty.",
+	
+	"84_feeding_stick_box":"Feeding Stick",
+	"84_feeding_stick_box.desc":"",
+	
+	"85_diving_apparatus_box":"Diving Apparatus",
+	"85_diving_apparatus_box.desc":"",
+	
+	"86_mic_headset_box":"Mic Headset",
+	"86_mic_headset_box.desc":"The Mic Headset allows your staff to be heard over the din of the aquarium while giving talks. You'll also need a Podium.",
+	
+	"podium":"Podium",
+	"podium.desc":"The Podium gives your Staff a place to stand while they give informative and entertaining talks to your Guests. They'll also need a Mic Headset.",
+	
+	"15_toolbox":"Toolkit",
+	"26_broom":"Broom",
+	"27_sponge":"Sponge",
+	"48_feeding_stick":"Feeding Stick",
+	"49_diving_apparatus":"Diving Apparatus",
+	"50_mic_headset":"Mic Headset",
+	
+
+	"toolDispenser":"Tools"
+
+
+
+
+}

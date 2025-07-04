@@ -1,0 +1,421 @@
+{
+	"1_azure_demoiselle":"Azure Demoiselle",
+	"1_azure_demoiselle.desc":"This fish has a quirky habit of eating fish feces! This unusual behaviour is a way of supplementing their nutrition in the wild.",
+	"1_azure_demoiselle.pl":"Azure Demoiselles",
+	
+	"2_king_demoiselle":"King Demoiselle",
+	"2_king_demoiselle.desc":"Despite its bold coloring, this fish is shy and can often be picked on by more confident tank mates.",
+	"2_king_demoiselle.pl":"King Demoiselles",
+	
+	"4_half_and_half_chromis":"Half and Half Chromis",
+	"4_half_and_half_chromis.desc":"This fish needs to be kept in groups of four or more.  In smaller groups, the fish will fight amongst themselves until only one dominant fish survives.",
+	"4_half_and_half_chromis.pl":"Half and Half Chromises",
+	
+	"5_blackbar_soldierfish":"Blackbar Soldierfish",
+	"5_blackbar_soldierfish.desc":"Red coloring and big eyes usually means the fish is nocturnal. Red can't be detected at night by most fish and larger eyes will collect tiny fragments of light.",
+	"5_blackbar_soldierfish.pl":"Blackbar Soldierfish",
+	
+	"6_reef_squirrelfish":"Reef Squirrelfish",
+	"6_reef_squirrelfish.desc":"This nocturnal fish is shy but not unprotected, defending itself with venomous dorsal spines that can give a sharp sting to any unwary aquarist!",
+	"6_reef_squirrelfish.pl":"Reef Squirrelfish",
+	
+	"8_volitans_lionfish":"Volitans Lionfish",
+	"8_volitans_lionfish.desc":"The Elvis of the fish world - Volitans frequently die from overeating! They're never full and their greed is such, that they can choke on prey that is too large to be swallowed.",
+	"8_volitans_lionfish.pl":"Volitans Lionfish",
+	
+	"9_shortfin_lionfish":"Fuzzy Dwarf Lionfish",
+	"9_shortfin_lionfish.desc":"This species sways its plumed fins to hypnotise prey. As with all Lionfish, the Fuzzy's dorsal fin packs a venomous punch.",
+	"9_shortfin_lionfish.pl":"Fuzzy Dwarf Lionfish",
+	
+	"10_coral_hind":"Coral Grouper",
+	"10_coral_hind.desc":"A fast growing fish, that can't be trusted with smaller tank mates: This Grouper wants to know what everything tastes like!",
+	"10_coral_hind.pl":"Coral Groupers",
+	
+	"11_yellow_tang":"Yellow Tang",
+	"11_yellow_tang.desc":"Tangs are crucial in their wild environments to keep in-check the algaes and plants that would otherwise overwhelm the reefs. Tangs can even be seen grazing on algae growing on the back of turtles!",
+	"11_yellow_tang.pl":"Yellow Tangs",
+	
+	"12_clown_fish":"Clownfish",
+	"12_clown_fish.desc":"Clownfish can change sex! The most dominant fish of any group will turn into a female, who then picks a subservient male to pair with.",
+	"12_clown_fish.pl":"Clown Fish",
+	
+	"14_emperor_angelfish":"Emperor Angelfish",
+	"14_emperor_angelfish.desc":"An Angelfish with attitude! Emperors' always take the top spot in any tank hierarchy - daring any fish to step out of line.",
+	"14_emperor_angelfish.pl":"Emperor Angelfish",
+	
+	"15_copperband_butterfly":"Copperband Butterfly",
+	"15_copperband_butterfly.desc":"The Copperband's elongated face enables it to reach between corals for hidden food. It will spend its entire day examining the reef for potential snacks!",
+	"15_copperband_butterfly.pl":"Copperband Butterflies",
+	
+	"16_regal_tang":"Regal Tang",
+	"16_regal_tang.desc":"There is more to 'Dory' than meets the eye - she has a blade at the base of her tail. This modified scale is razor sharp and if threatened she will lash out before making her escape.",
+	"16_regal_tang.pl":"Regal Tangs",
+	
+	"17_long_horn_cowfish":"Longhorn Cowfish",
+	"17_long_horn_cowfish.desc":"Inquisitive and intelligent, Cowfish quickly recognise aquarists and will spit water at them to get their attention!",
+	"17_long_horn_cowfish.pl":"Longhorn Cowfish",
+	
+	"18_porcupine_puffer":"Porcupine Puffer",
+	"18_porcupine_puffer.desc":"A pufferfish has two layers of skin - an inner pleated layer and an outer elasticated one. These dual layers are what enable the puffer to ingest water and expand itself into a ball.",
+	"18_porcupine_puffer.pl":"Porcupine Puffers",
+	
+	"19_big_bellied_seahorse":"Big Bellied Seahorse",
+	"19_big_bellied_seahorse.desc":"The Big Bellied is the largest of the Seahorse family. As with all Seahorses, it is the male who gives birth to the babies.",
+	"19_big_bellied_seahorse.pl":"Big Bellied Seahorses",
+	
+	"20_fox_face_rabbitfish":"Foxface Rabbitfish",
+	"20_fox_face_rabbitfish.desc":"The Foxface Rabbitfish is venomous, and like many other creatures that sting, displays the warning coloration of yellow and black.",
+	"20_fox_face_rabbitfish.pl":"Foxface Rabbitfish",
+	
+	"21_green_moray_eel":"Green Moray Eel",
+	"21_green_moray_eel.desc":"The insatiably greedy Green Moray has poor eyesight and two sets of teeth - one in the mouth and one in the throat. Aquarists, watch your fingers!",
+	"21_green_moray_eel.pl":"Green Moray Eels",
+	
+	"22_green_mandarin_dragonet":"Mandarin Dragonet",
+	"22_green_mandarin_dragonet.desc":"Exquisite but delicate - the Green Mandarin needs to graze constantly on tiny crustaceans with little competition from other fish.",
+	"22_green_mandarin_dragonet.pl":"Mandarin Dragonets",
+	
+	"23_blacktip_reef_shark":"Blacktip Reef Shark",
+	"23_blacktip_reef_shark.desc":"A fast moving graceful shark, that must be trained as a juvenile not to eat its tank mates when adult...",
+	"23_blacktip_reef_shark.pl":"Blacktip Reef Sharks",
+	
+	"25_unicorn_surgeonfish":"Unicorn Surgeonfish",
+	"25_unicorn_surgeonfish.desc":"Although sword-like, the Unicorn's horn is not for fighting. When settling disputes, it uses the curved blade at the base of its tail.",
+	"25_unicorn_surgeonfish.pl":"",
+	
+	"26_sohal_surgeonfish":"Sohal Surgeonfish",
+	"26_sohal_surgeonfish.desc":"This fish is as bossy as it is beautiful, entering into spates with fish twice its size over territory!",
+	"26_sohal_surgeonfish.pl":"",
+	
+	"27_achilles_surgeonfish":"Achilles Surgeonfish",
+	"27_achilles_surgeonfish.desc":"This rare Surgeonfish always catches the discerning collector's eye, but tank parameters must be spot-on, or the Achilles won't be around for long.",
+	"27_achilles_surgeonfish.pl":"",
+	
+	"28_spotted_boxfish":"Spotted Boxfish",
+	"28_spotted_boxfish.desc":"One of the most highly prized boxfish, but also the riskiest: If stressed they can release a deadly ostracitoxin that has the potential to kill all animals in range.",
+	"28_spotted_boxfish.pl":"",
+	
+	"29_striped_boxfish":"Striped Boxfish",
+	"29_striped_boxfish.desc":"The Striped Boxfish is armored like a tank. This makes them harder to eat, but also limits their mobility and accounts for their quirky \"straight-jacket\" swimming style!",
+	"29_striped_boxfish.pl":"",
+	
+	"30_schooling_banner_fish":"Schooling Bannerfish",
+	"30_schooling_banner_fish.desc":"The Schooling Bannerfish makes for a spectacular shoaling display. But if underfed, it will nibble slower moving animals...",
+	"30_schooling_banner_fish.pl":"",
+	
+	"31_redtail_butterflyfish":"Redtail Butterflyfish",
+	"31_redtail_butterflyfish.desc":"The Redtail's bright bottom and black \"eye-mask\" confuses would-be predators - making them unsure which end of the Butterfly is which!",
+	"31_redtail_butterflyfish.pl":"",
+	
+	"32_meyers_butterflyfish":"Meyers Butterflyfish",
+	"32_meyers_butterflyfish.desc":"This stunning shoaler has complex nutritional needs and will only flourish if housed with stony corals to graze upon.",
+	"32_meyers_butterflyfish.pl":"",
+	
+	"33_arabian_butterflyfish":"Arabian Butterflyfish",
+	"33_arabian_butterflyfish.desc":"This delicate Butterfly only thrives when bought young. Older specimens are less adaptable to new environments and foods. ",
+	"33_arabian_butterflyfish.pl":"",
+	
+	"34_blue_and_yellow_grouper":"Blue and Yellow Grouper",
+	"34_blue_and_yellow_grouper.desc":"Groupers can be highly poisonous to humans, due to toxic algae that the Grouper's prey consume in large amounts.",
+	"34_blue_and_yellow_grouper.pl":"",
+	
+	"35_panther_grouper":"Panther Grouper",
+	"35_panther_grouper.desc":"The Panther Grouper charms with its unusual swimming behaviour and bold personality.",
+	"35_panther_grouper.pl":"",
+	
+	"36_leaf_scorpionfish":"Leaf Scorpionfish",
+	"36_leaf_scorpionfish.desc":"A colorful but well camouflaged ambush predator, that watches, waits, then strikes!",
+	"36_leaf_scorpionfish.pl":"",
+	
+	"37_french_angelfish":"French Angelfish",
+	"37_french_angelfish.desc":"This understated beauty is the ultimate teamplayer and when young will act as a cleaner fish; picking parasites off other animals.",
+	"37_french_angelfish.pl":"",
+	
+	"38_flame_angelfish":"Flame Angelfish",
+	"38_flame_angelfish.desc":"This dwarf Angel will share its tank with most any fish - provided they don't look anything like himself!",
+	"38_flame_angelfish.pl":"",
+	
+	"39_coral_beauty":"Coral Beauty",
+	"39_coral_beauty.desc":"Proving that small can be stunning. The Coral Beauty's vibrant coloring never fails to catch the eye, despite it's retiring personality.",
+	"39_coral_beauty.pl":"",
+	
+	"41_squarespot_anthia_(male)":"Mirror Anthias",
+	"41_squarespot_anthia_(male).desc":"This show stopping fish needs lower lighting levels and supplemented foods to maintain its brilliant coloring.",
+	"41_squarespot_anthia_(male).pl":"",
+	
+	"42_purple_queen_anthias_(female)":"Purple Queen Anthias",
+	"42_purple_queen_anthias_(female).desc":"A fish that needs a lot of TLC to survive but which makes for a spectacular and highly sociable group.",
+	"42_purple_queen_anthias_(female).pl":"",
+	
+	"43_bartlett_anthias":"Bartlett Anthias",
+	"43_bartlett_anthias.desc":"This Anthias species is more robust than most, but still needs high-protein foods, frequent meals and lots of swimming space.",
+	"43_bartlett_anthias.pl":"",
+	
+	"44_royal_gramma":"Royal Gramma",
+	"44_royal_gramma.desc":"This delicate-looking beauty is deceptively hardy. In the wild, Royal Grammas' claim small territories in vertical reef walls.",
+	"44_royal_gramma.pl":"",
+	
+	"45_arabian_bluelined_dottyback":"Arabian Bluelined Dottyback",
+	"45_arabian_bluelined_dottyback.desc":"This fish is exceptionally aggressive to more docile tank mates and has even be known to disembowel them! ",
+	"45_arabian_bluelined_dottyback.pl":"",
+	
+	"46_oblique_lined_dottyback":"Oblique-lined Dottyback",
+	"46_oblique_lined_dottyback.desc":"A diva that hates anyone that looks like itself! Keep singly unless using plenty of rockwork to break up eye-lines to other members of the group.",
+	"46_oblique_lined_dottyback.pl":"",
+	
+	"47_orchid_dottyback":"Orchid Dottyback",
+	"47_orchid_dottyback.desc":"The gentlest of the Dottyback family, appearing to have missed the \"meanstreak\" that characterises so many in this group.",
+	"47_orchid_dottyback.pl":"",
+	
+	"51_slender_seahorse":"Slender Seahorse",
+	"51_slender_seahorse.desc":"When eating, the Slender Seahorse sucks in shrimp so quickly that they are liquidized - extremely handy for a fish without teeth!",
+	"51_slender_seahorse.pl":"",
+	
+	"52_flame_pipefish":"Flame Pipefish",
+	"52_flame_pipefish.desc":"Flame Pipefish have an unusual habit of swimming upside and will pick parasites from any gentle tank mates.",
+	"52_flame_pipefish.pl":"",
+	
+	"53_blue_knuckle_hermit_crab":"Blue Knuckle Hermit Crab",
+	"53_blue_knuckle_hermit_crab.desc":"This dwarf crab species is a real gem; a hardworking scavenger who plays nice with other tank mates. A group of these Hermits make an ideal tank clean-up crew.",
+	"53_blue_knuckle_hermit_crab.pl":"",
+	
+	"54_scarlet_leg_hermit_crab":"Red Leg Hermit Crab",
+	"54_scarlet_leg_hermit_crab.desc":"Red Legs love to climb and explore and their confidence means they can be housed with larger fish.",
+	"54_scarlet_leg_hermit_crab.pl":"",
+	
+
+
+	"58_marbled_serpent_starfish":"Marbled Serpent Starfish",
+	"58_marbled_serpent_starfish.desc":"This spidery starfish is quick moving to evade predators. Its habit of scavenging waste food and fish faeces makes it a useful addition.",
+	"58_marbled_serpent_starfish.pl":"",
+	
+	"60_bubble_tip_anemone,_rose":"Bubbletip Anemone",
+	"60_bubble_tip_anemone,_rose.desc":"A Clownfish's best friend, but unfortunately much harder to look after! Keep an eye on the health of your anemone, because the toxins from a dead one can take down a whole tank...",
+	"60_bubble_tip_anemone,_rose.pl":"",
+	
+	"63_leopard_giant_clam":"Leopard Giant Clam",
+	"63_leopard_giant_clam.desc":"Leopard Clams contains zooxanthellae - an algae that feeds on light. These algaes feed their host sugars and are responsible for the incredible coloration of the clam.",
+	"63_leopard_giant_clam.pl":"",
+	
+	"66_daisy_star_polyps":"Daisy Star Polyps",
+	"66_daisy_star_polyps.desc":"This fast growing coral will enhance any tank's rock-work with its feathery mat of flower-like polyps.",
+	"66_daisy_star_polyps.pl":"",
+	
+	"68_disco_mushrooms":"Disco Mushrooms",
+	"68_disco_mushrooms.desc":"A great beginner's coral that provides a riot of color. Mushrooms reproduce by creating new 'buds' from their foot.",
+	"68_disco_mushrooms.pl":"",
+	
+	"69_emperor_gorgonian":"Emperor Gorgonian",
+	"69_emperor_gorgonian.desc":"Desirable yet delicate, this sculptural Gorgonian is one of the Holy Grails of coral husbandry...",
+	"69_emperor_gorgonian.pl":"",
+	
+	"70_purple_plume_fan":"Purple Plume Fan",
+	"70_purple_plume_fan.desc":"This elegant coral won't thrive if placed near corals that sting or use toxins...",
+	"70_purple_plume_fan.pl":"",
+	
+	"71_blue_tubular_sponge":"Blue Tubular Sponge",
+	"71_blue_tubular_sponge.desc":"Tubular Sponge is as feisty as it is vibrant and can easily overgrow slower developing corals.",
+	"71_blue_tubular_sponge.pl":"",
+	
+	"72_plate_coral":"Plate Coral",
+	"72_plate_coral.desc":"A beautiful, slow growing coral that forms the distinctive 'shelves' seen on a reef. ",
+	"72_plate_coral.pl":"",
+	
+	"73_sun_montipora":"Sun Montipora",
+	"73_sun_montipora.desc":"A wow factor coral. Keep with strong lighting and ensure its surface plates remain free from algae.",
+	"73_sun_montipora.pl":"",
+	
+	"74_stagshorn_coral":"Staghorn Coral",
+	"74_stagshorn_coral.desc":"This coral forms the basis of the world's most massive reefs - its calcium carbonate exoskeleton lasting long after the coral itself has expired.",
+	"74_stagshorn_coral.pl":"",
+	
+	"76_toadstool_leather_coral":"Toadstool Leather Coral",
+	"76_toadstool_leather_coral.desc":"Don't place the Toadstool next to delicate corals, it's known to engage in chemical warfare - releasing growth inhibiting toxins into the water!",
+	"76_toadstool_leather_coral.pl":"",
+	
+	"77_fried_egg_jelly":"Fried Egg Jelly",
+	"77_fried_egg_jelly.desc":"This docile jelly doesn't have much of a sting and because of this small fish and shrimp hide among its tentacles for protection!",
+	"77_fried_egg_jelly.pl":"",
+	
+	"78_moon_jelly":"Moon Jelly",
+	"78_moon_jelly.desc":"Moon Jellies have limited swimming ability and drift with the current. They feed on plankton and small crustaceans which they collect with their stinging tentacles.",
+	"78_moon_jelly.pl":"",
+	
+	"79_greater_blue_ring_octopus":"Greater Blue Ring Octopus",
+	"79_greater_blue_ring_octopus.desc":"Don't be distracted by this octo's beauty. It carries enough venom in a single bite to kill twenty-six adult humans.",
+	"79_greater_blue_ring_octopus.pl":"",
+	
+	"80_zebra_moray_eel":"Zebra Moray Eel",
+	"80_zebra_moray_eel.desc":"Zebras won't try and sample their fish tank mates, but we can't say the same for any ornamental crustaceans...",
+	"80_zebra_moray_eel.pl":"",
+
+	"81_southern_stingray":"Southern Stingray",
+	"81_southern_stingray.desc":"A larger than life character prone to greediness and curiosity. They frequently get under-foot with tank divers, who must stay aware of this ray's barbed tail.",
+	"81_southern_stingray.pl":"",
+	
+	"82_bluespotted_ribbontail_ray":"Bluespotted Ribbontail Ray",
+	"82_bluespotted_ribbontail_ray.desc":"Expert care needed. Arguably the most beautiful of the small ray species but also the most difficult.",
+	"82_bluespotted_ribbontail_ray.pl":"",
+	
+	"83_spotted_eagle_ray":"Spotted Eagle Ray",
+	"83_spotted_eagle_ray.desc":"Spotted Eagles are the athletes of the ray world, maneuvering at great speed with their wing like pectoral fins and even jumping clear from the water.",
+	"83_spotted_eagle_ray.pl":"",
+	
+	"84_manta_ray":"Manta Ray",
+	"84_manta_ray.desc":"Mantas are curious and playful and have one of the highest brain-to-body mass ratios of all fish. In captivity, attention should be paid to ensuring this filter-feeder has adequate space and food to thrive.",
+	"84_manta_ray.pl":"",
+	
+	"85_green_turtle":"Green Turtle",
+	"85_green_turtle.desc":"This gentle animal loves its greens and enjoys being with other herbiverous fish that remove the algae growing on its shell. Green turtles are endangered in the wild and it is rare to see them in captivity.",
+	"85_green_turtle.pl":"",
+	
+	"86_bonnethead_shark":"Bonnethead Shark",
+	"86_bonnethead_shark.desc":"This mini Hammerhead is an active shark who moves at a velocity of 61 cm/sec. Bonnetheads like to form groups and establish hierarchies.",
+	"86_bonnethead_shark.pl":"",
+	
+	"87_leopard_shark":"Leopard Shark",
+	"87_leopard_shark.desc":"This strikingly marked shark is one of the few mid-sized sharks that can be trusted with smaller fish.",
+	"87_leopard_shark.pl":"",
+	
+	"88_whale_shark":"Whale Shark",
+	"88_whale_shark.desc":"The largest fish species in the world and the ultimate in aquarium prestige! This gentle giant is one of only three shark species to filter feed - gulping in plankton which it then strains over filter pads. A juvenile Whale Shark is estimated to eat 21 kg (46 pounds) of plankton per day.",
+	"88_whale_shark.pl":"",
+	
+	"89_epaulette_shark":"Epaulette Shark",
+	"89_epaulette_shark.desc":"This shark prefers to walk rather than swim, using its stiffened under-fins to walk across the sea-bed. The Epaulette will even use its curious talent to climb out of the water entirely to access more exciting tidal-pools!",
+	"89_epaulette_shark.pl":"",
+	
+	"90_tassled_wobbegong_shark":"Tassled Wobbegong Shark",
+	"90_tassled_wobbegong_shark.desc":"This canny ambush predator lifts its fringed head from the substrate to create a 'cave' to ensnare unsuspecting prey! To entice larger meals, it uses its tail as a lure -  hooking it over and waving so it resembles a small fish.",
+	"90_tassled_wobbegong_shark.pl":"",
+	
+	"92_lemon_shark":"Lemon Shark",
+	"92_lemon_shark.desc":"This shark will bite if provoked but tends to warn intruders with 'jaw gaping' and swimming a figure-of eight-pattern. Vitamin B deficiency can cause abnormalities in Lemon Sharks - remember to supplement!",
+	"92_lemon_shark.pl":"",
+	
+	"95_leafy_seadragon":"Leafy Seadragon",
+	"95_leafy_seadragon.desc":"One of the most fantastical looking sea creatures known, the Leafy Seadragon is truly unique. Its fronded body-work enables it to stay hidden in plain sight - provided there are seaweeds around!",
+	"95_leafy_seadragon.pl":"",
+	
+	"93_humpback_snapper":"Humpback Snapper",
+	"93_humpback_snapper.desc":"This species is an excellent addition to a large shark tank community since its shoaling ability and quick bursts of speed keep it out of trouble!",
+	"93_humpback_snapper.pl":"",
+	
+	"94_horse-eye_jack":"Horse-Eye Jack",
+	"94_horse-eye_jack.desc":"This Jack forms large schools in the wild and is a voracious eater! It is known to be curious and will often interact with divers.",
+	"94_horse-eye_jack.pl":"",
+	
+	"96_giant_pacific_octopus":"Giant Pacific Octopus",
+	"96_giant_pacific_octopus.desc":"The Giant Pacific is the largest of any octopus species and individuals can weigh-in in excess of 110lb. Their keen intelligence makes them master escapologists!",
+	"96_giant_pacific_octopus.pl":"",
+	
+	"97_nautilus":"Nautilus",
+	"97_nautilus.desc":"Often called 'living fossils', Nautilus have been in the oceans for over 150 million years. In the wild, Nautilus rise to the shallows to feed at dusk and retreat into deep water during the day.",
+	"97_nautilus.pl":"",
+	
+	"98_common_cuttlefish":"Common Cuttlefish",
+	"98_common_cuttlefish.desc":"Cuttlefish are masters of predation and disguise, changing the color and texture of their skin to blend into their surroundings.",
+	"98_common_cuttlefish.pl":"",
+	
+	"99_wolffish":"Wolffish",
+	"99_wolffish.desc":"Wolffish live in deep cold water and produce a natural antifreeze to keep their blood moving. In the wild, Wolffish are an important factor in controlling sea urchin populations",
+	"99_wolffish.pl":"",
+	
+	"100_lumpsucker":"Lumpsucker",
+	"100_lumpsucker.desc":"The Lumpsucker has curved pelvic fins, which it places together to create a cup to suction itself to surfaces. This unique design keeps the lumpsucker safe in turbulent water.",
+	"100_lumpsucker.pl":"",
+	
+	"101_turbot":"Turbot",
+	"101_turbot.desc":"When young, Turbot look like regular fish - they swim in an upright position and have one eye on either side of their head. But, as they develop, one eye migrates across the forehead to join the other! Their internal organs modify and they begin living horizontally.",
+	"101_turbot.pl":"",
+	
+	"102_cuckoo_wrasse":"Cuckoo Wrasse",
+	"102_cuckoo_wrasse.desc":"Females of this species can turn into males, ensuring there is always an optimal choice of partners come breeding season!",
+	"102_cuckoo_wrasse.pl":"",
+	
+	"103_ballan_wrasse":"Ballan Wrasse",
+	"103_ballan_wrasse.desc":"This wrasse is both intelligent and sociable - with younger Ballans cleaning lice from other fish. Ballan wrasse have an additional set of teeth in their throat for crushing mollusc shells.",
+	"103_ballan_wrasse.pl":"",
+	
+	"104_blonde_skate":"Blonde Skate",
+	"104_blonde_skate.desc":"During breeding season, this ray lays egg cases - known as 'Mermaid's Purses' -  which are attached by sticky hairs to the seaweed or substrate. Its takes around seven months for an egg case to hatch.",
+	"104_blonde_skate.pl":"",
+	
+	"105_atlantic_mackerel":"Atlantic Mackerel",
+	"105_atlantic_mackerel.desc":"These distinctive fish are agile shoalers with an amazing turn of speed. Their smaller than usual scales are easily damaged, but give their skin a velvety softness.",
+	"105_atlantic_mackerel.pl":"",
+	
+	"106_atlantic_cod":"Atlantic Cod",
+	"106_atlantic_cod.desc":"A sociable fish who is happy to mingle in a group, but also enjoys grubbing along the sea floor digging out tasty tidbits. Cod is a slow growing, long-lived species, whose wild numbers have been decimated by commercial fishing.",
+	"106_atlantic_cod.pl":"",
+	
+	"107_atlantic_pollock":"Atlantic Pollock",
+	"107_atlantic_pollock.desc":"A number of Pollock can make a striking easy-care shoal, but this fish is known to cannibalize the smallest members of its group!",
+	"107_atlantic_pollock.pl":"",
+	
+	"108_blue_whiting":"Blue Whiting",
+	"108_blue_whiting.desc":"Blue Whiting's bright white beauty makes their demands of excellent water and sensitive tank mates worth the effort.",
+	"108_blue_whiting.pl":"",
+	
+	"109_common_starfish":"Common Starfish",
+	"109_common_starfish.desc":"The common starfish has two stomachs, five eyes and the ability to 'drop' and regenerate a limb if it is caught by a predator.",
+	"109_common_starfish.pl":"",
+
+	"110_common_lobster":"Common Lobster",
+	"110_common_lobster.desc":"This fearless lobster always bags the best territory in any tank and will actively defend it. However, the tables can swiftly be turned after moulting, when a crustacean's jelly-soft shell offers no protection...",
+	"110_common_lobster.pl":"",
+	
+	"111_pie-crust_crab":"Pie-Crust Crab",
+	"111_pie-crust_crab.desc":"The heavyweight champion of the crab world, a Pie-Crust crab is capable of inflicting a bone-crunching grip with its claws.",
+	"111_pie-crust_crab.pl":"",
+	
+	"112_frilled_anemone":"Frilled Anemone",
+	"112_frilled_anemone.desc":"Each anemone's head contains over one thousand tentacles giving a feathery appearance. When happy in their surroundings, these long stalked anemones spread readily, giving a wonderful \"garden\" effect.",
+	"112_frilled_anemone.pl":"",
+	
+	"113_fish-eating_anemone":"Fish-eating Anemone",
+	"113_fish-eating_anemone.desc":"This anemone is capable of expanding to eat fish three times its size and its sting is one of the strongest around.",
+	"113_fish-eating_anemone.pl":"",
+	
+	"114_starry_smoothhound":"Starry Smoothhound",
+	"114_starry_smoothhound.desc":"When swimming these are fast flexible sharks, but they often choose to rest on the seabed. Smoothhounds are gentle and are the perfect tank mates for smaller fish.",
+	"114_starry_smoothhound.pl":"",
+	
+	"115_bull_huss":"Bull Huss",
+	"115_bull_huss.desc":"Bull Huss are known for their lazy lolling on the sand. Their favourite food is crab and they have a special technique for eating Hermits - shaking the shell so vigorously that the crab loses its grip and slides out!",
+	"115_bull_huss.pl":"",
+	
+	"116_angel_shark":"Angel Shark",
+	"116_angel_shark.desc":"A critically endangered shark in the wild due to commercial fishing. This ambush predator has rows of razor sharp teeth for impaling prey and it's also quick to bite if annoyed: aquarists, feed with caution...",
+	"116_angel_shark.pl":"",
+	
+	"animal":"Animals",
+	"damsel":"Damsels",
+	"soldierSquirrels":"Soldierfish and Squirrelfish",
+	"dottybacksGrammasAnthias":"Dottybacks, Grammas and Anthias",
+	"grouper":"Groupers",
+	"surgeon":"Surgeonfish",
+	"butterfly":"Butterflyfish",
+	"angel":"Angelfish",
+	"lionAndScorpion":"Lionfish and Scorpionfish",
+	"shark":"Sharks",
+	"ray":"Rays",
+	"eels":"Eels",
+	"seahorses":"Seahorses and Seadragons",
+	"boxAndPuffer":"Box and Pufferfish",
+	"crustacean":"Crustaceans",
+	"cephalopod":"Cephalopod",
+	"otherInverts":"Other Inverts",
+	"schoolingFinfish":"Schooling Finfish",
+	"wrasse":"Wrasse",
+	"oddball":"Oddballs",
+	"softCoral":"Soft Coral",
+	"stonyCoral":"Stony Coral",
+	"anemone":"Anemones",
+	"reptile":"Reptiles",
+	"otherInvertsStatic":"Anemones and Gorgonians",
+	"echinoderm":"Echinoderms",
+	"bivalve":"Bivalves",
+	"jellyfish":"Jellyfish",
+	
+}

@@ -1,0 +1,182 @@
+{
+	"campaign":"Campaign",
+	
+	"campaign-1-sunnyside":"1. Sunnyside",
+	"campaign-1-sunnyside.desc":"Learn the basics here establishing a small aquarium from scratch!",
+	
+	"sunnyside_intro.title":"Welcome to Sunnyside",
+	"sunnyside_intro.text.0":"You've been tasked with building a small aquarium from scratch here at Sunnyside.\n\nBefore the investors release any funding, they want to make sure you can handle the basic controls. Complete the Objectives in the top right of the screen to prove you know what you're doing.",
+	"sunnyside_intro.image.1":"main_objective",
+	"sunnyside_intro.text.2":"For more information on any objective, simply hover over the 'info' button to the right of it. Good luck!",
+	"sunnyside_intro.image.3":"info,0x65c0ffff",
+	
+	"sunnyside_basic_control":"Objectives",
+	"hoverOverInfo":"Hover over info button ->",
+	"hoverOverInfo.tooltip":"If you ever get stuck on a particular Objective. Hover over this button for handy tips!",
+	"rightClickToPan":"Pan camera",
+	"rightClickToPan.tooltip":"Hold the right mouse button and move the mouse to pan the camera around the game world. Alternatively use the WASD keys on your keyboard.",
+	"middleMouseToOrbit":"Orbit camera",
+	"middleMouseToOrbit.tooltip":"Hold the middle mouse button and move the mouse to orbit the camera around the center of the screen. Alternatively, hold Ctrl and move the mouse.",
+	"mouseWheelToZoom":"Zoom camera",
+	"mouseWheelToZoom.tooltip":"Scroll the mouse wheel to zoom the camera in and out. Alternatively, hold Shift and move the mouse forward and backwards.",
+	"pressHome":"Return to 'Home'",
+	"pressHome.tooltip":"If you lose your aquarium you can press the H key to return to the entrance at any time.",
+	
+	
+	
+	
+	
+	"sunnyside_start_basic_setup.title":"Time to build!",
+	"sunnyside_start_basic_setup.text.0":"Great stuff! You've just unlocked your first round of funding for your aquarium!\n\nUse the money to get the basic requirements of your aquarium set up. These are covered in the new set of Objectives you've just been given.\n\nBy the way, if you need to review this or any other message you can use the button in the bottom left of the screen.",
+	"sunnyside_start_basic_setup.image.1":"message,0x65c0ffff",
+	
+	"sunnyside_basic_setup":"Basic Setup",
+	"buildTwoTanks":"Build Basic Tanks {0}/{1}",
+	"buildTwoTanks.tooltip":"Tanks provide space for your Livestock to live in.\n\nBuild things using the Build Menu over on the left side of the screen. Click the large button with a tank on it and look for a tank called \"Basic Tank\".\n\nOnce selected, hover the cursor over an empty part of your aquarium and click to build.",
+	"addFilters":"Attach a Basic Filter to each tank",
+	"addFilters.tooltip":"Filters help keep the water in your tanks clean.\n\nYou'll find the Basic Filter in the Equipment section of the Build Menu. Look for the button with the cog and water on it.\n\nFilters must be built adjacent to your tanks.",
+	"addHeaters":"Attach a Basic Heater to each tank",
+	"addHeaters.tooltip":"Heaters keep your tanks at the tropical temperatures your fish need.\n\nYou'll find the Basic Heater in the Equipment section of the Build Menu.  Look for the button with the cog and water on it.\n\nHeaters must be built adjacent to your tanks.",
+	"addAzureDemoiselles":"Add some Azure Demoiselles to each tank",
+	"addAzureDemoiselles.tooltip":"Fish and other Livestock are what bring guests to your aquarium. Whenever a guest observes your Livestock you gain points <sprite name=\"ecology\">, <sprite name=\"science\">, <sprite name=\"prestige\">.\n\nYou can find the Azure Demoiselles under the Livestock section of the Build Menu. Look for the button with the fish on it.",
+	"addDecorations":"Add some decorations to your tanks",
+	"addDecorations.tooltip":"Decorations serve many functions. Guests prefer tanks which have a good variety of decorations in, plus some animals need certain decorations to thrive.\n\nFind them under the Tank Decoration section of the Build Menu. Look for the button with the underwater plants on it.",
+	"hireOneStaff":"Hire an aquarist",
+	"hireOneStaff.tooltip":"Staff look after your Livestock by making sure they get fed each day and by maintaining the equipment. Later on you'll also need staff to enrich your guests' visit.\n\nHire staff via the Staff Window. Open it using the button with the man and woman in the bottom right of the screen.",
+	"buildAFoodbox":"Build an Orange Pellet Dispenser",
+	"buildAFoodbox.tooltip":"Food Dispensers are used by your Staff to gather food before feeding your Livestock.\n\nYou can find the Orange Pellet Dispenser under the Tools section of the Build Menu. Use the mouse wheel or Q and E to rotate!",
+	"buildToolStation":"Build a Tool Station\n(scroll mouse wheel to rotate)",
+	"buildToolStation.tooltip":"Tool Stations provide Toolkits which are used by your Staff to fix broken down equipment.\n\nYou can find the Tool Station under the Tools section of the Build Menu. Use the mouse wheel or Q and E to rotate!",
+	"openYourAquarium":"Open your aquarium!",
+	"openYourAquarium.tooltip":"When you are ready, open your aquarium by clicking on the button at the bottom of the screen.",
+	
+	
+	
+	
+	
+	
+	"sunnyside_unlocking_fish":"Unlocking Animals",
+	"earnYourFirstEcology":"Earn your first Ecology <sprite name=\"ecology\"> point.",
+	"earnYourFirstEcology.tooltip":"Whenever a guest experiences one of your tanks, you gain points for everything it contains. Ecology <sprite name=\"ecology\"> points are used to unlock new animals and tank decorations.",
+	"startResearchingFirstFish":"Select fish to research",
+	"startResearchingFirstFish.tooltip":"The Ecology Research window will prompt you when you have started earning <sprite name=\"ecology\">. You can open the window to change research at any time by clicking on the progress bar.",
+	"unlockFirstFish":"Unlock your first fish",
+	"unlockFirstFish.tooltip":"You can Fast-Forward time using the button next to the time controls at the bottom-right of the screen.",
+	"pauseTheGame":"Pause the game",
+	"pauseTheGame.tooltip":"Pause the game whenever you like by clicking the time control or pressing Spacebar. You can even build while paused!",
+	"expand":"Expand your floor space\n(click-and-drag)",
+	"expand.tooltip":"Expand your aquarium's floor space to make room for a new tank. First select the expand tool to the top left of the screen, look for a button with four tiles on it.\n\nNow press and drag the left mouse button to designate an area next to your existing floor space to expand into.",
+	"buildALargeTank":"Build a large tank\n(click-and-drag)",
+	"buildALargeTank.tooltip":"Hold down the left mouse button when you build a tank to drag it out to a larger size.\n\nLarger tanks allow you to put more animals together in a tank but they may require additional heating and filtering.",
+	"moveTank":"Practice moving tank",
+	"moveTank.tooltip":"Sometimes you'll want to move your equipment. Practice this now by selecting the Move tool (M), clicking on a tank and clicking again to drop it somewhere else.",
+	"addHeaterAndFilter":"Add a basic heater and filter to your new tank",
+	"addHeaterAndFilter.tooltip":"Add a basic heater and filter to the large tank. You can find them in the Equipment section of the Build Menu.",
+	"addOrchidDottybacks":"Add some Orchid Dottybacks to your new tank {0}/{1}",
+	"addOrchidDottybacks.tooltip":"You can find your newly unlocked Orchid Dottyback under the Livestock section of the Build Menu. Look for the button with the fish on it.",
+	
+	"sunnyside_first_guests.title":"Your first guests!",
+	"sunnyside_first_guests.text.0":"Well done! Your basic aquarium is up and running and your first Guest has arrived!",
+	"sunnyside_first_guests.model.1":"guest",
+	"sunnyside_first_guests.text.2":"Whenever a Guest enters your aquarium they'll pay you some <sprite name=\"money\"> to enter.\n\nIn addition, as they experience your displays they'll reward you with Ecology <sprite name=\"ecology\"> points which you can use to unlock new animals for your aquarium.",
+	
+	"sunnyside_new_animal.title":"New animal incoming!",
+	"sunnyside_new_animal.text.0":"Great job! You've started to research a new animal - the Orchid Dottyback!",
+	"sunnyside_new_animal.model.1":"47_orchid_dottyback",
+	"sunnyside_new_animal.text.2":"As you earn more Ecology <sprite name=\"ecology\"> points you will make progress towards unlocking it. You can see your progress in the bottom left of the screen.",
+	"sunnyside_new_animal.image.3":"tutorial_progress_bar",
+	
+	"sunnyside_dottyback_unlocked.title":"Expand our range",
+	"sunnyside_dottyback_unlocked.text.0":"You've just unlocked the Orchid Dottyback.",
+	"sunnyside_dottyback_unlocked.model.1":"47_orchid_dottyback",
+	"sunnyside_dottyback_unlocked.text.2":"Now it's time to buy some for your aquarium. Follow the remaining Objectives to expand your livestock range!",
+	
+
+	
+	
+	
+	"sunnyside_care_requirements":"Care Requirements",
+	"atLeastOneHalfAndHalf":"At least one Half and Half Chromis",
+	"atLeastOneHalfAndHalf.tooltip":"Build another tank and add your newly acquired Half and Half Chromis.",
+	"satisfyShoalerRequirement":"Satisfy Shoaler requirement",
+	"satisfyShoalerRequirement.tooltip":"Add enough Half and Half Chromis to the tank to satisfy the Shoaling requirement.",
+	
+	"sunnyside_care_requirements_popup.title":"Different care requirements",
+	"sunnyside_care_requirements_popup.text.0":"You may have noticed a set of icons attached to each animal you research and acquire. These are known as the animal's Care Requirements. Failure to meet these will reduce the health of your animals and could lead to death.\n\nYour investors have arranged for you to access a new fish called the Half and Half Chromis. Let's take a look at its care requirements.",
+	"sunnyside_care_requirements_popup.infobutton.1":"4_half_and_half_chromis",
+	"sunnyside_care_requirements_popup.text.2":"The Half and Half Chromis has a requirement you haven't encounted before, it is a Shoaler. This means it likes to be with a minimum number of its own kind.\n\nDemonstrate your understanding of Care Requirements by satisfying the requirements of the Half and Half Chromis in a new tank.",
+	
+	
+	
+	
+	
+	"sunnyside_ranking_up":"Ranking Up",
+	"reachRank2":"Reach Rank 2\n{0}/{1}<sprite name=\"prestige\">",
+	"reachRank2.tooltip":"You should be able to rank up with your existing tanks. But if you have trouble, build more tanks and fill them with interesting and varied displays of animals and decorations. You'll rank up in no time!",
+
+	
+	"sunnyside_ranking_up_popup.title":"Ranking Up",
+	"sunnyside_ranking_up_popup.text.0":"Now you've got a few different species of fish in your aquarium, you should be able to rank up soon. Ranking up will instantly unlock new equipment, decorations and facilities and increase the repertoire of animals which are available to research.\n\nThere's more! The higher your rank, the more guests you attract and the more they are willing to pay to enter your aquarium.\n\nRanking up occurs as a result of generating Prestige <sprite name=\"prestige\"> points. These are earned whenever a guest enjoys something in your aquarium. There are many ways to earn <sprite name=\"prestige\"> but you'll earn the majority with your animals, tanks and decorations.\n\nYour next Objective is to rank up, after which you'll be able to unlock the animals required for your remaining Objectives!",
+
+	
+	"sunnyside_unlock_fish_popup.title":"Let's unlock some more animals",
+	"sunnyside_unlock_fish_popup.text.0":"Now you are Rank 2 you have access to more animals. You are going to unlock them one at a time and ensure each of their Care Requirements are met.",
+	
+	"sunnyside_king.title":"King Demoiselle",
+	"sunnyside_king.text.0":"You've unlocked the King Demoiselle! Let's take a look.",
+	"sunnyside_king.infobutton.1":"2_king_demoiselle",
+	"sunnyside_king.text.2":"The King Demoiselle is a timid beauty, in other words, a Wimp!\n\nDon't house them with any animals with the Bully tag.",
+	
+	"sunnyside_oblique.title":"Arabian Bluelined Dottyback",
+	"sunnyside_oblique.text.0":"You've unlocked the Arabian Bluelined Dottyback! Let's take a look.",
+	"sunnyside_oblique.infobutton.1":"45_arabian_bluelined_dottyback",
+	"sunnyside_oblique.text.2":"The Arabian Bluelined Dottyback is a pugnacious little fellow. They are Bullies and will terrify any animals with the Wimp tag, such as the King Demoiselle you unlocked earlier.",
+	
+	"sunnyside_yellow_tang.title":"Yellow Tangs",
+	"sunnyside_yellow_tang.text.0":"You've unlocked the Yellow Tang! Let's take a look.",
+	"sunnyside_yellow_tang.infobutton.1":"11_yellow_tang",
+	"sunnyside_yellow_tang.text.2":"The Yellow Tang has a higher Water Quality requirement than your other animals. Therefore, you may need to have more filters or less fish in the tank.\n\nNotice that they also eat a different type of food than your other animals. Make sure you build a Green Pellet Dispenser so that your staff can feed it.\n\nFinally, the Yellow Tang likes Plants. House them in a tank with at least 1 <sprite name=\"plant\"> per Tang.",
+
+	"sunnyside_blackbar.title":"Blackbar Soldierfish",
+	"sunnyside_blackbar.text.0":"You've unlocked the Blackbar Soldierfish! Let's take a look.",
+	"sunnyside_blackbar.infobutton.1":"5_blackbar_soldierfish",
+	"sunnyside_blackbar.text.2":"Blackbar Soldierfish are nocturnal, so they like to have a Cave to hang out in. When you reached Rank 2 you unlocked the Driftwood Cave decoration, which provides <sprite name=\"cave\">, so make sure you add one to your Blackbar Soldierfish tank.\n\nAlso note that they Dislike Lights. You don't have to worry about this right now, but later you'll need to light your tanks for certain Plants and Corals so you'll need to steer clear of the Blackbar Soldierfish in those tanks!",
+	
+
+	
+	"sunnyside_tired":"Tired Guests",
+	"sunnyside_tired.title":"Tired guests",
+	"sunnyside_tired.text.0":"One of your Guests has grown Tired.",
+	"sunnyside_tired.image.1":"low_energy",
+	"sunnyside_tired.text.2":"Build some Benches so they have somewhere to sit and rest. You'll find them in the Facilities section.",
+	"sunnyside_tired.image.3":"facilities,0x65c0ffff",
+	"sunnyside_tired.model.4":"1_bench",
+	"buildBenches":"Build Benches {0}/{1}",
+	"buildBenches.tooltip":"Find the Bench in the Facilities section of the Build Menu.",
+	
+	"sunnyside_final":"Final challenge",
+	"sunnyside_final.title":"The final challenge",
+	"sunnyside_final.text.0":"The aquarium is looking great. Your final challenge is to reach a target amount of Prestige <sprite name=\"prestige\"> and maintain it for a period of time.",
+	
+	"sunnyside_unfed.title":"Going hungry",
+	"sunnyside_unfed.text.0":"Yesterday your staff weren't able to feed all your animals before the end of the day, causing some to go hungry.\n\nNormally this is because your staff simply didn't have enough time to get around all your tanks. Check the distance between your Food Dispensers and your tanks.",
+	"sunnyside_unfed.image.1":"walk_too_far",
+	"sunnyside_unfed.text.2":"If possible, move them closer, or add additional dispensers so your staff spend less time walking.",
+	"sunnyside_unfed.model.3":"orangePellet_box",
+	"sunnyside_unfed.text.4":"If your animals are consistently going hungry, you may need to invest in additional staff members!",
+	
+	
+	
+	"sunnyside_broken.title":"Broken Equipment",
+	"sunnyside_broken.text.0":"A piece of equipment has broken down.",
+	"sunnyside_broken.image.1":"broken_equipment",
+	"sunnyside_broken.text.2":"This will cause it to slowly lose effectiveness over time. A staff member with the Fixing role will automatically retrieve a Toolkit and remedy the problem.\n\nIf many pieces of equipment fail at the same time, you may want to consider hiring more staff, building additional Tool Stations or raising the priority of the Fixing role on your staff members.",
+
+	
+	
+	"sunnyside_win_message.title":"You win!",
+	"sunnyside_win_message.text.0":"You've built Sunnyside up to be a great little Aquarium and people have started to take notice.\n\nYou've received a job offer to run a larger aquarium over in North Woods.",
+	"sunnyside_win_message.rawimage.1":"campaign-2-north_woods,0xffffffff,North Woods",
+	"sunnyside_win_message.text.2":"You can continue to build here at Sunnyside for as long as you want, this message will stay in your message log (accessible via the button in the bottom-left) until you're ready.\n\nWhen you're ready to move on to bigger and better things, let me know.",
+	"sunnyside_win_message.reply.0":"I'm ready to take the job at North Woods."
+}

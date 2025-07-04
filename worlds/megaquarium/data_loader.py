@@ -11,7 +11,7 @@ from .utils import load_json5_data
 
 def existsOrTrue(dicti, field):
     if field in dicti:
-        return dict[field]
+        return dicti[field]
     return False
 
 def load_animals_from_json(db,dataname) -> None:
@@ -66,7 +66,7 @@ def load_animals_from_json(db,dataname) -> None:
             rank=json_animal["unlockable"]["availableLevel"], \
             food=json_animal["animal"]["stats"]["eats"]["item"] if "eats" in json_animal["animal"]["stats"] else None, \
             waterQuality=json_animal["animal"]["stats"]["waterQuality"]["value"], 
-            defaultUnlocked=unlocked_at_start_of_rank,
+            autoUnlock=unlocked_at_start_of_rank,
             genus=json_animal["tags"][-1],
             size=json_animal["animal"]["stages"][-1]["size"],
             requirements=requirements,

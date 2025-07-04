@@ -25,6 +25,7 @@ class Requirements(Enum):
     dislikes_conspecifics = "dislikes_conspecifics"
     wimp = "wimp"
     bully = "bully"
+    shoaler = "shoaler"
     eats_fish = "eats_fish"
     eats_crustaceans = "eats_crustaceans"
 
@@ -49,6 +50,7 @@ class MegaqItem:
     idNo: int
     gameId: str
     itemClass: ItemClassification
+    autoUnlock: bool = False
 
     def to_item_id(self)-> str:
         return f"AITEM_{self.gameId}"
@@ -56,6 +58,8 @@ class MegaqItem:
     def to_item(self,player) -> Item:
         return MegaquariumItem(name=self.to_item_id(), classification=self.itemClass, code=self.idNo, player=player)
 
+    def __hash__(self):
+        return hash(self.gameId)
 
 @dataclass(kw_only=True)
 class Animal(MegaqItem):
@@ -63,7 +67,6 @@ class Animal(MegaqItem):
     genus: str
     food: str
     waterQuality: int
-    defaultUnlocked: bool
     size: int
     requirements: FrozenSet[str]
     itemClass: ItemClassification = ItemClassification.filler 
@@ -105,7 +108,6 @@ class Food(MegaqItem):
 class Equipment(MegaqItem):
     itemClass: ItemClassification = ItemClassification.filler
     rank: int 
-    autoUnlock : bool = False
     chilling: Optional[int] = False
     heating: Optional[int] = False
     filtering: Optional[int] = False
@@ -124,9 +126,13 @@ class Tank(MegaqItem):
     volumePerTile: float
     hasRoundedCorners : bool = False
     isKriesel: bool = False
-    autoUnlock: bool = False
     unlockTag: Optional[str] = None
 
+    def to_item_id(self)-> str:
+        return f"AITEM_{self.unlockTag}"
+
+
+@dataclass(kw_only=True)
 class AnimalFilter:
     # filter by genus
     genus: str = None
@@ -135,7 +141,41 @@ class AnimalFilter:
     # filter by shoaler
     shoaler: bool = False
     # different species
-    numSpecies: int = None
+    numSpecies: int = 1
+
+
+    def animal_satisfies(self, anim):
+        if not self.genus is None:
+            if anim.genus != self.genus:
+                return False
+
+        if not self.eats is None:
+            if anim.food != self.eats:
+                return False
+
+        if self.shoaler:
+            if not Requirements.shoaler in anim.requirements:
+                return False
+
+        return True
+        
+    def content_id(self) -> str:
+        tagIds = []
+        
+        for key in ["genus", "eats", "numSpecies"]:
+            value = getattr(self, key, None)
+            if not value is None:
+                tagIds.append(f"{key}-{value}")
+        
+        for key in ["shoaler"]:
+            value = getattr(self, key, None)
+            if getattr(self,key, False) is True:
+                tagIds.append(f"{key}")
+
+
+        tags = ":".join(tagIds)
+
+        return f"animFilter:{tags}"
 
 
     def to_json(self):
@@ -143,11 +183,15 @@ class AnimalFilter:
         obj["tag"] = "animal" if self.genus is None else self.genus
         if not self.numSpecies is None:
             obj["differentSpec"] = True 
-            obj["quantity"] = self.numSpecies if self.numSpecies is not None else 1
+            obj["quantity"] = self.numSpecies
         if not self.eats is None:
+            assert(not "insertOverride" in obj)
             obj["eats"] = self.eats
+            obj["insertOverride"] = self.eats
         if self.shoaler:
+            assert(not "insertOverride" in obj)
             obj["shoaler"] = True
+            obj["insertOverride"] = "shoaler"
         return obj
 
 @dataclass
@@ -166,19 +210,53 @@ class HavePointsCondition(MegaqCondition):
     def to_json(self):
         return {"havePoints": {"id": self.points.name, "quantity": self.amount}}
 
+class TimerCondition(MegaqCondition):
+    ticks: int
 
+    def to_json(self):
+        return {"timer":{"ticksRemaining": self.ticks, "insert": True}}
+
+# todo, make this an objective that generates objectives, not a condition.
 @dataclass
 class TankWithAnimalsCondition(MegaqCondition):
     # specific item or fish, or a tag
     items: List[Tuple[Union[MegaqItem, AnimalFilter], int]]
     filtered: bool = False
     heated: bool = False
-    timer: Optional[int] = None
-    gameId: str = "tankWithXAnimal"
-
+    lit: bool = False 
+    #gameId: str = "tankWithXAnimal"
+    
 
     def required_items():
         return map(lambda x: x[0], self.items)
+
+    def content_id(self):
+        # translate each requirement to a key
+        species = list(map(lambda itm: itm[0].gameId if isinstance(itm[0], MegaqItem) else itm[0].content_id(), self.items))
+        species.sort()
+        species_str = ":".join(species)
+        return f"tankWAnimals_{species_str}"
+
+    def generate_progressive_conditions(self):
+        for i in range(len(self.items)):
+            if isinstance(self.items[i], Animal):
+                yield "tankWithXAnimal", TankWithAnimalsCondition(items=items[:i+1])
+            else:
+                yield "tankWithXDecoration", TankWithAnimalsCondition(items=self.items[:i+1])
+
+        if self.filtered:
+            yield "tankWithWaterQuality",TankWithAnimalsCondition(items=self.items, filtered=self.filtered)
+        
+        if self.heated:
+            yield "tankWithHeating",TankWithAnimalsCondition(items=self.items, filtered=self.filtered, heated=self.heated)
+         
+        if self.lit:
+            yield "tankWithSufficientLighting",TankWithAnimalsCondition(items=self.items, filtered=self.filtered, heated=self.heated, lit=self.lit)
+        
+
+       
+
+        pass 
 
     def to_json(self):
         def convert_item(arg):
@@ -188,8 +266,17 @@ class TankWithAnimalsCondition(MegaqCondition):
                 return {"id": arg[0].gameId, "quantity": arg[1]}
 
         tankItems = list(map(lambda arg: convert_item(arg), self.items))
-        return {"tank": {"hostsMany":tankItems, "insert":True, "filtered":self.filtered} }
+        data = {"tank": {"hostsMany":tankItems} }
+        if self.filtered:
+            data["tank"]["isFiltered"] = True
+        if self.lit:
+            data["tank"]["isLit"] = True
+        if self.lit:
+            data["tank"]["isHeated"] = True
 
+        data["tank"]["insert"] = True
+
+        return data
 
 @dataclass
 class AddMoneyAction(MegaqAction):
@@ -204,7 +291,10 @@ class UnlockItemAction(MegaqAction):
     item: str
 
     def to_json(self):
-        return {"unlock": self.item.gameId}
+        if not isinstance(self.item, Tank):
+            return {"unlock": self.item.gameId}
+        else:
+            return {"unlock": self.item.unlockTag}
 
 @dataclass 
 class VisitLocationAction(MegaqAction):
@@ -220,6 +310,9 @@ class MoveSectionAction(MegaqAction):
     def to_json(self):
         return {"moveOnToSection": self.sectionId}
 
+class YouWinAction(MegaqAction):
+    def to_json(self):
+        return {"youWin": True}
 
 @dataclass
 class MegaqTrigger:
@@ -286,11 +379,11 @@ class TradeQuest:
 @dataclass
 class Section:
     sectionId: str
-    triggers: List[MegaqTrigger]
+    triggers: List[MegaqTrigger] 
     reward: MegaqAction 
     doOnComplete: List[MegaqAction]
     doOnStart: List[MegaqAction]
-    objectives: List[MegaqObjective]
+    objectives: List[MegaqObjective] 
     mainSection: bool = True
 
     def to_json(self):
@@ -303,6 +396,17 @@ class Section:
             "doOnComplete": list(map(lambda a: a.to_json(), self.doOnComplete)),
             "doOnStart": list(map(lambda a: a.to_json(), self.doOnStart))
         }
+
+def createBuildTankSection(name: str, tankRequirements: TankWithAnimalsCondition, reward: MegaqAction, timer: Optional[TimerCondition]=None, mainSection: bool = False ):
+    sec = Section(sectionId=name, mainSection=mainSection, reward=reward, doOnComplete=[], doOnStart=[], triggers=[], objectives=[])
+
+    sec.objectives.append(MegaqObjective(objectiveId=f"tankWithParameters", conditions=[]))
+    for condName,cond in tankRequirements.generate_progressive_conditions():
+        sec.objectives.append(MegaqObjective(objectiveId=condName, conditions=[cond]))
+
+
+    return sec
+
 
 '''
 Any scenario objectives involving excluded fish are automatically removed.
@@ -442,7 +546,7 @@ class MegaquariumDB:
         for food in self.food_sources.values():
             yield food
 
-    def get_items(self,filterfn):
+    def get_items(self,filterfn=None):
         if not filterfn is None:
             return filter(lambda it: filterfn(it), self.all_items())
         else:
@@ -456,13 +560,13 @@ class MegaquariumDB:
 
 
 
-    def get_tanks(self,filterfn):
+    def get_tanks(self,filterfn=None):
         if filterfn is None:
             return self.tanks.values()
         else:
             return filter(lambda e: filterfn(e), self.tanks.values())
 
-    def get_animals(self, filterfn):
+    def get_animals(self, filterfn=None):
         if filterfn is None:
             return self.animals.values()
         else:

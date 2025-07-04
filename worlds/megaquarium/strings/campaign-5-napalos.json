@@ -1,0 +1,76 @@
+{
+	"campaign-5-napalos":"5. Napalos",
+	"campaign-5-napalos.desc":"Convert an abandoned theatre into an aquarium!",
+	
+	"napalos_intro.title":"Welcome to Napalos",
+	"napalos_intro.text.0":"This theatre has fallen into disuse. You are going to convert it into a successful aquarium!\n\nThis is your opportunity to demonstrate everything you have learned so far, it's time to build an aquarium of your own design!\n\nThe only conditions of success are that you must reach Rank 7 and obtain a minimum number of different animal species.\n\nYou will have opportunities to complete optional Objectives as you grow. It is up to you whether you accept these, but you may find it easier to succeed if you do. Good luck!",
+	
+	"napalos_main":"Build an aquarium",
+	
+	"opt_napalos_green_pellet":"Herbivore Habitat",
+	"opt_napalos_green_pellet.title":"Herbivore Habitat",
+	"opt_napalos_green_pellet.text.0":"Would you be interested in creating a sponsored exhibit? I'd love to see a display showing herbivores in a natural looking habitat.",
+	"opt_napalos_green_pellet.reply.0":"Let's do this!",
+	"opt_napalos_green_pellet_complete.title":"Happy Herbivores!",
+	"opt_napalos_green_pellet_complete.text.0":"The display is looking great, here's the rest of the sponsorship money.",
+	
+	"napalos_staff_talks.title":"Staff talks",
+	"napalos_staff_talks.text.0":"Now you are Rank 7 you have access to the Podium and Mic Headset. These allow you to schedule staff talks!",
+	"napalos_staff_talks.model.1":"podium",
+	"napalos_staff_talks.model.2":"86_mic_headset_box",
+	"napalos_staff_talks.text.3":"Staff talks allow you to generate additional points <sprite name=\"ecology\">,<sprite name=\"science\">,<sprite name=\"prestige\">. The type of point you get depends on the talk.\n\nYour choice of talk depends on what animals are in the nearby tanks so place your Podium carefully. The number of points earned depends on the Talking skill of the staff member and the number of guests that are nearby.\n\nComplete the new optional Objective by putting on your first talk!",
+	
+	"napalos_epaulette_shark.title":"Epaulette Shark",
+	"napalos_epaulette_shark.text.0":"You've just unlocked the Epaulette Shark.",
+	"napalos_epaulette_shark.infobutton.1":"89_epaulette_shark",
+	"napalos_epaulette_shark.text.2":"Along with all other Sharks, the Epaulette needs a supplement to stay healthy.",
+	"napalos_epaulette_shark.model.3":"supplement",
+	"napalos_epaulette_shark.text.4":"This supplement needs to be fed in addition to normal food, every few days. Ensure you have a Supplement Cabinet in your aquarium.",
+	"napalos_epaulette_shark.model.5":"supplement_box",
+	"napalos_epaulette_shark.text.6":"Finally, feeding supplements is skilful work and will take a lot longer for staff with low Feeding skill.",
+	
+	"staffManagementC.title":"Staff zoning",
+	"staffManagementC.text.0":"Did you know you can assign specific zones for your staff to work in?\n\nStaff will only carry out tasks which are inside their zone. This gives you more control over which staff work where and allows you to manage your staff more efficiently.",
+	"staffManagementC.image.1":"staff_zoning",
+	"staffManagementC.text.2":"Complete the new optional Objective you've just been given to learn how to create zones for your staff!",
+	
+	"opt_zoning":"Zoning",
+	"openStaffManageTab":"Open Staff Manage tab",
+	"openStaffManageTab.tooltip":"First open the Staff window and then select the Manage tab.",
+	"selectZoneButton":"Click Zone Button for any staff",
+	"selectZoneButton.tooltip":"The Zone Button is in the middle of the row, it will say 'No zone assigned' if the staff hasn't been assigned to a zone yet.",
+	"createNewZone":"Create a new zone",
+	"createNewZone.tooltip":"While in the zoning tool, click the 'Create new zone' button.\n\nTo get to the zoning tool, open the Staff Manage tab and click on the Zone Button for any staff.",
+	"addToZone":"Drag to add to the zone area",
+	"addToZone.tooltip":"While in the zoning tool with a zone selected, left click and drag anywhere on the screen to add to the zone.",
+	"subtractFromZone":"Drag within zone to subtract",
+	"subtractFromZone.tooltip":"While in the zoning tool with a zone selected, left click and drag within the existing area to subtract from the zone.",
+	"renameZone":"Rename zone",
+	"renameZone.tooltip":"In the zoning tool, the rename button is to the far right of the zone's name. The icon is a pencil writing on paper. Once you've clicked it, you will be able to type to edit the zone's name directly. Hit enter or click anywhere when you've finished writing the zone's name.",
+	"assignStaffToZone":"Assign staff to zone",
+	"assignStaffToZone.tooltip":"While in the zoning tool, click the 'Assign staff' button to the right of the zone's name to actually assign the staff to that zone.",
+	"deleteZone":"Delete zone",
+	"deleteZone.tooltip":"While in the zoning tool, the delete button is to the far right of the zone's name. The icon is a little cross. When a zone is deleted, all staff members assigned to that zone will revert to having no zone assigned.",
+	
+	"opt_zoning_complete.title":"Master of Zoning",
+	"opt_zoning_complete.text.0":"Nicely done! You now know how to create, edit and assign staff to zones.\n\nZones have many uses, for example: they can be used to keep staff working in a specific area so they spend less time walking between jobs; you can use them to divide your staff between jobs evenly to make sure everything gets done; you can even use them to force certain staff to do certain jobs, for example, getting a skilled staff member to work on difficult tasks to make the best use of their time.\n\nNow it's up to you to experiment and work out how to get the best out of your team!",
+	
+	"opt_large_animals":"Large Animals",
+	
+	"opt_talks":"Staff talk",
+	"staffWithTalking":"Staff with Talking skill",
+	"staffWithTalking.tooltip":"Hire a staff with the Talking skill via the Staff menu in the bottom right.",
+	"talkTypeEpauletteShark":"Schedule talk about the Epaulette Shark",
+	"talkTypeEpauletteShark.tooltip":"Make sure you place your podium near your tank with the Epaulette Shark.\n\nSelect your Podium. Use the dropdown in its window to change the talk type to Epaulette Shark.\n\nIf if doesn't have that talk available, check that it is close enough to a tank with an Epaulette Shark in it.",
+	
+	"napalos_win_message.title":"You win!",
+	"napalos_win_message.text.0":"You've done it! You have proven that you have the creative vision and management experience needed to create an aquarium from scratch and build it into an aquatic paradise.\n\nIf you're looking for a new challenge I have identified an aquatic research facility in Hartcliff that could be a golden opportunity.",
+	"napalos_win_message.rawimage.1":"campaign-6-hartcliff,0xffffffff,Hartcliff",
+	"napalos_win_message.text.2":"You can continue to build here at Napalos for as long as you want, this message will stay in your message log (accessible via the button in the bottom-left) until you're ready.\n\nWhen you're ready to move on to Hartcliff, let me know.",
+	"napalos_win_message.reply.0":"I'm ready to check out the research facility in Hartcliff.",
+	
+	"napalos_nitrate.title":"Nitrate Reactor",
+	"napalos_nitrate.text.0":"You've just unlocked the Nitrate Reactor.",
+	"napalos_nitrate.infobutton.1":"nitrate_reactor",
+	"napalos_nitrate.text.2":"Nitrate Reacting is a 3rd way to increase water quality. Combine filtering, protein skimming and nitrate reacting in equal amounts to achieve the highest water quality.\n\nBut be warned, Nitrate Reactors are much more expensive than Filters and Protein Skimmers, you should only use them when you need a very high water quality."
+}

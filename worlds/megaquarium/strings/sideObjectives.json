@@ -1,0 +1,462 @@
+{
+	"observe":"Observe {1}",
+	"observe.title":"{1} Observation Request",
+	"observe.text.0":"Hello, I represent {0}. We are very interested in observing the behaviour of {1} in captivity.\n\nIf you were able to construct an enclosure with the following parameters and allow us to observe it for a period of time, we could compensate you for your efforts.",
+	"observe.reply.0":"Compensation you say?",
+	"observe_complete.title":"Observation Complete!",
+	"observe_complete.text.0":"We were able to watch the {1} in captivity and learned a lot about their behaviour.",
+	
+	"observe_2.title":"Observation Request",
+	"observe_2.text.0":"Hello, I'm contacting you on behalf of {0}. We have funding for one of two potential observation studies. The first study looks at the behaviour of {1} while the second looks at {2}.\n\nWould you be willing to work with us on one of these studies? And if so which one?",
+	"observe_2.reply.0":"Let's take a look at {1}.",
+	"observe_2.reply.1":"I prefer the study of {2}.",
+	
+	"observe_3.title":"{1} Group Observation",
+	"observe_3.text.0":"Hello from {0}. Field research has indicated peculiar tendencies among {1} when in large aggregations. We want to carry out a study of {1} in captivity.\n\nIf you are able to construct a tank with the following parameters and allow us to set up observation cameras for a period of time, we could compensate you for your efforts.",
+	"observe_3.reply.0":"I'd be glad to help with your study.",
+	"observe_3_complete.title":"Observation Concluded!",
+	"observe_3_complete.text.0":"The results of the {1} study are in and are truly fascinating. Thank you so much for your cooperation.",
+	
+	"wealthy_benefactor":"Wealthy Benefactor",
+	"wealthy_benefactor.title":"Wealthy Benefactor",
+	"wealthy_benefactor.text.0":"Greetings, my name is {0}. I'm something of an aquatic enthusiast! I would love to sponsor one of your exhibits if you'll allow me.\n\nI wouldn't want to tread on your toes, but if you insisted on my input, something with the following parameters would please me immensely!",	
+	"wealthy_benefactor.reply.0":"OK, it's a deal.",
+	
+	"wealthy_benefactor_2.title":"{1} are my favourite!",
+	"wealthy_benefactor_2.text.0":"Good day, my name is {0}. I would like to pay for the construction of a tank focused on {2}!\n\nThey are my absolute favourite, won't you indulge me?",
+	"wealthy_benefactor_2.reply.0":"You're surprisingly persuasive.",
+	
+	"journalist":"Journalist",
+	"journalist.title":"{1}, an under represented minority",
+	"journalist.text.0":"Hi, my name is {0} and I'm an aquatic journalist. I want to write an article about your aquarium, but something must be corrected first. Why, in today's modern aquatic society are {1} still being under represented? Until you rectify this I cannot write the article.",
+	"journalist.reply.0":"I'll see what I can do.",
+	"journalist_complete.title":"{1} are on the front page!",
+	"journalist_complete.text.0":"Thank you for complying with my request. The article is live so you should see a boost in the aquarium's popularity.",
+	
+	"sponsored_exhibit":"{1} Exhibit",
+	"sponsored_exhibit.title":"{1} Exhibit",
+	"sponsored_exhibit.text.0":"Hello, I represent {0}. We are interested in sponsoring an exhibit in your aquarium. Something with the following parameters would be excellent.",
+	"sponsored_exhibit.reply.0":"It's a deal!",
+	"sponsored_exhibit_complete.title":"{1} Exhibit Complete",
+	"sponsored_exhibit_complete.text.0":"The {1} exhibit is looking very good. We are happy we sponsored it.",
+	
+	"sponsored_exhibit_decoration":"Centerpiece",
+	"sponsored_exhibit_decoration.title":"{1} Exhibit",
+	"sponsored_exhibit_decoration.text.0":"Hello, I represent {0}. We are interested in sponsoring an exhibit in your aquarium. Something with the following parameters would be excellent.",
+	
+	"guest_request":"Guests request {0}",
+	"guest_request.title":"Guests want {0}",
+	"guest_request.text.0":"After collating feedback forms from guests, it has become apparent that they want {0}. Will you attempt to satisfy their request?",
+	"guest_request.reply.0":"The guests will have what they want!",
+	"guest_request_complete.title":"Satisfied Guest Request",
+	"guest_request_complete.text.0":"The latest feedback from guests shows that they love the {0}. Great job!",
+	
+	"standard_trade.title":"Interested in some {0}?",
+	"standard_trade.text.0":"I have {2} of these {0}:",
+	"standard_trade.infobutton.1":"{1}",
+	"standard_trade.text.2":"Would you like to trade for them? I'm interested in the following:",
+	"standard_trade.afterTrade":"Fantastic! Here are the {0}.",
+	
+	"merchant.title":"{0} for sale",
+	"merchant.text.0":"For sale: {2} {0}.",
+	"merchant.infobutton.1":"{1}",
+	"merchant.text.2":"Price: <sprite name=\"money\">{3}",
+	"merchant.reply.0":"It's a deal!",
+	
+	"merchant_inanimate.title":"{0} for sale",
+	"merchant_inanimate.text.0":"For sale: {2} {0}.",
+	"merchant_inanimate.infobutton.1":"{1}",
+	"merchant_inanimate.text.2":"Price: <sprite name=\"money\">{3}",
+	"merchant_inanimate.reply.0":"It's a deal!",
+	
+	"any_mix":"Mixed Display",
+	"any_mix.title":"Mixed Display",
+	"any_mix.text.0":"A display featuring the following would give your Base Prestige <sprite name=\"prestige\"> a boost!",
+	"any_mix.reply.0":"I'll give it a go.",
+	"any_mix_complete.title":"Mixed Display Complete",
+	"any_mix_complete.text.0":"The mixed display has come together well and the aquarium has enjoyed a boost to its Base Prestige <sprite name=\"prestige\">.",
+	
+	"any_mix_2":"Mixed Tank",
+	"any_mix_2.title":"Mixed Tank",
+	"any_mix_2.text.0":"A tank with the following mix of animals could give your Base Prestige <sprite name=\"prestige\"> a boost!",
+	"any_mix_2.reply.0":"Looks like a winner.",
+	"any_mix_2_complete.title":"Mixed Tank Complete",
+	"any_mix_2_complete.text.0":"The mixed tank is complete and has resulted in a boost to the aquarium's Base Prestige <sprite name=\"prestige\">.",
+	
+	"coldwater_mix":"Coldwater Mix",
+	"coldwater_mix.title":"Coldwater Mix",
+	"coldwater_mix.text.0":"A display featuring the following mix of Coldwater animals would give your Base Prestige <sprite name=\"prestige\"> a boost!",
+	"coldwater_mix.reply.0":"I'll look into it.",
+	"coldwater_mix_complete.title":"Coldwater Mix Complete",
+	"coldwater_mix_complete.text.0":"The Coldwater mixed display is complete and has given your guests a new reason to come to the aquarium. Base Prestige <sprite name=\"prestige\"> has increased!",
+	
+	"specialist_display":"{0} Exhibit",
+	"specialist_display.title":"{0} Exhibit",
+	"specialist_display.text.0":"A specialist display showing a group of {0} together would give your Base Prestige <sprite name=\"prestige\"> a boost!",
+	"specialist_display.reply.0":"{0} are the new black.",
+	"specialist_display_complete.title":"{0} Exhibit Complete",
+	"specialist_display_complete.text.0":"The {0} exhibit is complete and it certainly seems to have given the aquarium a boost of Base Prestige <sprite name=\"prestige\">.",
+	
+	"specialist_display_2":"{0} Tank",
+	"specialist_display_2.title":"{0} Tank",
+	"specialist_display_2.text.0":"A tank focusing on {0} would give your guests something to talk about, likely leading to a boost in Base Prestige <sprite name=\"prestige\">.",
+	"specialist_display_2.reply.0":"Sounds like a plan.",
+	"specialist_display_2_complete.title":"{0} Tank Complete",
+	"specialist_display_2_complete.text.0":"The tank focusing on {0} is complete and has made quite a splash with the guests. Base Prestige <sprite name=\"prestige\"> has increased!",
+	
+	"specialist_display_3":"{0} Display",
+	"specialist_display_3.title":"{0} Display",
+	"specialist_display_3.text.0":"A display specialising in {0} has not really been done before. It could put the aquarium on the map, leading to a boost in Base Prestige <sprite name=\"prestige\">.",
+	"specialist_display_3.reply.0":"I agree.",
+	"specialist_display_3_complete.title":"{0} Display Complete",
+	"specialist_display_3_complete.text.0":"The specialised {0} display is finished and it's creating quite the buzz. Base Prestige <sprite name=\"prestige\"> has increased!",
+	
+	"objGroup1":"the Hope Foundation",
+	"objGroup2":"the Ocean Life Consortium",
+	"objGroup3":"the Equinox Research Facility",
+	"objGroup4":"the Aquatic Psychology Institute",
+	"objPerson1":"George Fuppington",
+	"objPerson2":"Elise Von Sorlig",
+	"objPerson3":"Bernie Peters",
+	"objPerson4":"Lucia Wainwright",
+	"objJournalist1":"Yanna Olesen",
+
+	// v3.0.0 Sandbox strings start here
+	
+	"objMerchant1":"Lion Aquatics",
+	"objMerchant2":"Responsible Livestock and Sundry",
+	"objMerchant3":"Ocean Importers",
+	
+	"objAquarium1":"Red Kahu",
+	"objAquarium2":"Richantwood",
+	"objAquarium3":"Chénou",
+	"objAquarium4":"San Rimaz",
+	"objAquarium5":"Hanraat",
+	"objAquarium6":"Gudenhausen",
+	
+	"standard_objects_reward_message.title":"'{0}' reward: {1} x {2}",
+	"standard_objects_reward_message.text.0":"Your reward for the side objective, '{0}', is enclosed.",
+	"standard_objects_reward_message.infobutton.1":"{3}",
+
+	"standard_unlock_reward_message.title":"'{0}' reward: {1} unlocked!",
+	"standard_unlock_reward_message.text.0":"As reward for the side objective, '{0}', the following has been unlocked: {1}!",
+	"standard_unlock_reward_message.infobutton.1":"{2}",
+	
+	"opt_standard.reply.0":"Accept.",
+	"opt_standard.reply.1":"Decline.",
+	
+	"opt_animal_donation":"Donation",
+	"opt_animal_donation.title":"Animal donation: {1}",
+	"opt_animal_donation.text.0":"I am interested in donating {0} of the following animal to your aquarium:",
+	"opt_animal_donation.infobutton.1":"{2}",
+	"opt_animal_donation.text.2":"First you will need to prove your aquarium worthy of such a donation.",
+	
+	"opt_rescue_animal":"Animal Rescue",
+	"opt_rescue_animal.title":"Animal Rescue: {0}",
+	"opt_rescue_animal.text.0":"We've rescued {2} of the following animal:",
+	"opt_rescue_animal.infobutton.1":"{1}",
+	"opt_rescue_animal.text.2":"Due to their tricky care requirements, we first need you to prove you have what it takes to look after them.",
+	
+	"opt_favourite_animal":"Favourite animal",
+	"opt_favourite_animal.title":"{1} are my favourite!",
+	"opt_favourite_animal.text.0":"Good day, my name is {0}. I would like to pay for the construction of a tank focused on {1}!\n\nThey are my absolute favourite, won't you indulge me?",
+	"opt_favourite_animal.infobutton.1":"{2}",
+	"opt_favourite_animal.reply.0":"You're surprisingly persuasive.",
+	
+	"opt_target_guests":"Maximise guests",
+	"opt_target_guests.title":"Tourism board: Guest count",
+	"opt_target_guests.text.0":"Hello, I represent the local tourism board. If you can hit the following target guest count, we can offer a significant reward.",
+	
+	"opt_target_education":"Education",
+	"opt_target_education.title":"Educational target: {0}",
+	"opt_target_education.text.0":"Here at Ocean Life Outreach, we believe education is the key to saving our seas. We'd like to offer you an incentive to hit the following educational targets.",
+	
+	"combinedPointValueEcologyInsert":"Combined <sprite name=\"ecology\">",
+	"combinedPointValueScienceInsert":"Combined <sprite name=\"science\">",
+	"biodiversity":"Biodiversity",
+	
+	"opt_merchant_unlock_animal.title":"{0} supply",
+	"opt_merchant_unlock_animal.text.0":"Dear Curator, I represent {3}. We work with aquariums to make new and exciting species available for purchase. Our latest project is to set up a supply of {0}.",
+	"opt_merchant_unlock_animal.infobutton.1":"{1}",
+	"opt_merchant_unlock_animal.text.2":"Would you be interested in funding some of the cost of setting this up?\n\nPrice: <sprite name=\"money\">{2}\n\nReward: {0} unlocked!",
+	"opt_merchant_unlock.reply.0":"Yes, please.",
+	
+	"opt_merchant_unlock_equipment.title":"{0} supply",
+	"opt_merchant_unlock_equipment.text.0":"Hello, I'm from {3}. We collaborate with aquariums to provide the latest in aquarium technology before it hits the open market. We have the following product in R&D right now:",
+	"opt_merchant_unlock_equipment.infobutton.1":"{1}",
+	"opt_merchant_unlock_equipment.text.2":"With your funding we can expedite production and make it available for you to purchase immediately.\n\nPrice: <sprite name=\"money\">{2}\n\nReward: {0} unlocked!",
+	"opt_merchant_unlock_equipment.reply.0":"I need the latest tech.",
+	
+	"opt_aquarium_trade.title":"Trade offer: {2} x {0}",
+	"opt_aquarium_trade.text.0":"Hello, this is {3} from {4} Aquarium. Perhaps we can help each other out?\n\nWe could offer you {2} x {0}.",
+	"opt_aquarium_trade.infobutton.1":"{1}",
+	"opt_aquarium_trade.text.2":"In return we'd like the following animal. Are you interested in doing a trade?",
+	"opt_aquarium_trade.reply.0":"Decline.",
+	"opt_aquarium_trade.afterTrade":"Trade complete:",
+	
+	"opt_aquarium_trade_unlock.title":"Trade offer: {0} supply",
+	"opt_aquarium_trade_unlock.text.0":"Hello, this is {2} from {3} Aquarium. Perhaps we can help each other out?\n\nWe could share our supplier of {0} with you.",
+	"opt_aquarium_trade_unlock.infobutton.1":"{1}",
+	"opt_aquarium_trade_unlock.text.2":"In return we'd like the following animal. Are you interested in doing a trade?\n\nReward: {0} unlocked!",
+	"opt_aquarium_trade_unlock.reply.0":"Decline.",
+	"opt_aquarium_trade_unlock.afterTrade":"Trade complete: {0} unlocked!",
+	
+	"opt_collector.title":"Help me fill my collection",
+	"opt_collector.text.0":"Hello, my name is {0}. I'm putting together a private collection. I will remunerate you considerably if you can provide the following.\n\nReward: <sprite name=\"money\">{1}",
+	"opt_collector.reply.0":"Decline.",
+	"opt_collector.afterTrade":"Collection complete!",
+	
+	"opt_rehouse":"Rehouse",
+	"opt_rehouse.title":"Can you look after {0}?",
+	"opt_rehouse.text.0":"Hello, this is {2} from {3} Aquarium. A group of {0} were donated to us but we don't have the facilities to house them permanently.",
+	"opt_rehouse.infobutton.1":"{1}",
+	"opt_rehouse.text.2":"Would you be able to give them a home?",
+	
+	"opt_share_supplier":"Supplier's Trial",
+	"opt_share_supplier.title":"Interested in {0} supply?",
+	"opt_share_supplier.text.0":"Hello, this is {2} from {3} Aquarium. We have a supplier for {0} which we'd be happy to share with you.",
+	"opt_share_supplier.infobutton.1":"{1}",
+	"opt_share_supplier.text.2":"They're quite strict about who they supply their animals to though. If you could just fulfil these requirements...",
+	
+	"opt_use_decoration":"Use decoration",
+	"opt_use_decoration.title":"Display using {0}?",
+	"opt_use_decoration.text.0":"Hi, my name is {2} and I am the stage manager for a theatre group. We've finished our latest production and we have the following decoration that we no longer need:",
+	"opt_use_decoration.infobutton.1":"{1}",	
+	"opt_use_decoration.text.2":"I thought it might look good in a tank or as an exhibit all by itself. If you think you could use it, you're welcome to it.",
+	
+	// ---------------------------------
+	
+	"different":" different",
+	"differentStart":"Different ",
+	"tankWithParameters":"Build a tank with:",
+	"buildAdditionalTanks":"Build additional tanks:",
+	"addObjective":"Add:",
+	"buildObjective":"Build:",
+	"whileTheAboveAreComplete":"While above are complete:",
+	
+	"tankWithXAnimal":"{4}{2} {0}/{1}",
+	"tankWithXAnimal.tooltip":"The tank must contain at least {1}{3} {2}.",
+	
+	"tankWithXAnimalCheckEndOfMessage":"{4}{2} {0}/{1}\n<color=#86ABC6>(Check end of message)</color>",
+	"tankWithXAnimalCheckEndOfMessage.tooltip":"The tank must contain at least {1}{3} {2}. It will be at the bottom of the message which contained this objective.",
+	
+	"tankWithXDecoration":"{4}{2} {0}/{1}",
+	"tankWithXDecoration.tooltip":"The tank must contain at least {1}{3} {2}.",
+	
+	"tankWithXDecorationCheckEndOfMessage":"{4}{2} {0}/{1}\n<color=#86ABC6>(Check end of message)</color>",
+	"tankWithXDecorationCheckEndOfMessage.tooltip":"The tank must contain at least {1}{3} {2}. It will be at the bottom of the message which contained this objective.",
+	
+	"tankWithXAnimalFullyGrown":"Fully grown {2} {0}/{1}",
+	"tankWithXAnimalFullyGrown.tooltip":"The tank must contain at least {1} fully grown {2}.",
+	
+	"tankWithXAnimalWhoEat":"Different {2} eaters {0}/{1}",
+	"tankWithXAnimalWhoEat.tooltip":"The tank must contain at least {1} different {2} eaters.",
+	
+	"timer":"For {0}",
+	"timer.tooltip":"Satisfy the above conditions until the timer reaches zero.",
+	
+	"tankWithWaterQuality":"Sufficient water quality",
+	"tankWithWaterQuality.tooltip":"Add enough filtering so that the water quality requirement of all animals in the tank are met.",
+	
+	"tankWithHeating":"Sufficient heating",
+	"tankWithHeating.tooltip":"Add enough heating equipment so that the Heating requirement of the tank is met.",
+	
+	"tankWithChilling":"Sufficient chilling",
+	"tankWithChilling.tooltip":"Add enough chilling equipment so that the Chilling requirement of the tank is met.",
+	
+	"tankWithSufficientLighting":"Sufficient lighting",
+	"tankWithSufficientLighting.tooltip":"Add enough lighting equipment so that the Lighting requirement of all corals in the tank are met.",
+	
+	"tankIsSpec":"Type: {7}",
+	"tankIsSpec.tooltip":"Build a {7}",
+	
+	"tankIsPainted":"Paint: {8}",
+	"tankIsPainted.tooltip":"Paint the tank with {8}",
+	
+	"tankSize":"Size {5}x{6}",
+	"tankSize.tooltip":"Build a tank with size {5}x{6}.",
+	
+	"anyAnimal":"Any Animal",
+	"anyAnimal.tooltip":"Add any animal you like!",
+
+	"tankWithVolume":"Volume {9}<sprite name=\"volume\">",
+	"tankWithVolume.tooltip":"Ensure the tank is large enough that is has the required volume. Remember, deeper tanks have higher volumes for their size.",
+	
+	"tankWithRounded":"Rounded corners",
+	"tankWithRounded.tooltip":"Some tanks have square corners, some have rounded ones. For this tank, you need to use one of the rounded ones.",
+	
+	"tankWithValue":"Point value {0}/{1}<sprite name=\"{2}\">",
+	"tankWithValue.tooltip":"Add animals until the combined value of the tank is at least {1}<sprite name=\"{2}\">.",
+
+	"tankWithAquascaping":"{10} <sprite name=\"{11}\">",
+	"tankWithAquascaping.tooltip":"Add decorations that provide <sprite name=\"{11}\"> to reach the required number.",
+	
+	"tankWithOpenSpace":"Open space {12}x{12}",
+	"tankWithOpenSpace.tooltip":"The tank must have a {12}x{12} square of ground without any decorations.",
+	
+	"acquireAnimal":"Acquire at least {1} {2}",
+	"acquireAnimal.tooltip":"Use your Ecology <sprite name=\"ecology\"> to unlock the {2}. Then add {1} to a tank.",
+	
+	"acquireAndSatisfyAnimal":"Meet all req. of {2}",
+	"acquireAndSatisfyAnimal.tooltip":"Unlock and acquire at least one {2}, meeting all of its Care Requirements. You can click on a tank to select it and then click on the icon of the {2} to examine its requirements.",
+	
+	"increaseIncome":"Increase income {0}/{1}<sprite name=\"{2}\">",
+	"increaseIncome.tooltip":"Increase your income by building more tanks and filling them with animals!",
+	
+	"havePoints":"Earn {0}/{1}<sprite name=\"{2}\">",
+	"havePoints.tooltip":"Unlock new animals, build new tanks and fill them with unique combinations of animals and decorations!",
+	
+	"pointIncome":"<sprite name=\"{2}\"> Income: +{0}/{1}<sprite name=\"{2}\">",
+	"pointIncome.tooltip":"Add animals which generate <sprite name=\"{2}\"> until your point income reaches the required level.",
+	
+	"combinedPointValue":"Combined <sprite name=\"{2}\"> across animals {0}/{1}<sprite name=\"{2}\">",
+	"combinedPointValue.tooltip":"Add animals to your aquarium until the combined value across all tanks is {1}<sprite name=\"{2}\">.",	
+	
+	"combinedPointValueEcology":"Combined <sprite name=\"ecology\"> across animals {0}/{1}<sprite name=\"ecology\">",
+	"combinedPointValueEcology.tooltip":"Add animals to your aquarium until the combined value across all tanks is {1}<sprite name=\"ecology\">.",	
+	
+	"combinedPointValueScience":"Combined <sprite name=\"science\"> across animals {0}/{1}<sprite name=\"science\">",
+	"combinedPointValueScience.tooltip":"Add animals to your aquarium until the combined value across all tanks is {1}<sprite name=\"science\">.",	
+	
+	"tankPointValue":"Tank with value {0}/{1}<sprite name=\"{2}\">",
+	"tankPointValue.tooltip":"Create a tank with a combined value across all animals of {1}<sprite name=\"{2}\">.",
+	
+	"existXAnimal":"{4}{2} {0}/{1}",
+	"existXAnimal.tooltip":"Your aquarium must contain at least {1}{3} {2}.",
+	
+	"existXAnimalSupplement":"Different animals that Require Supplements {0}/{1}",
+	"existXAnimalSupplement.tooltip":"Your aquarium must contain at least {1} different animals which Require Supplements.",
+	
+	"existXInanimate":"{4}{2} {0}/{1}",
+	"existXInanimate.tooltip":"Your aquarium must contain at least {1}{3} {2}.",
+	
+	"existXFullyGrownAnimal":"Fully grown {2} {0}/{1}",
+	"existXFullyGrownAnimal.tooltip":"Your aquarium must contain at least {1} fully grown {2}.",
+	
+	"existXAnimalColdwater":"Different Coldwater {2} {0}/{1}",
+	"existXAnimalColdwater.tooltip":"Your aquarium must contain at least {1} different Coldwater {2}.",
+	
+	"existGuests":"Guests {0}/{1}",
+	"existGuests.tooltip":"Your aquarium must have at least {1} Guests in it. Meet their needs and make sure there is enough to see and Guests will remain in your aquarium for longer!",
+	
+	"reachRankX":"Reach Rank {2}\n{0}/{1}<sprite name=\"prestige\">",
+	"reachRankX.tooltip":"Unlock new things, build more tanks and fill them with interesting and varied displays of animals. Don't forget to decorate!",
+	
+	"unlockObjectiveScience":"Unlock the {0}",
+	"unlockObjectiveScience.tooltip":"Earn enough Science <sprite name=\"science\"> to unlock the {0}.",
+	
+	"unlockObjectiveScienceReward":"Unlock the {0}",
+	"unlockObjectiveScienceReward.tooltip":"Check your message log, there might be someone who can help you unlock what you need.",
+	
+	"unlockObjectiveEcology":"Unlock the {0}",
+	"unlockObjectiveEcology.tooltip":"Earn enough Ecology <sprite name=\"ecology\"> to unlock the {0}.",
+	
+	"haveDailyRevenue":"Daily revenue <sprite name=\"money\">{0}/{1}",
+	"haveDailyRevenue.tooltip":"Increase your revenue by increasing your Prestige and by selling your guests food, drink and gift shop items.",
+	
+	"itemDailySales":"{2} daily sales {0}/{1}",
+	"itemDailySales.tooltip":"Place down {2} stands in crowded places to increase daily sales to the target amount.",
+	
+	"allRequirementsMet":"All requirements met",
+	"allRequirementsMet.tooltip":"Satisfy the care requirements of all the animals in the tank.",
+	
+	"allRequirementsMetXofY":"All requirements met {0}/{1}",
+	"allRequirementsMetXofY.tooltip":"Satisfy the care requirements of all the animals in the tank.",
+	
+	"optionallyHireSomeStaff":"Hire additional staff (optional)",
+	
+	"optionallyDecorate":"Decorate your aquarium (optional)",
+	
+	"optionallyExpand":"Expand your aquarium (optional)",
+	
+	"optionallyTalks":"Establish Staff Talks (optional)",
+	
+	"rememberToCheckYourMessageLog":"<color=#86ABC6>Remember to check your message log!</color>",
+	
+	"plantDestructionChanceZero":"Zero plant destruction chance{13}",
+	"plantDestructionChanceZero.tooltip":"Hover over the Plant Destroyer icon to see the current destruction chance.\n\nAdd additional <sprite name=\"plant\"> until the Plant Destroyer has a 0% chance to destroy the plants.",
+	"plantDestructionChanceCurrently":"\nCurrently: {0}%",
+	
+	"tankWithDifferentDecorations":"Unique decorations {0}/{1}",
+	"tankWithDifferentDecorations.tooltip":"The tank must contain at least {1} unique decorations.",
+	
+	"tankWithLight":"Light {15}<sprite name=\"light\">",
+	"tankWithLight.tooltip":"The tank must have {15} or more light <sprite name=\"light\">.",
+	
+	"guestsViewedFeeding":"Guests watched feeding {0}/{1}",
+	"guestsViewedFeeding.tooltip":"If a guest views the tank while a staff member is feeding, you will earn extra Prestige <sprite name=\"prestige\">.",
+	
+	"tankWithfullyGrown":"Fully grown",
+	"tankWithfullyGrown.tooltip":"Look after the animal(s) until they are fully grown.",
+	
+	"existXCheckMessage":"{2} {0}/{1}\n<color=#86ABC6>(Check end of message)</color>",
+	"existXCheckMessage.tooltip":"Your aquarium must contain at least {1} {2}. It will be at the bottom of the message which contained this objective.",
+	
+	"totalPrestigeFromSource":"Total Prestige from {2} {0}/{1}<sprite name=\"prestige\">",
+	"totalPrestigeFromSource.tooltip":"Earn a total of {1} Prestige <sprite name=\"prestige\"> from {2}.",
+	
+	"totalPrestigeFromPaint":"Earn Prestige from {2} painted objects {0}/{1}<sprite name=\"prestige\">",
+	"totalPrestigeFromPaint.tooltip":"When a guest encounters a sufficient number of objects painted with the same theme, they will generate some Prestige <sprite name=\"prestige\">.\n\nKeep painting objects with {2} paint until this happens.",
+	
+	"havePrestigeFromSource":"Daily Prestige from {2} {0}/{1}<sprite name=\"prestige\">",
+	"havePrestigeFromSource.tooltip":"Increase daily Prestige <sprite name=\"prestige\"> from {2} until it reaches {1}.",
+	
+	"feedAnimalXofY":"Complete {0} Feeding Tasks {1}/{2}",
+	"feedAnimalXofY.tooltip":"Ensure you have the correct food dispenser placed in your aquarium. Feed the animal in question {2} times to complete this objective. ",
+	
+	"differentTalksXofY":"Give different Staff Talks {0}/{1}",
+	"differentTalksXofY.tooltip":"Place one or more Podiums and schedule different staff talks. Make sure you have a staff member with the Talking skill and a Mic Headset in the aquarium.",
+	
+	"unlockDecorations":"Unlock Decorations!",
+	"rewardUnlocksThing":"{0} Unlocked!",
+	"basePrestige":"Base Prestige +{0}<sprite name=\"prestige\">",
+	"grantIncrease":"Daily Grant +<sprite name=\"money\">{0}",
+	"pointReward":"+{0}<sprite name=\"{1}\">",
+	"animal_reward":"{1} x {2}",
+	"shoaler":"Shoaler",
+	"shoalers":"Shoalers",
+	"wimp":"Wimp",
+	"wimps":"Wimps",
+	"activeSwimmer":"Active Swimmer",
+	"activeSwimmers":"Active Swimmers",
+	"corals":"Corals",
+	"lionfish":"Lionfish",
+	"large_animals":"large animals",
+	"scavenger":"Scavenger",
+	"scavengers":"Scavengers",
+	"plantLover":"Plant Lover",
+	"plantLovers":"Plant Lovers",
+	"rockLover":"Rock Lover",
+	"rockLovers":"Rock Lovers",
+	"caveLover":"Cave Lover",
+	"caveLovers":"Cave Lovers",
+	"greedyAnimal":"Greedy Animal",
+	"armoredAnimal":"Armored Animal",
+	"bully":"Bully",
+	"likesPlants":"Plant Lover",
+	"likesCave":"Cave Lover",
+	"likesRocks":"Rock Lover",
+	"dislikesConspecificsName":"Dislikes Conspecifics",
+	"dislikesCongenersName":"Dislikes Congeners",
+	"dislikesFoodCompetitorsName":"Dislikes Food Competitors",
+	"congenersOnlyName":"Congeners Only",
+	"dislikesLightsName":"Dislikes Lights",
+	"greedyName":"Greedy",
+	"armoredName":"Armored",
+	"isCrustacean":"Crustacean",
+	"isGorgonian":"Gorgonian",
+	"isSoftCoral":"Soft Coral",
+	"isStonyCoral":"Stony Coral",
+	"isAnemone":"Anemone",
+	"isClam":"Clam",
+	"isStarfish":"Starfish",
+	"reqSupplement":"Requires Supplement",
+	"needsRoundedName":"Needs Rounded Tank",
+	"needsKreiselName":"Needs Kreisel Tank",
+	
+	"intervention_report.title":"Intervention report: {0}",
+	"intervention_report.text.0":"<color=#AACCEE><size=140%>INTERVENTION REPORT</size>\n\nNAME:</color>    {0}\n\n<color=#AACCEE>SPECIES:</color>    {4}\n\nWe were forced to intervene to save this animal's life. We have left it under your care but please be more careful next time.",
+	"intervention_report.model.1":"{2}",
+	"intervention_report.text.2":"<color=#AACCEE>WHERE:</color>     <link=\"{6}\"><color=#28B7FFFF>{5}</color></link>\n\n<color=#AACCEE>MAIN RISK FACTOR:</color>    <color=#FF4444>{1}</color>.{3}",
+	"intervention_reportInsert":"\n\nAs a result of the bad publicity Base Prestige <sprite name=\"prestige\"> has reduced by {0}.",
+}
