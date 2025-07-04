@@ -156,15 +156,18 @@ class MegaquariumWorld(World):
 
                 objective = MEGAQUARIUM_DB.get_objective_by_location_id(loc.name)
                 #objective.actions.append(MoveSectionAction(f"section{idx+1}"))
-                sec = createBuildTankSection(f"Tank {idx}", reward=unlockedItem, tankRequirements=objective.conditions[0])
+                trig,sec = createBuildTankSection(f"Tank {idx}", reward=unlockedItem, tankRequirements=objective.conditions[0])
                 sec.doOnComplete.append(unlockedItem)
                 #obj = MegaqObjective(objectiveId="tankWithXAnimal",conditions=[objective.conditions[0]])
                 #sec = Section(sectionId=f"Tank {idx}", mainSection=False, triggers=[], reward=unlockedItem, doOnStart=[], doOnComplete=objective.actions, objectives=[obj])
                 sectionsByRank[objective.rank].append(sec)
                 unlockables.excluded.append(item)
                 sections.append(sec)
-                sectionsByRank[objective.rank][0].doOnStart.append(SideObjectiveAvailableAction(sec.sectionId))
 
+                if not trig is None:
+                    sectionsByRank[objective.rank][0].triggers.append(trig)
+                else:
+                    sectionsByRank[objective.rank][0].doOnStart.append(SideObjectiveAvailableAction(sec.sectionId))
 
         #reachRankX
         campaign = MegaqScenario(startSection=sections[0], sections=sections, unlockables=unlockables, startRank=self.min_rank, money=10000)

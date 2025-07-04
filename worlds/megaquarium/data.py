@@ -221,6 +221,14 @@ class AnimalFilter:
         return obj
 
 @dataclass
+class UnlockItemCondition(MegaqCondition):
+    item: MegaqItem
+
+    def to_json(self):
+        return {"unlocked": {"id": self.item.gameId}}
+
+
+@dataclass
 class ReachRankCondition(MegaqCondition):
     rankNo: int
     gameId: str = "reachRankX"
@@ -477,11 +485,20 @@ def createBuildTankSection(name: str, tankRequirements: TankWithAnimalsCondition
     sec = Section(sectionId=name, mainSection=mainSection, reward=reward, doOnComplete=[], doOnStart=[], triggers=[], objectives=[])
 
     sec.objectives.append(MegaqObjective(objectiveId=f"tankWithParameters", conditions=[]))
+
     for condName,cond in tankRequirements.generate_progressive_conditions():
         sec.objectives.append(MegaqObjective(objectiveId=condName, conditions=[cond]))
+    
+    unlockReqs = []
+    for req,_ in filter(lambda x: isinstance(x[0], MegaqItem), tankRequirements.items):
+        unlockReqs.append(UnlockItemCondition(req))
 
+    if len(unlockReqs) == 0:
+        trig = None
+    else:
+        trig=MegaqTrigger(idNo=-1, location=None, rank=tankRequirements.rank, conditions=unlockReqs, actions=[SideObjectiveAvailableAction(sec.sectionId)])
 
-    return sec
+    return trig,sec
 
 
 '''
